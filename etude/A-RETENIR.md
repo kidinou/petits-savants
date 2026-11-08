@@ -30,7 +30,7 @@ Le fichier `SYNTHESE.md` résume tout avec le plan d'action complet.
 4. **La voix de synthèse et les emojis font « amateur ».** La voix lit mal les sons isolés ([t], [ch]), ce qui est grave pour apprendre à lire. Les emojis sont ambigus (⚽, c'est « ballon » ou « foot » ?).
 5. **On parle aux parents, pas aux enfants.** Ce sont eux qui paient. La loi interdit de pousser un enfant à réclamer un achat.
 6. **Notre message** : « L'école sur la télé du salon. » Le contraire de « l'écran-sucette » qu'on donne pour occuper l'enfant : un écran partagé, une vraie leçon, sans pub.
-7. **Notre mascotte : Tilou**, une petite goutte abricot dont l'antenne en « ? » devient « ! » quand l'enfant comprend. Elle est originale, donc on peut la protéger, contrairement à un renard ou un panda génériques. Les animaux actuels deviennent « le doudou de Tilou ».
+7. **Nos mascottes : les Pétillous.** L'enfant choisit son compagnon parmi 6 créatures originales (Tilou, Babil, Pila, Feuillette, Nimbo, Plumo) et le personnalise avec ce qu'il gagne. **Tilou**, la petite goutte abricot dont l'antenne en « ? » devient « ! », reste le visage de la marque (logo, vidéos, peluche). Des créatures originales se protègent, contrairement à un renard ou un panda génériques. Les animaux actuels deviennent des doudous.
 8. **Les points doivent récompenser l'effort, pas le temps passé.** Pas de flamme qui culpabilise : une « Semaine pétillante » (4 jours sur 7 suffisent). Rien de payant au hasard.
 9. **La publicité payante ne serait pas rentable de toute façon** : un abonné coûterait plus cher en pub qu'il ne rapporte. Notre choix « 0 € et réseaux sociaux » est donc le bon.
 10. **Ne jamais montrer le visage d'un enfant** (même les nôtres) dans les vidéos : les lois de 2020 et 2024 sont très strictes. On filme des mains, des dos, l'écran, Tilou.
@@ -53,7 +53,7 @@ Le fichier `SYNTHESE.md` résume tout avec le plan d'action complet.
 - [ ] **Version tablette et téléphone** de la même application Android.
 - [ ] **La voix** : enregistrer nous-mêmes les sons et les syllabes (gratuit, avec un bon micro de téléphone dans une pièce calme). Pour le reste, une voix de synthèse de qualité générée à l'avance.
 - [ ] **Remplacer les emojis** par des illustrations faites avec Google Flow (planche P18).
-- [ ] **Intégrer Tilou** et le nouveau système de points et d'objets : premier objet gagné en moins de 5 minutes.
+- [ ] **Intégrer les 6 compagnons au choix** et le nouveau système de points et d'objets : premier objet gagné en moins de 5 minutes. Les 6 partagent les mêmes points d'accroche, pour qu'un même chapeau aille à tous.
 - [ ] **Une leçon Premium offerte par jour** quand l'enfant a fini les leçons gratuites de sa classe.
 - [ ] **Publier sur l'Amazon Appstore** (Fire TV), c'est gratuit.
 
@@ -94,10 +94,11 @@ CapCut, Canva (version gratuite), Meta Business Suite pour programmer Instagram 
 Tout est dans `09-planches-google-flow.md`. L'ordre :
 
 1. **Tilou d'abord** (planche P01). On le valide avant tout le reste, puis on l'utilise comme image de référence (« ingrédient ») pour toutes les autres planches.
-2. Ses expressions, ses poses et ses 5 stades d'évolution.
-3. Les accessoires : chapeaux, tenues, objets, couleurs, à chaque fois seuls **et** portés par Tilou.
-4. L'univers : la cabane, l'Arbre-à-Pourquoi, Somnole, les autres personnages.
-5. Les illustrations qui remplacent les emojis des exercices.
+2. **Les 5 autres compagnons** (planche P01 bis), construits sur la même base que Tilou.
+3. Les expressions, les poses et les 5 stades d'évolution.
+4. Les accessoires : chapeaux, tenues, objets, couleurs, à chaque fois seuls **et** portés par les 6 compagnons, pour vérifier qu'ils vont à tous.
+5. L'univers : la cabane, l'Arbre-à-Pourquoi, Somnole.
+6. Les illustrations qui remplacent les emojis des exercices.
 
 À savoir : une image brute d'IA est mal protégée par le droit d'auteur. Pour que Tilou nous appartienne vraiment, il faut le retoucher ou le redessiner nous-mêmes, en gardant les étapes (croquis datés).
 
@@ -122,7 +123,7 @@ On peut faire tout le marketing à 0 €. Quelques obligations restent pourtant 
 
 Certains sites étaient bloqués pendant l'étude (Google Play, l'INPI…). Avant de décider :
 
-- que « Petits Savants », « Tilou » et « Pétillous » sont libres à l'INPI (data.inpi.fr) — « Tilou » est un surnom courant, le nom de secours est « Quilou » ;
+- que « Petits Savants », « Tilou », « Pétillous » et les noms des 5 autres compagnons sont libres à l'INPI (data.inpi.fr) — « Tilou » est un surnom courant, le nom de secours est « Quilou » ;
 - les prix des concurrents dans les magasins d'applications ;
 - les règles officielles de Google Play pour les applications familiales et de YouTube pour les vidéos « conçues pour les enfants » ;
 - les points juridiques, idéalement avec un expert-comptable ou un avocat : les rapports ne sont pas un avis juridique.

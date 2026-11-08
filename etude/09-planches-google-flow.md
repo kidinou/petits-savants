@@ -7,6 +7,7 @@
 ## Comment s'y prendre
 
 1. **On commence par Tilou seul (planche 1) et on le valide ensemble avant tout le reste.** Toutes les autres planches dépendent de lui : si sa forme change après, il faut tout refaire.
+   **L'enfant choisit son compagnon parmi 6 Pétillous** (décision du 8 novembre). Pour qu'un même chapeau ou une même tenue aille à tous, **les 6 sont construits sur la même base que Tilou** : même taille, même haut de tête arrondi, mêmes petits bras et pieds. Seuls changent la couleur, la forme de la « signature » (antenne, oreilles-feuilles…) et quelques détails.
 2. **Une fois Tilou validé, utilisez l'image retenue comme « ingrédient » (image de référence) dans Flow pour toutes les planches suivantes.** C'est ce qui garde le même personnage d'une image à l'autre.
 3. **Collez le bloc « Style commun » à la fin de chaque prompt.** Il garantit le même rendu partout.
 4. **Les prompts sont en anglais**, car les modèles d'image de Flow les suivent mieux. Les explications sont en français.
@@ -41,7 +42,14 @@ Pour les objets isolés (planches 5 à 9), ajoutez aussi :
 - le corps est **abricot, en goutte** (pas rose, pas parfaitement rond) ;
 - on le reconnaît en tout petit, en ombre noire.
 
-**P02 · Les expressions** *(avec P01 en ingrédient)*
+**P01 bis · Les 5 autres compagnons au choix** *(avec P01 en ingrédient)*
+> *Character lineup of 6 original companion creatures from the same family, standing side by side at exactly the same height, all built on the same body base as the reference character: same rounded drop-shaped body, same cream egg-shaped belly, same big glossy indigo eyes, same rosy cheeks, same short mitten arms and round feet, same rounded top of the head. Only the color and one signature feature change: 1) the reference apricot character with its question-mark antenna; 2) Babil, raspberry (#C72E5A), with a small speech-bubble-shaped tuft on top of the head; 3) Pila, cube blue (#2566CC), with three tiny rounded dice-dot spots on the belly and a small square tuft; 4) Feuillette, moss green (#1D7A45), with two leaf-shaped ears; 5) Nimbo, pearly white with a lavender tint, with a small fluffy cloud puff on top of the head and a tiny violet backpack (#7444D9); 6) Plumo, teal (#08757D), with a ribbon-like curl on the head ending in a tiny pencil tip. Front view, same pose for all.*
+
+À vérifier : les 6 ont **la même hauteur et le même haut de tête**. C'est indispensable pour que les accessoires aillent à tous. Si un compagnon vous plaît moins, on change seulement sa couleur ou sa signature.
+
+Pour chaque compagnon retenu, refaites ensuite la planche P01 (vues de face, de trois quarts, de profil et de dos) avec son image en ingrédient.
+
+**P02 · Les expressions** *(avec P01 en ingrédient, puis à refaire pour chaque compagnon)*
 > *Expression sheet of the same character, 12 head-and-body portraits in a 4 × 3 grid: curious (antenna as a question mark, head tilted); delighted (antenna snapped straight up into an exclamation mark, pearl glowing bright, eyes as happy crescents, cheeks glowing); dazzled (exclamation antenna, pearl sparkling); thinking (antenna gently twisting); "almost" (small soft pout, antenna curling back, kind eyebrows, not sad); encouraging (one mitten raised); proud, clapping; listening (mitten cupped by the side of the body); surprised (round eyes, antenna like a spring); laughing (eyes closed, body bouncing); sleeping (eyes closed, antenna curled into a small spiral to the side, pearl dimmed, tiny "z" shape); waving goodbye.*
 
 **P03 · Les poses**
@@ -53,8 +61,8 @@ Pour les objets isolés (planches 5 à 9), ajoutez aussi :
 ### 🟠 Étape 2 : les accessoires (ce que l'enfant gagne)
 
 Ces planches reprennent le catalogue du rapport 03 (122 objets). Pour chaque catégorie, faites **deux images** :
-- **les objets seuls**, pour que l'application puisse les poser sur Tilou ;
-- **Tilou qui les porte**, pour vérifier que c'est beau sur lui.
+- **les objets seuls**, pour que l'application puisse les poser sur n'importe quel compagnon ;
+- **les 6 compagnons qui portent le même objet**, pour vérifier qu'il va à tous. Prompt type, avec P01 bis en ingrédient : *The same 6 companion creatures side by side, each wearing the same [objet], placed identically on each one, same scale.*
 
 **P05 · Les chapeaux (18)**
 > *Item sheet of 18 hats for a small round creature, in a 6 × 3 grid: pompom beanie, baseball cap, beach bucket hat, painter's beret, straw hat, a big flower to wear on the head, party hat, explorer helmet, crown of leaves, astronaut helmet, starry night cap, chef's toque, golden crown, glowing mushroom hat, crown of tiny paper lanterns, scholar's toque with a small tassel, winter elf hat, spring bunny-ear headband.*
@@ -82,7 +90,7 @@ Ces planches reprennent le catalogue du rapport 03 (122 objets). Pour chaque cat
 **P12 · Somnole, le gardien du soir**
 > *Original character sheet: a big living cushion creature, soft and round-cornered, deep night indigo (#2E3D7C) fabric with small embroidered yellow stars, a long starry night cap with a pompom, sleepy half-closed kind eyes, small stubby arms, holding a tiny glowing paper lantern. Front, three-quarter and side views, plus 3 expressions: yawning, gently smiling, sleeping.*
 
-**P13 · Les 5 guides des matières**
+**P13 · Les 5 compagnons en version « fiche de présentation »** *(si vous voulez un autre style que P01 bis)*
 > *Lineup of 5 original small creatures standing side by side, same size and style as a family: Babil, a speech-bubble-shaped creature in raspberry (#C72E5A) who loves rhymes; Pila, three stacked rounded blocks with dice dots on the faces, in cube blue (#2566CC); Feuillette, a small green creature (#1D7A45) with two big leaf-shaped ears and an oversized magnifying glass; Nimbo, a small pearly-white cloud with a violet backpack (#7444D9) covered in stickers; Plumo, a ribbon-shaped creature in teal (#08757D) whose tail ends in a pencil tip leaving a glowing trail.*
 
 **P14 · Les Pépins (8 petits compagnons)**
