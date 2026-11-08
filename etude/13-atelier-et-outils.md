@@ -1049,3 +1049,445 @@ Le parent lit une fiche bien plus volontiers sur son téléphone, dans la cuisin
 
 Les fiches sont aussi une **matière première marketing** : une fiche par semaine en épingle Pinterest ou en carrousel Instagram (étude 05, piliers « Activités sans écran » et « Routines »), avec un renvoi vers l'app.
 
+---
+
+## 3. Les outils de la maison, bâtis sur Minuto
+
+### 3.1 Ce que Minuto apporte déjà
+
+Les fondatrices ont déjà fait **Minuto**, une application web de minuteurs visuels (un seul fichier HTML : CSS, décors SVG animés, JavaScript, sons générés en direct). C'est une base solide, pensée pour les enfants : de vrais dessins animés plutôt que des chiffres, une interface à gros boutons, des sons doux, un mode « petits » sans aucun chiffre. **On ne repart pas de zéro : la partie outils de Petits Savants, c'est Minuto adapté à la télé.**
+
+Ce que contient Minuto (lu dans le fichier) :
+
+- **Un moteur de minuterie** : un « plan » fait d'un ou plusieurs segments (un minuteur, les étapes d'une routine, travail et pause), avec pause, « +1 minute », « Recommencer », une carte « Ensuite » entre deux étapes (avec un « C'est parti » qui se lance tout seul) et un écran « C'est fini ! » (« Encore » / « Terminer »). Le décor « pulse » doucement dans les deux dernières minutes.
+- **Neuf décors animés** en SVG (cadre de 300 × 300), chacun avec la même petite interface `build()` / `update({ f, remaining, duration, running })` : **Réveil** (un disque coloré qui diminue et passe du vert au rouge ; en mode « grands », un cadran de 60 minutes à la façon des minuteurs de classe), **Aquarium** (l'eau coule d'un robinet, le niveau monte, les poissons arrivent un à un, des bulles), **Sablier**, **Fleur** (une graine qui devient une fleur), **Fusée** (vers la lune), **Dent** (les microbes disparaissent un par un sous la brosse), **Coffre** (les jouets sautent un à un dans le coffre), **Dino** (un œuf qui se fendille puis éclot), et **Course** pour les défis.
+- **Deux publics** : « Les petits » (« Ils ne lisent pas encore l'heure. Que des dessins, aucun chiffre. ») et « Les grands » (« En plus du dessin, les minutes et l'heure de fin. »).
+- **Des minuteurs personnalisés** (nom, image, durée, décor, et démarrage automatique à une heure donnée), avec quatre minuteurs prêts : Brossage des dents (2 min, Dent), Télé (20 min, Aquarium), Rangement (10 min, Coffre), Avant le dodo (15 min, Fusée).
+- **Les activités** : Routines (Le matin, Le soir, jusqu'à 12 étapes, avec « J'ai fini cette étape »), Dodos (les nuits avant un grand jour, une lune par nuit), Chacun son tour (2 à 4 joueurs, un animal chacun, tirage « Au hasard »), Bulle de calme (inspirer 4 s, garder 1,5 s, souffler 6 s, sur 1, 2, 3 ou 5 minutes, avec un son qui monte et qui descend), Devoirs et pauses (15 min de travail, 5 min de pause, 3 tours par défaut), Défis (finir avant l'escargot, la tortue ou le lapin, avec podium et record) et Mes étoiles (un bocal qui se remplit, et une récompense quand il est plein).
+- **Des sons générés en WebAudio**, sans fichier audio : une clochette de quatre notes (sol, si, ré, sol) répétée trois fois à la fin, un petit « pop », un « ding ».
+- **Des réglages** de fin : la mélodie, et « L'écran change de couleur », pour voir la fin de loin.
+
+**Notre verdict, élément par élément** :
+
+| Élément de Minuto | Verdict pour Petits Savants | Pourquoi |
+|---|---|---|
+| Moteur de minuterie (segments, pause, +1 min, « Ensuite », « C'est fini ! ») | **Reprendre tel quel** (la logique), réécrit au style de l'app | C'est exactement ce qu'il faut ; seule la commande change (télécommande). |
+| Décors Aquarium, Sablier, Réveil, Dent, Coffre | **Reprendre tels quels** | Lisibles, drôles, adaptés aux non-lecteurs ; les contours épais (3 unités sur 300) restent nets agrandis à 840 px. |
+| Décors Fleur, Fusée, Dino | **Reprendre**, rangés dans « Plus de décors » | Bons pour l'attente ; la fusée est un peu excitante pour le coucher (on lui préfère le Ciel du soir, à créer). |
+| Mode « petits » / « grands » | **Reprendre**, et le déduire de la classe de l'enfant | TPS-GS : que des dessins ; CP-CE2 : dessin, minutes restantes et heure de fin. Le parent peut changer. |
+| Clochette de fin, « pop », « ding », son de la bulle | **Reprendre**, harmonisés avec les sons de l'app (`Sfx` de `platform.js`, aussi en WebAudio) | Déjà doux, sans fichier ni droits. Réglage du niveau pour les haut-parleurs de télé (§ 3.2). |
+| Fin « l'écran change de couleur » | **Adapter** : un halo arc-en-ciel sur le bord de l'écran, 10 secondes, pas tout l'écran | Sur une télé de 55 pouces, un plein écran qui change de couleur en boucle est trop violent ; on évite tout ce qui clignote (plus de 3 éclairs par seconde, règle d'accessibilité WCAG 2.3.1). |
+| Routines | **Reprendre et adapter** : cases à cocher visibles, pictogrammes maison, étapes sans minuteur possibles, pas d'étoile par étape | Voir § 3.4. |
+| Dodos | **Reprendre tel quel** | Simple, utile, en plein dans « se repérer dans le temps ». |
+| Chacun son tour | **Reprendre**, avec les profils des enfants comme joueurs | Voir § 3.7. |
+| Bulle de calme | **Reprendre**, rythme adapté à l'âge | Voir § 3.6. |
+| Devoirs et pauses | **Reprendre**, durées par classe, et y brancher les ambiances sonores | Voir § 3.5. |
+| Défis contre l'escargot | **Revoir** : pas de podium entre frères et sœurs, pas de record, un mode « tous ensemble » | Voir § 3.7. |
+| Mes étoiles (bocal + récompense) | **Revoir en profondeur** : devient le « bocal des fiertés », sans récompense matérielle | Voir § 3.9. |
+| Minuteur prêt « Télé, 20 min » | **Ne pas reprendre** sur la télé | La limite de temps par enfant existe déjà dans l'espace parents ; on le renomme « Temps calme ». |
+| Démarrage automatique à une heure | **Garder sur le téléphone seulement** | La télé est souvent éteinte le matin ; Minuto le dit lui-même : « Minuto doit rester ouvert, écran allumé ». |
+| Six thèmes de couleurs (Pop, Féerique, Espace…) | **Laisser à Minuto** | Petits Savants a sa propre identité (étude 08). |
+| Questionnaire d'accueil | **Inutile** | Le profil de l'enfant (classe, avatar, couleur) dit déjà tout. |
+| Sauvegarde en ligne optionnelle | **Ne pas reprendre** | Petits Savants garde tout sur la télé, sans compte. |
+| La mascotte « Minuto », petite horloge | **À décider** | Deux options : elle devient l'hôte de l'espace des outils (« les minuteurs de Minuto »), ce qui garde le travail et un nom déjà trouvé ; ou les outils sont présentés par le compagnon de l'enfant, pour un seul univers. Nous penchons pour la première, si Minuto reste aussi une app à part (renvoi croisé). |
+
+**Ce qui manque à Minuto**, et qu'on ajoute : le décor **Arc-en-ciel** demandé par les fondatrices ; un décor de coucher (**Ciel du soir**) ; la **commande à la télécommande** et la mise en page à 3 m ; le lien avec **les profils des enfants** ; les **ambiances sonores** pour les devoirs ; le **Dé géant** pour les jeux de l'atelier ; une **version imprimable** des routines.
+
+### 3.2 Règles communes : la télé et le téléphone
+
+**Mise en page à 1920 × 1080** (la taille de travail de l'app), avec 5 % de marge de sécurité (96 px sur les côtés, 54 px en haut et en bas) :
+
+- **Mode « petits »** : le décor seul, centré, en **960 × 960 px** (le SVG de 300 unités agrandi 3,2 fois). Le nom de l'activité en haut (48 px), lu par la voix au lancement. Les boutons se cachent après 5 secondes sans touche et reviennent dès qu'on appuie.
+- **Mode « grands »** : le décor à gauche en **840 × 840 px** ; à droite, le temps restant en chiffres de **160 px** (chiffres à chasse fixe, pour qu'ils ne « dansent » pas), l'heure de fin en 40 px (« Fini à 17 h 25 »), puis la rangée de boutons.
+- **Boutons** : 220 × 120 px, icône et mot (32 px), anneau de focus jaune et marine de l'app. Texte jamais sous 34 px. Contraste 4,5:1 au moins.
+
+**La télécommande** (les mêmes réflexes que dans les leçons, avec l'aide-mémoire des touches en bas de l'écran) :
+
+| Touche | Écran de choix (durée, décor) | Minuteur en cours |
+|---|---|---|
+| ◀ ▶ ▲ ▼ | Se déplacer entre les durées et les décors | Se déplacer entre Recommencer, Pause, +1 minute |
+| OK | Choisir, puis « Lancer » | Le bouton qui a le focus (par défaut : Pause / Reprendre) |
+| Retour | Revenir | Demande « Arrêter le minuteur ? » (Oui / Non, le focus sur Non) : un enfant qui appuie par erreur ne coupe rien |
+| Vert (ou 2) | — | « J'ai fini ! » (étape de routine, défi) |
+| Jaune (ou 3) | — | +1 minute |
+| Bleu (ou 4) | — | Son de fin activé ou coupé |
+| Rouge (ou 1) | — | Dans « Chacun son tour » et les défis à plusieurs : chaque couleur est un enfant (rouge, vert, jaune, bleu), il appuie sur sa couleur quand il a fini |
+
+**Choisir une durée à la télécommande** : une grille de durées toutes prêtes adaptées à l'outil (par exemple 1, 2, 5, 10, 15, 20, 30, 45, 60 min), plus « Autre durée » : ◀ ▶ enlève ou ajoute 1 minute, une pression longue va de 5 en 5 (Minuto a déjà cette « pression qui répète »). Maximum 2 heures sur la télé. **Taper un nom** (minuteur personnalisé, étape de routine) se fait de préférence **sur le téléphone** connecté ; sinon avec le clavier à l'écran de l'app (celui du prénom).
+
+**La fin** :
+
+- **Son** : la clochette de Minuto (quatre notes montantes sol-si-ré-sol, 0,17 s d'écart, attaque de 15 ms, extinction en 1,3 s), jouée **trois fois** à 1,9 s d'intervalle puis plus rien. Sur la télé, on ajoute un filtre qui adoucit les aigus (passe-bas vers 4 kHz) et un niveau plus bas que les sons « bravo » des leçons : les haut-parleurs de télé sont souvent réglés fort. Réglage « Son de fin : doux / normal / coupé », avec un bouton « Écouter ».
+- **Option « Prévenir 1 minute avant »** (désactivée par défaut) : un seul « ding » très doux.
+- **Image** : le décor fait sa fin (l'aquarium est plein, la fusée a planté son drapeau, le coffre est fermé, l'œuf a éclos), un halo arc-en-ciel fait le tour de l'écran pendant 10 secondes, puis la carte « C'est fini ! » avec « Encore » et « Terminer ». **Au coucher**, ni clochette ni halo (§ 3.3, Ciel du soir).
+- **Après 5 minutes sans touche**, l'écran revient à l'accueil : on ne laisse pas une télé allumée pour rien.
+
+**Ce qu'il faut à la télé, et que Minuto n'avait pas à gérer** :
+
+- **Écran allumé** : l'app Android TV garde déjà l'écran allumé (`FLAG_KEEP_SCREEN_ON` dans `MainActivity`) ; l'économiseur d'écran ne doit pas couper un minuteur de 30 minutes. Sur LG et Samsung, il faut vérifier l'équivalent de chaque système.
+- **Écrans OLED** : une image fixe pendant 30 à 60 minutes peut marquer l'écran. Le décor se décale de 2 à 4 px chaque minute, les textes fixes sont un peu atténués, et les longs minuteurs proposent « écran tamisé » (luminosité réduite, animations ralenties).
+- **Puissance des télés** : Minuto recalcule ses décors à chaque image (60 par seconde). Sur un petit boîtier (Chromecast HD, Fire TV Stick Lite, Mi Box S), on limite à 30 images par seconde, on fait les animations d'ambiance (bulles, poissons qui nagent) en transformations CSS, et on coupe tout ce qui n'est pas le temps qui passe quand le réglage « animations réduites » est actif (Minuto respecte déjà `prefers-reduced-motion`).
+- **Style de code** : Petits Savants est écrit en JavaScript à l'ancienne (`var`, fonctions, sans étape de compilation) pour tourner dans les navigateurs des vieilles télés ; Minuto utilise la syntaxe moderne (fonctions fléchées, gabarits de chaînes, `async`). Le portage des décors est mécanique (les gabarits deviennent des concaténations) mais à faire décor par décor, avec un test d'affichage par décor.
+
+**Sur le téléphone** :
+
+- **Téléphone connecté à la télé** (lien existant) : il sert de **télécommande des outils** (lancer, mettre en pause, +1 minute, « J'ai fini »), d'**éditeur** (noms, étapes de routine, dates des Dodos) et de **miroir** du minuteur (le même décor, en petit). La télé reste la référence du temps.
+- **Téléphone seul** : la page téléphone est servie par la télé, donc elle s'arrête quand la télé s'éteint. Pour les minuteurs sans télé (le brossage de dents à la salle de bain), le vrai outil est **Minuto lui-même**, ou la future application tablette et téléphone de Petits Savants (étude 02, § 4.1) qui reprendra ces écrans tels quels : ils sont déjà conçus pour le doigt.
+
+### 3.3 Les minuteurs visuels
+
+Six décors sur l'écran de choix, quatre de plus dans « Plus de décors ». Pour chacun : le rendu, l'animation, les durées proposées, la fin, et à quoi il sert.
+
+#### Arc-en-ciel (nouveau, à dessiner dans le style de Minuto)
+
+- **Rendu** : six arcs en pointillés gris, « à colorier », posés sur deux nuages souriants ; les couleurs de la palette de Minuto (rouge `#FF5A5F`, orange `#FF9F1C`, jaune `#F2A900`, vert `#2FCB89`, bleu `#3FA7F5`, violet `#9B5DE5`), contour épais `#2B2350` comme les autres décors.
+- **Animation** : chaque arc se colorie comme tracé au crayon, du nuage de gauche vers celui de droite (un trait qui avance), l'un après l'autre, du rouge (dehors) au violet (dedans). Chaque arc prend un sixième du temps. À la moitié, un soleil passe la tête derrière le nuage. Une petite étoile scintille au bout du crayon pendant que ça colorie.
+- **Ce que l'enfant comprend sans lire** : « encore deux couleurs », c'est un repère concret, mieux qu'une aiguille.
+- **Durées** : 5, 10, 15, 20, 30 minutes (et durée libre).
+- **Fin** : le soleil sort en entier et sourit, les nuages sautillent, des étincelles ; clochette.
+- **Option** : un « ding » très doux à chaque couleur terminée (désactivé par défaut).
+- **À quoi il sert** : les **devoirs** et la lecture (10-15 min au CP, 15-20 au CE), un **temps de jeu calme**, « dans 15 minutes, on part ».
+
+#### Aquarium (Minuto, tel quel)
+
+- **Rendu** : un aquarium vide, un robinet en haut à gauche.
+- **Animation** : l'eau coule et le niveau monte régulièrement ; les poissons arrivent un à un à des moments fixés (poisson-clown, poisson chirurgien, poisson-globe…), une pieuvre se pose au fond, les bulles montent. Les arrivées de poissons sont des repères pour les petits (« le poisson-globe est là, c'est presque fini »).
+- **Durées** : 10, 15, **20** (par défaut), 30 minutes.
+- **Fin** : l'aquarium est plein, le robinet s'arrête, les poissons nagent ensemble ; clochette.
+- **À quoi il sert** : le **temps calme** après l'école, le **bain** (15 min, comme dans la routine du soir de Minuto), un **repas** qui s'éternise, une **attente** (« quand l'aquarium sera plein, on ira au parc »).
+
+#### Sablier (Minuto, tel quel)
+
+- **Rendu** : un sablier vertical, du sable fait de grains de toutes les couleurs.
+- **Animation** : le sable coule du haut vers le bas, le tas monte en bas.
+- **Durées** : courtes : 30 secondes, 1, 2, 3, 5 minutes.
+- **Fin** : le dernier grain tombe, le sablier fait un petit saut ; clochette.
+- **À quoi il sert** : **se laver les mains** (30 s, fiche PS-08), les **tours de jeu** (c'est le décor par défaut de « Chacun son tour »), les petits défis de l'atelier (petit bac, dico-défi), une **petite attente**.
+
+#### Réveil, le disque qui fond (Minuto, tel quel)
+
+- **Rendu** : un réveil rond avec un disque de couleur. En mode « grands », un vrai cadran de 60 minutes avec ses 60 traits, comme les minuteurs utilisés en classe.
+- **Animation** : la part colorée diminue dans le sens des aiguilles d'une montre et passe doucement du vert au rouge.
+- **Durées** : 1 à 60 minutes.
+- **Fin** : le disque a disparu, le réveil sonne (la clochette).
+- **À quoi il sert** : les **transitions** (« encore 5 minutes de jeu »), les enfants qui ont besoin de **voir le temps qui reste d'un coup d'œil** (attention, troubles de l'attention, autisme : c'est le format le plus utilisé dans ces accompagnements), les devoirs des grands. **Réglage** « couleur fixe » pour les enfants que le passage au rouge inquiète.
+
+#### La dent (Minuto, tel quel, avec un petit ajout)
+
+- **Rendu** : une grosse dent un peu jaunie, couverte de microbes rigolos, une brosse à dents.
+- **Animation** : la brosse va de microbe en microbe ; chacun disparaît dans une gerbe de bulles avec un petit « pop », la dent blanchit, son visage passe d'inquiet à radieux ; les yeux de la dent suivent le prochain microbe.
+- **Ajout proposé** : ranger les microbes en **quatre zones** (en haut à droite, en haut à gauche, en bas à gauche, en bas à droite) pour que la brosse change de zone toutes les 30 secondes : l'enfant apprend la méthode (brosser toutes les faces, partout).
+- **Durée** : **2 minutes** (la durée recommandée par les dentistes, matin et soir).
+- **Fin** : la dent brille et sourit ; clochette.
+- **À quoi il sert** : le **brossage des dents**, et la leçon « Dents et microbes » (`mo-sante-hygiene`).
+
+#### Le coffre à jouets (Minuto, tel quel)
+
+- **Rendu** : un coffre ouvert sur un tapis rond arc-en-ciel, des jouets éparpillés par terre (ballon, ours, cubes, canard, voiture, tambour).
+- **Animation** : les jouets sautent un à un dans le coffre en faisant une pirouette, avec une pluie d'étoiles.
+- **Durées** : 5, 10, 15 minutes.
+- **Fin** : le couvercle se ferme ; clochette.
+- **À quoi il sert** : le **rangement**. L'enfant range « en même temps que le coffre » : c'est une course amicale avec le dessin, pas avec un frère.
+
+#### Plus de décors
+
+- **Fleur** (Minuto) : une graine sous la terre, une tige qui pousse, des feuilles, un bouton, puis la fleur s'ouvre. Pour **la pause** des devoirs (c'est le décor de pause de Minuto) et les **attentes** ; lien avec « La petite graine » (`mo-nat-graine`).
+- **Fusée** (Minuto) : la fusée suit un chemin d'étoiles vers la lune et y plante un drapeau. Pour l'attente d'un **départ**, d'une **visite**.
+- **Dino** (Minuto) : l'œuf se fendille de plus en plus, un petit dinosaure jette un œil, puis éclot. Pour une **attente** avec une surprise au bout.
+- **Ciel du soir** (nouveau) : un ciel de fin de journée qui fonce lentement, les étoiles s'allument une à une, la lune se lève, le compagnon de l'enfant bâille et se couche dans un coin. **Durées** : 10, 15, 20 minutes. **Fin sans clochette** : l'écran s'assombrit en 30 secondes jusqu'au noir, une boîte à musique de trois notes très douce, puis la télé revient à l'accueil. Pour **le temps avant le coucher** et le futur « mode bonne nuit » (§ 4). Il remplace la Fusée pour le coucher : on ne lance pas une fusée pour s'endormir.
+
+*Plus tard* : **Le chemin du compagnon**, où l'animal 3D de l'enfant (`pet3d.js`) marche jusqu'à sa cabane ; très attachant, mais plus coûteux (animation 3D sur de petits boîtiers).
+
+### 3.4 Les routines en images
+
+**Pourquoi** : les routines rassurent les jeunes enfants (ils savent ce qui vient ensuite), réduisent les rappels à répétition (« Tes chaussures ! ») et donnent de l'**autonomie** : c'est l'image, pas l'adulte, qui dit ce qu'il reste à faire. C'est aussi une très forte demande des parents (les tableaux de routine sont parmi les recherches qui montent le plus sur Pinterest, étude 05).
+
+**Ce qu'on reprend de Minuto** : la routine est une suite d'étapes (nom, image, durée, décor), qui s'enchaînent avec la carte « Ensuite : … · C'est parti », et le bouton « J'ai fini cette étape ». **Ce qu'on change** :
+
+- **Les cases à cocher sont visibles en permanence** : en haut de l'écran, une frise de toutes les étapes (pictogramme de 160 px, mot en 34 px), chacune avec sa case. L'étape en cours est agrandie au centre ; les étapes faites sont cochées et un peu atténuées ; celles qui restent attendent en couleur.
+- **Une étape peut ne pas avoir de minuteur** (« Je m'habille » n'a pas besoin d'être chronométré chez tout le monde). Celles qui en ont un affichent leur décor (la Dent pour les dents, le Coffre pour ranger).
+- **L'enfant coche lui-même** : touche OK ou verte (« J'ai fini ! »), ou sur le téléphone. Petit « pop », le compagnon saute de joie, la voix annonce l'étape suivante (« Ensuite : les dents ! »).
+- **Pas d'étoile par étape** (Minuto en donne une). À la fin : « Routine finie ! Belle journée ! » et le compagnon fait un câlin. Le parent peut, s'il le veut, ajouter une ligne au bocal des fiertés (« Toute la routine du matin tout seul ! »).
+- **Les cases se vident chaque jour à 4 h du matin.** Il n'y a pas d'historique des jours ratés, pas de série.
+- **Pictogrammes maison** (pas d'emojis, étude 02) : on part des 18 icônes d'activités de Minuto (télé, jeu, tablette, brosse à dents, bain, repas, bol, dodo, livre, crayon, nounours, tee-shirt, chaussure, cartable, musique, palette, ballon, étoile) et on les complète jusqu'à 40 environ : toilettes, laver les mains, laver le visage, se coiffer, manteau, goûter, verre d'eau, pyjama, histoire, câlin, lumière éteinte, préparer ses habits, mettre la table, débarrasser, nourrir l'animal, agenda, lire sa leçon, cahier, bouger, ranger son cartable, montrer à un adulte.
+- **Version à imprimer** : un QR code ouvre une page A4 de la routine (les pictogrammes, les cases à cocher au feutre), à coller sur le frigo. Beaucoup de familles n'allument pas la télé le matin, et c'est très bien : la routine sur la télé est un plus, pas une obligation.
+
+**Les routines prêtes** (modifiables, sur le téléphone ou derrière le code sur la télé) :
+
+| Routine | Maternelle (TPS-GS) | Élémentaire (CP-CE2) |
+|---|---|---|
+| **Le matin** | Pipi · M'habiller · Petit-déjeuner · Les dents (Dent, 2 min) · Chaussures et manteau | Pipi et visage · M'habiller · Petit-déjeuner · Les dents (Dent, 2 min) · Me coiffer · Cartable · Chaussures et manteau |
+| **Le soir** | Ranger les jouets (Coffre, 10 min) · Le bain (Aquarium, 15 min) · Pyjama · Les dents (Dent) · L'histoire · Câlin | Ranger (Coffre) · Douche ou bain · Pyjama · Préparer mes affaires pour demain · Les dents (Dent) · Lecture (Ciel du soir, 15 min) · Câlin |
+| **Les devoirs** (CP-CE2) | — | Goûter et pause · Sortir l'agenda · Lire ma leçon à voix haute · Faire mes exercices (Arc-en-ciel) · Bouger 1 minute · Ranger mon cartable · Montrer à un adulte |
+
+*Note pédagogique* : à l'école élémentaire, les devoirs écrits à la maison ne sont normalement pas demandés (une règle ancienne, régulièrement rappelée) ; dans la pratique, il y a surtout des leçons à apprendre et de la lecture. La routine « devoirs » est donc pensée pour **lire et apprendre**, en peu de temps.
+
+### 3.5 Devoirs et pauses, et les ambiances sonores
+
+**Devoirs et pauses** (Minuto) : un temps de travail, une vraie pause, et on recommence. On garde le principe et la phrase de pause de Minuto (« Bouge, bois un verre d'eau, respire un grand coup. »), et on adapte les durées à l'âge :
+
+| Classe | Travail | Pause | Tours | Décors |
+|---|---|---|---|---|
+| CP | 10 min | 3 min | 2 | Arc-en-ciel / Fleur |
+| CE1 | 15 min | 5 min | 2 | Arc-en-ciel / Fleur |
+| CE2 | 20 min | 5 min | 2 | Réveil (mode grands) / Fleur |
+
+Pendant la pause, la télé propose une idée de mouvement qui change à chaque fois (« 10 sauts de grenouille », « Étire-toi comme un chat », « Va boire un verre d'eau »). Pas d'étoile par tour (Minuto en donne une) : à la fin, « Bien travaillé ! » et, si le parent veut, une fierté dans le bocal.
+
+#### Les « musiques de concentration » : est-ce pertinent ?
+
+**Ce que dit la recherche, honnêtement** :
+
+- **Les paroles gênent la lecture et la mémoire.** C'est l'un des résultats les plus solides de la psychologie cognitive : la parole entendue en fond, même dans une langue qu'on ne comprend pas, perturbe la mémoire de travail verbale (« effet de la parole non pertinente », Salamé et Baddeley, 1982 et 1989). La musique chantée gêne plus que la musique instrumentale. Or lire, apprendre une leçon, écrire, c'est exactement de la mémoire verbale.
+- **L'effet de la musique de fond est faible et variable.** Une méta-analyse (Kämpfe, Sedlmeier et Renkewitz, *Psychology of Music*, 2011) trouve un effet global proche de zéro : un peu négatif sur la lecture et la mémoire, un peu positif sur l'humeur et l'activité physique. L'« effet Mozart » (écouter du Mozart rend plus intelligent) n'a pas résisté aux vérifications (Chabris, 1999 ; Pietschnig, Voracek et Formann, 2010).
+- **Les enfants sont plus gênés par le bruit que les adultes.** Les travaux sur l'acoustique des classes (revue de Klatte, Bergström et Lachmann, *Frontiers in Psychology*, 2013) montrent que les enfants, surtout les plus jeunes, souffrent plus du bruit de fond et de la parole de fond pour écouter, lire et retenir.
+- **Chez les tout-petits, le fond sonore réduit le jeu et les échanges.** La télé allumée en fond fait jouer les 1-3 ans moins longtemps et moins concentrés (Schmidt et coll., *Child Development*, 2008) et réduit les mots que les adultes leur adressent. En maternelle, ce qui fait progresser, c'est la conversation : le silence est un meilleur allié.
+- **Un cas particulier : les enfants très inattentifs.** Des études de l'équipe de Göran Söderlund (depuis 2007) et une méta-analyse récente rapportent un petit bénéfice d'un bruit continu (bruit blanc ou rose) chez des enfants inattentifs ou avec un TDAH, et un effet nul ou négatif chez les autres. C'est prometteur mais modeste ; à présenter comme « à essayer », jamais comme un traitement *(références exactes à vérifier avant publication)*.
+- **Ce qui marche à coup sûr, c'est l'apaisement.** Des sons doux, réguliers, sans surprise (pluie, vagues) aident à **se calmer** et à **faire une transition** : c'est un usage de détente, pas de concentration.
+
+**Notre réponse** : oui, mais avec un cadre clair, et sans promettre qu'une musique « rend concentré ».
+
+1. **On ne l'appelle pas « musique de concentration »** mais **« ambiances calmes »**, pour ne rien promettre.
+2. **Uniquement au cycle 2 (CP-CE2), pour les tâches qui ne demandent pas de lire ou d'apprendre des mots** : calcul, copie, coloriage, rangement, bricolage, et pour le temps calme. Le texte d'aide le dit : « Pour lire ou apprendre une leçon, le silence aide mieux. »
+3. **Jamais pendant les leçons** de l'app : la voix qui lit les consignes et les sons à reconnaître entrerait en conflit avec la musique. L'ambiance se coupe automatiquement dès qu'une leçon s'ouvre ou que la voix parle.
+4. **Désactivée par défaut**, branchée sur **Devoirs et pauses** (pendant le travail, silence pendant la pause pour bien marquer la différence) et sur le minuteur **Temps calme**. Pas proposée en maternelle, sauf dans la Bulle de calme et le Ciel du soir.
+5. **Volume bas** : niveau de départ très bas (environ 15 % du volume des sons de l'app), réglage « très doux / doux », montée progressive en 8 secondes, descente en 4 secondes ; la clochette de fin passe par-dessus (l'ambiance baisse pendant qu'elle sonne).
+6. **Jamais de paroles.**
+
+**Les ambiances proposées**, toutes **générées en direct en WebAudio** (comme les sons de Minuto et de l'app : pas de fichier, pas de droits, 0 €, rien à télécharger) :
+
+| Ambiance | Comment on la fabrique | Pour quoi |
+|---|---|---|
+| **Pluie douce** | Bruit rose (bruit blanc filtré) passé dans un filtre passe-bas autour de 1,5 kHz, avec de petites gouttes ajoutées au hasard (impulsions brèves filtrées) | Devoirs, temps calme ; l'ambiance la plus neutre, à proposer en premier |
+| **Vagues** | Bruit rose dont le volume et le filtre montent et descendent lentement (une vague toutes les 8 à 12 secondes) | Temps calme, Bulle de calme (le rythme des vagues rejoint la respiration lente) |
+| **Forêt** | Bruit filtré qui fait le vent dans les feuilles, très lent ; option « oiseaux » (un gazouillis synthétique rare, une fois par minute environ), désactivée par défaut | Temps calme, coloriage, bricolage |
+| **Piano lent** | Notes de piano simplifiées (oscillateurs avec une attaque et une longue extinction), tirées au hasard dans une gamme pentatonique (do, ré, mi, sol, la : jamais de fausse note), une note toutes les 1,5 à 3 secondes, avec un écho doux | Devoirs de calcul ou de copie, pour ceux que le bruit de pluie ennuie |
+| **Souffle doux** | Bruit brun (plus grave que le rose), continu, sans variation | Pour les enfants que le moindre bruit de la maison distrait ; « à essayer » |
+| **Boîte à musique** (coucher seulement) | Trois ou quatre notes aiguës très douces, en boucle lente | Ciel du soir et mode bonne nuit, pas les devoirs |
+
+**Si on veut un jour de vraies musiques enregistrées** : seulement avec une licence claire et écrite. Les pièges : la « Bibliothèque audio YouTube » est faite pour les vidéos YouTube, pas pour une app ; « libre de droits » ne veut souvent rien dire ; une œuvre classique est dans le domaine public mais **l'enregistrement**, lui, est protégé (il faut un enregistrement lui aussi libre, comme ceux de Musopen) ; un compositeur membre de la SACEM ne peut pas céder ses droits librement. Les options sûres : des enregistrements sous licence **CC0** (vérifiés un par un, par exemple sur Freesound en filtrant CC0), ou une **commande** à un musicien avec une cession de droits écrite. La synthèse en direct reste la meilleure solution : gratuite, légère, et sans aucun risque.
+
+**Le rendu sur la télé** : l'ambiance ne prend pas l'écran, le minuteur reste au centre. En haut à droite, une petite pastille « ♪ Pluie douce » (32 px) ; quand on la sélectionne, ◀ ▶ change d'ambiance et OK la coupe. Pour le **Temps calme** sans minuteur, une option « fenêtre » montre une image très lente et sombre qui va avec le son (la pluie qui coule sur une vitre, la mer au loin), à luminosité réduite, qui s'éteint seule à la fin de la durée choisie.
+
+### 3.6 La bulle de calme
+
+**Pourquoi** : apprendre à se calmer est au programme (à la maternelle, « apprendre ensemble et vivre ensemble » ; au cycle 2, en enseignement moral et civique, « identifier et exprimer ses émotions »). La respiration lente, avec une expiration plus longue que l'inspiration, est l'outil le plus simple et le mieux étayé pour faire redescendre la tension. C'est ce que font Petit BamBou ou Headspace pour enfants, avec une voix ; on le fait avec une image.
+
+**Ce qu'on reprend de Minuto** : la bulle qui gonfle et dégonfle, l'anneau qui montre la durée, les deux sons très doux (un qui monte quand on inspire, un qui descend quand on souffle), les durées 1, 2, 3, 5 minutes, et les phrases (« On respire avec la bulle ? », « Inspire par le nez… », « Souffle tout doucement… »).
+
+**Ce qu'on adapte** :
+
+- **Le rythme selon l'âge** : Minuto utilise 4 s pour inspirer, 1,5 s pour garder l'air, 6 s pour souffler. C'est bien à partir du CP. **Pour la maternelle**, on supprime le moment où l'on garde l'air (difficile et inutile à cet âge) et on raccourcit : 3 s pour inspirer, 4 s pour souffler. Durée par défaut : 1 minute en maternelle, 2 minutes en élémentaire.
+- **La voix** : le compagnon dit les consignes pendant les deux premières respirations, puis se tait (on garde seulement les sons doux).
+- **Sur la télé** : bulle de 700 px au centre, consigne en 48 px. Le compagnon respire en même temps que la bulle (il respire déjà dans l'app !).
+- **Une « météo des émotions » avant, facultative** : cinq visages (content, triste, en colère, inquiet, fatigué) ; l'enfant choisit, et la bulle propose une idée (« Tu es en colère : on souffle fort comme le vent, puis tout doucement »). **Ce choix n'est enregistré nulle part** et n'apparaît pas dans le rapport parent : une émotion n'est pas une donnée à surveiller. Lien avec « Happy, sad » (`en-play-feel`) et « How are you? » (`en-day-feel`).
+- **Où la trouver** : dans l'espace famille, et **sur l'écran de pause** quand le temps du jour est fini (une transition douce vers la fin de l'écran).
+
+### 3.7 Chacun son tour, les défis et les Dodos
+
+**Chacun son tour** (Minuto, tel quel sur le fond) : 2 à 4 joueurs, la durée d'un tour, le nombre de tours, un tirage « Au hasard » pour savoir qui commence, et l'annonce de qui prend la main.
+- **Pourquoi** : partager un jouet, un vélo, la place à la fenêtre du train sans dispute ; les « c'est pas juste » tombent quand c'est le minuteur qui décide. Et les jeux de l'atelier (petit bac, jeu de l'oie) gagnent un arbitre neutre.
+- **Sur la télé** : les joueurs sont les **profils des enfants** (avatar, couleur) plus « Papa », « Maman » ou un invité ; chaque joueur a sa touche de couleur. La voix annonce : « C'est au tour de Léa ! ».
+
+**Défis** (Minuto, à revoir) : l'enfant doit avoir fini avant que l'escargot (ou la tortue, le lapin…) n'arrive au drapeau.
+- **Ce qu'on garde** : la course contre un personnage, pour un seul enfant ; c'est drôle et ça débloque un enfant qui traîne à s'habiller, entre 4 et 7 ans.
+- **Ce qu'on change** : **pas de podium ni de record entre frères et sœurs** (la comparaison entre enfants est exactement ce que l'étude 03 a écarté) ; à la place, un mode **« Tous ensemble contre l'escargot »** où l'équipe gagne si tout le monde a fini. L'escargot va lentement : le défi doit être gagnable. Le défi n'est **jamais une punition** ; et l'aide le dit : si votre enfant est stressé par la course, le minuteur simple (Coffre, Arc-en-ciel) fait le même travail.
+
+**Dodos** (Minuto, tel quel) : combien de nuits avant l'anniversaire, Noël, les vacances, le retour de papa ; une lune s'en va chaque matin.
+- **Pourquoi** : le temps est très abstrait pour un enfant de 3 à 6 ans ; « encore 4 dodos » est concret, et c'est « se repérer dans le temps » (`mo-tm-calendrier`, `mo-gs-semaine`).
+- **Sur la télé** : une rangée de lunes (30 au plus, puis « +12 »), le grand nombre au centre. À l'ouverture du profil d'un enfant, le compagnon l'annonce une fois par jour : « Encore 3 dodos avant l'anniversaire de Léo ! »
+
+### 3.8 Le dé géant et « Qui commence ? » (nouveau)
+
+- **Rendu** : un dé de 500 px au centre (points, ou chiffres pour les grands), un ou deux dés ; option « dé de 1 à 3 » pour les petits.
+- **Animation** : OK lance, le dé roule une seconde avec un « pop » à l'arrivée ; la voix dit le résultat (« Cinq ! »).
+- **« Qui commence ? »** : une roue avec les avatars des joueurs, qui tourne et s'arrête sur l'un d'eux.
+- **Pourquoi** : les jeux de société maison de l'atelier (MS-05, CE1-01) ; il remplace un petit dé quand il y a un tout-petit dans la maison ; tout le monde voit le résultat ; il évite les disputes de « qui a triché ».
+
+*Plus tard, dans l'espace parents* : un **chrono de lecture** pour le CP-CE2 (une minute de lecture d'un texte, le parent note le nombre de mots bien lus), qui montre la progression de l'enfant par rapport à lui-même, avec les repères officiels présentés avec prudence (50 mots par minute en fin de CP, 70 en fin de CE1, 90 en fin de CE2 : étude 02, § 2.1). Il prépare la future lecture à voix haute dans l'app.
+
+### 3.9 Le bocal des fiertés, à la place du pot d'étoiles
+
+**Ce que fait Minuto** : une étoile tombe dans un bocal à la fin de chaque minuteur, de chaque étape de routine, de chaque tour de devoirs et de chaque bulle de calme ; quand le bocal est plein (10 étoiles par défaut), « on gagne… » une récompense que le parent écrit (« Une surprise »).
+
+**Pourquoi on le revoit** :
+
+1. **Il récompense le temps qui passe**, pas l'effort : un minuteur « Télé » de 20 minutes rapporte une étoile, comme une routine faite seul. L'étude 03 a posé le principe inverse (« les points récompensent l'effort, pas le temps passé »).
+2. **Une récompense matérielle attendue peut éteindre l'envie de faire.** Une méta-analyse de 128 études (Deci, Koestner et Ryan, *Psychological Bulletin*, 1999) montre que les récompenses concrètes, annoncées à l'avance et liées au fait de faire la tâche, réduisent la motivation propre de l'enfant pour cette tâche. Pour être juste : l'effet est surtout fort pour les activités qui plaisent déjà (jouer, lire, dessiner), moins pour les corvées. Mais dans une app qui veut donner le goût d'apprendre, on ne veut pas que lire ou respirer « paie ».
+3. **Petits Savants a déjà des étoiles** (la monnaie des cadeaux du compagnon). Deux sortes d'étoiles qui ne s'échangent pas, c'est incompréhensible pour un enfant de 5 ans.
+
+**Ce qu'on propose : le bocal des fiertés.**
+
+- **Une fierté**, c'est une petite réussite racontée en une phrase et une image : « J'ai mis mes chaussures tout seul », « J'ai fini toute la routine du matin », « On a joué à la valise des sons », « J'ai réussi le son [ch] ». Le parent l'ajoute (sur le téléphone ou derrière le code), ou l'enfant la propose et le parent valide.
+- **Chaque fierté devient une petite lumière** (une luciole, une lanterne, en écho aux lanternes de l'Arbre-à-Pourquoi de l'étude 03) qui flotte dans le bocal. On peut la toucher : la voix relit la phrase.
+- **Pas d'objectif, pas d'échange.** Le bocal ne se « vide » pas contre un cadeau. Quand il y a environ 10 nouvelles lumières, le compagnon propose : « Et si on regardait tes fiertés ensemble ? ». L'aide aux parents suggère, s'ils veulent fêter ça, **un moment plutôt qu'un objet** : choisir le jeu du soir, une histoire en plus, inviter un copain, une sortie au parc.
+- **Des mots qui décrivent l'effort**, proposés au parent pour écrire la fierté : « Tu as essayé encore et encore », « Tu l'as fait tout seul » plutôt que « Tu es le meilleur » (les travaux de Mueller et Dweck, 1998, sur l'éloge de l'effort plutôt que de l'intelligence ; et les conseils pratiques de Faber et Mazlish).
+- **C'est aussi le « carnet de réussites »** demandé en § 4 : à la fin du trimestre, il devient une page à garder ou à imprimer.
+
+### 3.10 Ce qu'on écarte
+
+| Idée | Pourquoi non |
+|---|---|
+| Un sonomètre (« le feu tricolore du bruit ») | Il faut écouter le micro en permanence : contraire à la promesse de confidentialité, et la plupart des télés n'ont pas de micro ouvert. |
+| Un tableau de points échangeables contre du temps d'écran ou des bonbons | Écran et sucre comme monnaie : c'est exactement ce qu'on veut éviter (§ 3.9). |
+| Un classement entre frères et sœurs | Comparaison, jalousie ; voir les défis (§ 3.7). |
+| Un minuteur de « coin de réflexion » ou de punition | Un outil de l'app ne doit jamais servir à punir ; la Bulle de calme est l'alternative positive. |
+| Un réveil « tu peux te lever » | Très utile (Yoto le fait avec sa lumière), mais la télé n'est pas dans la chambre. À garder pour l'app téléphone ou tablette. |
+| La caméra (vérifier que les dents sont brossées, que la chambre est rangée) | Surveillance et vie privée : non. |
+
+### 3.11 Les données des outils
+
+Le format reprend celui de Minuto (fonctions `cleanTimer`, `cleanRoutine`, `cleanEvent`, `cleanTurns`, `cleanStudy`), avec deux différences : tout est rattaché à la famille ou à un enfant, et rien ne part en ligne. Clé `tools` dans le `Store` local.
+
+```json
+{
+  "tools": {
+    "prefs": { "endSound": "doux", "warn1min": false, "flash": true, "reducedMotion": false, "ambience": null, "ambienceLevel": "tres-doux" },
+    "timers": [
+      { "id": "t1", "name": "Brossage des dents", "ic": "brush", "sec": 120, "theme": "dents", "mode": "auto" },
+      { "id": "t2", "name": "Temps calme", "ic": "book", "sec": 1200, "theme": "aquarium", "mode": "auto", "ambience": "pluie" }
+    ],
+    "routines": [
+      { "id": "r1", "child": "c1", "name": "Le matin", "ic": "sunrise",
+        "steps": [
+          { "name": "M'habiller", "ic": "shirt", "sec": 0, "theme": null },
+          { "name": "Les dents", "ic": "brush", "sec": 120, "theme": "dents" }
+        ],
+        "today": { "day": "2026-11-08", "done": [0] } }
+    ],
+    "events": [ { "id": "e1", "name": "Anniversaire de Léo", "ic": "cake", "date": "2026-11-21" } ],
+    "turns": { "players": ["c1", "c2", "parent"], "sec": 300, "rounds": 2, "theme": "sablier" },
+    "study": { "CP": { "work": 600, "pause": 180, "rounds": 2, "theme": "arcenciel", "ptheme": "fleur", "ambience": null } },
+    "prides": [ { "id": "p1", "child": "c1", "day": "2026-11-08", "ic": "shoe", "text": "J'ai mis mes chaussures tout seul" } ]
+  }
+}
+```
+
+`mode: "auto"` veut dire « petits » ou « grands » selon la classe de l'enfant. `routines[].today` est remis à zéro chaque jour, sans historique. `prides` est la seule trace gardée dans le temps, et c'est le parent qui la crée.
+
+---
+
+## 4. Ce qu'on pourrait ajouter d'autre
+
+### 4.1 Ce que font les autres
+
+*Prix et détails à revérifier dans les magasins d'applications avant toute communication (certains sites étaient inaccessibles pendant les études précédentes).*
+
+| App | Ce qu'elle fait | Ce qu'on en retient | Ce qu'on évite |
+|---|---|---|---|
+| **Khan Academy Kids** | Gratuite, sans publicité, 2-8 ans : parcours adaptatif, bibliothèque de livres lus à voix haute, dessin et jeux libres, personnages attachants. Surtout en anglais. | Une **bibliothèque** à côté du parcours ; le gratuit total crée une énorme confiance. | — |
+| **Lingokids** | Anglais 2-8 ans par le jeu, beaucoup de **chansons** et de vidéos, espace parents avec progrès. | Les comptines et chansons font revenir les enfants (et font marcher YouTube). | Le gratuit trop limité, les minuteurs frustrants, les plaintes de facturation (étude 03). |
+| **Bayam** (Bayard, Milan) | 3-10 ans : histoires, documentaires, vidéos, jeux issus des magazines ; sans publicité ni algorithme ; chronomètre et contrôle parental ; jusqu'à 6 profils. | Un **catalogue de contenus variés** (pas seulement des exercices) et un discours « sans algorithme » qui rassure. | — |
+| **Lumni** (audiovisuel public) | Gratuit : vidéos, jeux et dossiers classés par niveau et par matière, de la maternelle au lycée. | Le **classement par niveau et matière** que les parents comprennent tout de suite. | Le contenu peu interactif, sans suivi de l'enfant. |
+| **Pili Pop** | Anglais (et espagnol) à l'oral, avec reconnaissance de la voix et des personnages. | **Faire parler** l'enfant, pas seulement écouter. | — |
+| **Kaligo** | Écriture à la main sur tablette avec stylet, analyse du geste, utilisée en classe. | Le **geste d'écriture** pris au sérieux (notre tracé au téléphone va dans ce sens). | Le prix élevé et le matériel nécessaire. |
+| **Mon Kit Maternelle** | Activités et fiches pour la maternelle, par section *(app non vérifiée pendant l'étude)*. | La demande des parents de maternelle pour des **activités à faire à la maison**, rangées par section : c'est notre atelier. | — |
+| **Petit BamBou** | Méditation guidée en français, avec des séances pour enfants ; voix humaine, séances courtes. | La **voix humaine calme** et les séances de 3 à 5 minutes : modèle pour la Bulle de calme et le mode bonne nuit. | — |
+| **Lunii** | Boîte à histoires **sans écran** ; l'enfant compose son histoire (héros, lieu, objet) ; catalogue d'histoires payantes et abonnement. | L'**audio sans écran** est devenu un achat évident pour les parents ; l'enfant **choisit** les éléments de son histoire. | — |
+| **Yoto** | Lecteur audio à cartes (histoires, musique, podcasts), cartes à enregistrer soi-même, veilleuse et réveil lumineux. | Le **rituel du coucher** (veilleuse, histoire, extinction progressive) et l'objet que l'enfant manipule seul. | — |
+| **Minuto** (les fondatrices) | Minuteurs visuels, routines, Dodos, Bulle de calme (§ 3.1). | La base de nos outils. | Le bocal à récompense (§ 3.9). |
+
+**Ce qui ressort** : (1) les parents paient pour du **contenu qui occupe bien** (histoires, comptines, livres), pas seulement pour des exercices ; (2) l'**audio sans écran** est la grande tendance des 3-8 ans (Lunii, Yoto), et une télé peut l'offrir écran noir ; (3) les apps les plus appréciées **rassurent** (pas de publicité, pas d'algorithme, gratuit large) ; (4) **personne** ne propose à la fois les leçons du programme, des idées à faire sans écran liées à ces leçons, et des outils du quotidien : c'est notre combinaison unique, et elle colle à notre message « l'écran partagé, le contraire de l'écran-sucette ».
+
+### 4.2 Les idées, par ordre de priorité
+
+Effort : **S** quelques jours, **M** deux à quatre semaines, **L** plus d'un mois (contenu compris). Le principe pour le Premium (le même que pour les leçons) : **Premium vend du contenu** (leçons, histoires, catalogue complet) ; **les outils du quotidien restent gratuits** (un minuteur payant agace, un minuteur gratuit qu'on ouvre chaque jour fait revenir dans l'app et parler d'elle). Rien de ce qui est Premium n'est montré à l'enfant comme « bloqué ».
+
+| # | Idée | Intérêt | Effort | Gratuit ou Premium |
+|---|---|---|---|---|
+| 1 | **Idée du soir** liée aux leçons (§ 2) | Très fort : rend le rapport utile, prolonge l'apprentissage sans écran, différenciant | S | Gratuit |
+| 2 | **Atelier** : catalogue des 84 fiches avec filtres | Fort : valeur visible pour le parent, contenu marketing (Pinterest) | M | 3 fiches par classe gratuites, le reste Premium |
+| 3 | **Minuteurs visuels** (6 décors + 4) | Fort : usage quotidien, pour toute la famille, base Minuto déjà faite | M | Gratuit |
+| 4 | **Routines en images** + version à imprimer | Fort : très demandé, autonomie de l'enfant | M | Gratuit |
+| 5 | **Bulle de calme** (+ météo des émotions) | Fort pour les familles, programme (vivre ensemble, EMC) | S | Gratuit |
+| 6 | **Dodos**, **Chacun son tour**, **Dé géant** | Moyen : petits outils très appréciés, quasi gratuits à faire | S | Gratuit |
+| 7 | **Bocal des fiertés / carnet de réussites** | Fort : valorise l'effort, le lien parent-enfant, prépare le bilan | M | Gratuit |
+| 8 | **Devoirs et pauses + ambiances calmes** | Moyen : utile au cycle 2, à présenter avec prudence (§ 3.5) | M | Gratuit |
+| 9 | **Comptines** (paroles affichées pour le parent, voix humaine) | Fort en TPS-MS et en anglais ; synergie avec la chaîne YouTube (étude 05) | M (L avec la musique) | Une par matière gratuite, le reste Premium |
+| 10 | **Mode bonne nuit** : fin de séance (étude 03, § 6.4), Ciel du soir, une histoire ou une comptine douce, écran qui s'éteint | Fort : rituel du soir, image « écran raisonné » | M | Gratuit (les histoires suivent la règle de l'idée 11) |
+| 11 | **Histoires audio** écran noir (ou une seule image fixe et sombre), lues par une voix humaine | Très fort : ce que les parents achètent (Lunii, Yoto) ; peu d'écran | L | Une histoire par semaine gratuite, le catalogue Premium |
+| 12 | **Petites histoires à lire** (décodables, CP-CE1) : l'enfant lit, la voix aide | Très fort pour la lecture au CP, cœur du Premium | L | Premium (2 gratuites par période) |
+| 13 | **Bilan de trimestre** et page « À montrer à la maîtresse » (étude 02, § 5.2), avec le carnet de réussites | Fort pour la conversion : le parent voit la valeur | M | Premium (le bilan simple de la semaine reste gratuit) |
+| 14 | **Défi famille de la semaine** : une fiche de l'atelier à faire tous ensemble, coopérative, sans compteur | Moyen : crée un rendez-vous, contenu pour les réseaux | S | Gratuit |
+| 15 | **Mode vacances** : révisions d'été, « préparer le CP » | Fort de juin à août | M | Premium |
+| 16 | **Recettes pas à pas** sur la télé (images, minuteur intégré) | Moyen : cuisine = maths et lecture ; très partageable | M | 3 gratuites, le reste Premium |
+| 17 | **Quiz famille** : 2 à 4 joueurs, questions adaptées à chaque âge, sur la télé | Moyen à fort : fait jouer les parents, soirées | L | Premium |
+| 18 | **Les « pourquoi » de l'Arbre-à-Pourquoi** : réponses courtes illustrées (« Pourquoi le ciel est bleu ? ») | Moyen : curiosité, découverte du monde | L | Premium |
+| 19 | **Chrono de lecture** (fluence) dans l'espace parents | Moyen : utile au CP-CE2, prépare la lecture à voix haute | S | Premium |
+| 20 | **Le chemin du compagnon** (minuteur avec l'animal 3D) | Moyen : attachant | M | Gratuit |
+
+**À ne pas faire** : un fil de vidéos qui s'enchaînent toutes seules, un chat ou un espace social, une IA qui converse avec l'enfant, des notifications à l'enfant, de la publicité, un classement entre enfants, quoi que ce soit qui pousse l'enfant à réclamer un achat.
+
+---
+
+## 5. Le plan d'intégration
+
+### 5.1 Où ces espaces apparaissent
+
+| Endroit | Ce qu'on ajoute | Code parent ? |
+|---|---|---|
+| **Écran des profils** (l'accueil) | Une tuile **« À la maison »** (l'horloge Minuto) à côté de « Téléphone ». Elle ouvre les outils : Minuteurs, Routines, Bulle de calme, Chacun son tour, Dodos, Dé géant. | **Non** pour lancer un outil ; **oui** pour modifier (durées, routines, Dodos), ou sur le téléphone connecté. Le parent peut masquer la tuile. |
+| **Écran d'un enfant** (son parcours) | Rien pendant les leçons. À l'ouverture : l'annonce des Dodos (une fois par jour) et, le matin ou le soir, « Ta routine du soir est prête » si une routine existe pour cet enfant. | Non |
+| **Fin de séance** (rituel du coucher, étude 03) | La carte de l'atelier « Ce soir, joue à … avec ta famille » (une fois par jour). | Non (désactivable par le parent) |
+| **Écran de pause** (temps du jour terminé) | Un bouton « Respirer avec la bulle ». | Non |
+| **Espace parents** | Dans le rapport de chaque enfant : l'**idée du soir** (à la place de la phrase actuelle) et l'icône « idée » à côté des leçons à revoir ; le **bocal des fiertés** de l'enfant (ajouter une fierté). Une nouvelle tuile **« L'atelier »** (le catalogue avec ses filtres). Une tuile **« Réglages de la maison »** (son de fin, ambiances, carte de fin de séance, tuile de l'accueil). | **Oui** |
+| **Téléphone connecté** | La fiche de l'idée du soir et l'atelier, lisibles en cuisine ; la télécommande et l'éditeur des outils. | Les éditeurs demandent le code une fois par session |
+| **Site (QR code)** | Fiches et routines à imprimer, contenu dans le fragment de l'URL (rien envoyé au serveur). | Non |
+
+**Pourquoi les outils ne sont pas derrière le code** : un enfant qui lance un aquarium ou la bulle de calme ne risque rien, et un parent qui doit taper un code pour lancer le brossage de dents n'utilisera pas l'outil. **Le temps passé dans les outils ne compte pas dans le temps d'écran de l'enfant** (aucun profil n'est ouvert), mais les décors sont lents par nature et l'écran revient à l'accueil après la fin : ce n'est pas un divertissement de remplacement. **Pourquoi l'atelier est derrière le code** : il s'adresse au parent (cuisine, eau, sorties ne se font pas seul), et il garde le lien avec le rapport de l'enfant ; l'enfant n'en voit que la carte d'invitation.
+
+### 5.2 Ce que voit l'enfant, ce que voit le parent
+
+| | Enfant | Parent |
+|---|---|---|
+| Minuteurs | Les lancer, mettre en pause, les regarder | Créer, nommer, régler les durées et les sons |
+| Routines | Cocher ses étapes | Créer, modifier, imprimer, choisir pour quel enfant |
+| Bulle de calme, Dé, Chacun son tour, Dodos | Tout | Régler les durées, les joueurs, les dates |
+| Ambiances calmes | Les entendre | Les activer (désactivées par défaut) |
+| Atelier | La carte d'invitation de fin de séance, lue par la voix | Le catalogue, l'idée du soir, l'historique « on l'a fait » |
+| Bocal des fiertés | Le regarder, réécouter ses fiertés | Ajouter, valider, retirer une fierté |
+
+### 5.3 Gratuit et Premium
+
+| Gratuit | Premium |
+|---|---|
+| Tous les outils (minuteurs, routines, bulle de calme, Dodos, Chacun son tour, dé, devoirs et pauses, ambiances) | — |
+| L'idée du soir (elle peut proposer n'importe quelle fiche, gratuite ou non, une fois par jour) | — |
+| 3 fiches de l'atelier par classe (21 fiches) consultables à tout moment | Les 84 fiches et les suivantes, avec tous les filtres |
+| Le bocal des fiertés | Le bilan de trimestre qui le reprend |
+
+Les fiches gratuites suggérées (choisies pour varier les matières et les lieux) : TPS-01, TPS-04, TPS-08 · PS-04, PS-07, PS-12 · MS-01, MS-03, MS-05 · GS-01, GS-05, GS-07 · CP-01, CP-02, CP-06 · CE1-01, CE1-05, CE1-07 · CE2-02, CE2-05, CE2-07.
+
+Comme pour les leçons, **l'enfant ne voit jamais une fiche ou un outil « bloqué »** et rien ne l'invite à demander un achat (règle déjà appliquée par l'app et rappelée par les études 03 et 04).
+
+### 5.4 Dans quel ordre
+
+Ces lots viennent **après** les urgences de [A-RETENIR.md](A-RETENIR.md) (Premium derrière le code, bouton de résiliation, essai de 14 jours…). Estimations pour un développeur, tests compris.
+
+| Lot | Contenu | Effort estimé | Pourquoi dans cet ordre |
+|---|---|---|---|
+| **1. L'idée du soir** | `www/js/content/atelier.js` avec les 84 fiches (générées une fois à partir de ce document par un petit script, les fiches étant très régulières), tests de contenu (§ 1.4), choix de l'idée (§ 2.2), carte dans le rapport, icône « idée » sur les leçons à revoir, historique local ; page téléphone de la fiche | 5 à 7 jours | Le plus de valeur pour le moins d'effort ; remplace un code qui existe déjà (`EVENING`). |
+| **2. Les minuteurs** | Moteur repris de Minuto, réécrit au style de l'app ; décors Aquarium, Sablier, Réveil, Dent, Coffre portés ; nouvel Arc-en-ciel ; écran de choix et télécommande (§ 3.2) ; sons ; tuile « À la maison » ; tests d'affichage par décor et test sur un petit boîtier | 10 à 15 jours | L'outil le plus demandé ; la base de tous les autres. |
+| **3. Routines et petits outils** | Routines (cases, pictogrammes, impression), Bulle de calme (rythme par âge), Dodos, Chacun son tour, Dé géant ; téléphone comme télécommande et éditeur | 8 à 10 jours | Réutilise le moteur du lot 2. |
+| **4. L'atelier complet et les fiertés** | Catalogue avec filtres sur la télé et le téléphone, QR d'impression, carte de fin de séance, bocal des fiertés | 8 à 10 jours | Donne au Premium une valeur de plus, visible des parents. |
+| **5. Devoirs, ambiances, coucher** | Devoirs et pauses, ambiances WebAudio (§ 3.5), Ciel du soir, Fleur, Fusée, Dino ; premier « mode bonne nuit » | 6 à 8 jours | Moins urgent, et l'usage des ambiances mérite d'être observé sur les lots précédents. |
+| **Ensuite** | Comptines, histoires audio, petites histoires à lire au CP, bilan de trimestre (§ 4.2) | Selon le contenu | Le gros du travail est du contenu (voix, illustrations), en parallèle du parcours lecture du CP. |
+
+**À chaque lot** : une branche et une revue, les tests Playwright existants (`tests/*.spec.mjs`) complétés, une vérification sur une vraie télé à 3 m (lisibilité, télécommande, son), et le README mis à jour.
+
+---
+
+## 6. Résumé
+
+1. **L'atelier** : 84 fiches prêtes (12 par classe, de la TPS au CE2), chacune avec compétence du programme, durée, matériel courant, 3 à 5 étapes, deux variantes, sécurité, et pour 83 d'entre elles une leçon de l'app liée (identifiants vérifiés).
+2. Six filtres (classe, matière, compétence, durée, lieu, matériel) et un format JSON simple, stocké sur la télé ; des tests vérifient la sécurité (aucun petit objet en TPS).
+3. **L'idée du soir** remplace la phrase actuelle du rapport : une seule idée par jour, choisie selon les leçons à revoir, celles du jour et la matière la moins réussie, sans compteur ni reproche.
+4. **Les outils sont Minuto, adapté à la télé** : moteur, décors (Aquarium, Sablier, Réveil, Dent, Coffre, Fleur, Fusée, Dino), routines, Dodos, Chacun son tour, Bulle de calme, devoirs et pauses repris presque tels quels.
+5. On ajoute l'**Arc-en-ciel**, le **Ciel du soir**, le **Dé géant**, la commande à la télécommande (touches de couleur), une mise en page lisible à 3 m et les précautions propres à la télé (écran allumé, OLED, petits boîtiers).
+6. On **revoit** le pot d'étoiles (qui récompense le temps et promet un cadeau) en **bocal des fiertés** sans récompense matérielle, et les défis (pas de podium entre frères et sœurs).
+7. **Ambiances calmes** : utiles avec prudence (jamais de paroles, pas pour lire, pas en maternelle, jamais pendant les leçons, désactivées par défaut), générées en WebAudio : 0 € et aucun droit à payer.
+8. **Benchmark** : notre combinaison unique est « leçons du programme + idées sans écran liées + outils du quotidien » ; la grande tendance à suivre est l'audio sans écran (Lunii, Yoto).
+9. Les 20 idées priorisées : d'abord l'idée du soir, les minuteurs, les routines, la bulle de calme ; ensuite comptines, mode bonne nuit, histoires audio et petites histoires à lire au CP.
+10. **Outils gratuits, contenu Premium** : 21 fiches gratuites, le catalogue complet en Premium ; rien de « bloqué » montré à l'enfant.
+11. Intégration : une tuile « À la maison » sur l'accueil (sans code pour lancer), l'atelier et les réglages dans l'espace parents (avec code), le téléphone comme lecteur de fiches et télécommande.
+12. Ordre : idée du soir (5-7 jours), minuteurs (10-15), routines et petits outils (8-10), atelier complet et fiertés (8-10), devoirs et coucher (6-8), après les urgences de A-RETENIR.
