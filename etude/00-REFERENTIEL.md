@@ -83,6 +83,14 @@
 - **Tout se fait à la télécommande** : flèches, OK, touches 1 à 4. Le téléphone et le papier sont des options.
 - **Animations légères** : déplacements et transparence seulement, rien qui fasse ramer une télé de 2020, et coupées si l'appareil demande moins de mouvement.
 - **La télé reste un écran calme** : pas de clignotements, pas de sons agressifs.
+- **Aucun flash** : jamais plus de 3 clignotements par seconde, jamais de grand éclair (épilepsie, règle WCAG 2.3.1).
+- **Jamais d'information portée par la seule couleur** : on ajoute toujours une forme, une icône ou un mot (daltonisme).
+- **Les réglages pour tous les profils**, proposés au premier lancement et dans les réglages (en cours de conception, rapport 15) :
+  - taille du texte : petit, moyen, grand ;
+  - mode calme : moins d'animations, sons doux, pas de confettis, pour les enfants autistes ou sensibles ;
+  - police adaptée à la dyslexie ;
+  - écriture sur papier ou au téléphone ;
+  - thèmes de couleurs (blanc et pop, rose, bleu, puis des univers) qui ne changent jamais la lisibilité.
 
 ---
 
@@ -128,7 +136,9 @@
 - [ ] Chaque bouton a une icône et dit son nom.
 - [ ] Tout se fait à la télécommande.
 - [ ] Rien ne pousse l'enfant à acheter.
-- [ ] Les animations sont légères.
+- [ ] Les animations sont légères, sans aucun flash.
+- [ ] Aucune information n'est donnée par la seule couleur.
+- [ ] Ça marche en mode calme, en grand texte et avec chaque thème.
 - [ ] J'ai vérifié à l'image (capture d'écran).
 
 ### ✅ Après une image ou une vidéo
