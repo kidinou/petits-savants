@@ -28,6 +28,7 @@
    - Pas de série de jours qu'on perd, pas de compte à rebours qui presse l'enfant, pas de hasard payant.
    - Pas de « tu m'as manqué » ni de « ne pars pas ».
    - La fin du temps d'écran est douce (rapport 03).
+   - **Aucune parole affective de l'application ou de l'animal envers l'enfant** : jamais de « je t'aime », de surnom (« mon cœur », « ma puce »), de bisou, de rires bizarres ni de « encore », « on joue ? », « reviens ». Le ton est chaleureux mais neutre, et l'animal se tait quand parler n'est pas utile. Un test automatique bloque ces expressions.
 7. **Une image faite par IA n'appartient pas vraiment à la marque.** La version finale de Tilou et des visuels clés est retouchée ou redessinée par un humain, et on garde les étapes datées. On ne cite jamais un personnage, un studio ou une marque existants dans un prompt (rapports 03, 07 et 11).
 8. **Les mentions légales doivent être complètes avant toute communication publique** : nom de l'éditeur, statut, SIREN, adresse, médiateur de la consommation. ⚖️ *LCEN (rapport 07). À faire.*
 
