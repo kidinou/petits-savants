@@ -452,3 +452,99 @@ Sur Pinterest, les parents **préparent** : routines, activités, fêtes, rentr�
 | **Juillet-août** | **Été : cahiers de vacances, passage au CP**, voyages | Défi d'été « 30 jours, 10 min », activités voyage (journal de voyage : +1 280 % sur Pinterest) | Rentrée, Halloween |
 | **Septembre** | **Rentrée** | « Rentrée en GS, au CP, en CE1 : ce qui change », routines, offre de rentrée | Halloween, Toussaint |
 | **Octobre** | Vacances de la Toussaint ; Halloween ; 1 an de l'app en novembre | Activités d'Halloween (sons qui font peur), bilan de la première année | Noël |
+
+---
+
+## 6. Le calendrier éditorial
+
+### 6.1 Les 4 premières semaines, jour par jour (du 9 novembre au 6 décembre 2026)
+
+Légende :
+
+- **IG** : Instagram. Chaque Reel est republié sur Facebook via Meta Business Suite, sur TikTok et en YouTube Short (chaîne parents), sauf mention contraire.
+- **Pin** : épingles nouvelles programmées.
+- **Prod** : tâche de production.
+- Les numéros renvoient aux idées de la partie 3 (vidéos courtes) et de la partie 5.2 (publications).
+
+Horaires conseillés de départ, à ajuster selon vos statistiques au bout de 3 semaines :
+
+- **Instagram et Facebook :** 12 h 30 ou 20 h 30 (sieste, coucher des enfants).
+- **TikTok :** 19 h à 21 h.
+- **Pinterest :** le soir et le week-end.
+- **Newsletter :** dimanche 18 h.
+
+**Semaine 1 : « Bonjour, on est Petits Savants » (ouverture des comptes)**
+
+| Jour | Date | Publications | Production et autres |
+|---|---|---|---|
+| Lun | 9 nov. | IG : post de présentation du couple (publication n° 5, épinglée) et Reel n° 5 (coulisses du lancement). TikTok : n° 5 | **Prod :** réserver tous les noms de comptes, remplir les bios, vérifier le site sur Pinterest, ouvrir Meta Business Suite |
+| Mar | 10 nov. | IG : carrousel n° 2 (le son, pas le nom). Pin : création des 20 tableaux et 3 premières épingles (fiche son [m]) | **Prod :** page de la fiche son [m] et formulaire Brevo |
+| Mer | 11 nov. *(férié)* | IG : Reel n° 1 (« Presque ! », réaction d'enfant, mains). Stories : sondage « Votre enfant est en : PS / MS / GS / CP / CE ? » | Jour férié : tournage en lot de 4 Reels (n° 2, 3, 6, 23) |
+| Jeu | 12 nov. | TikTok : n° 9 (tendance). Pin : 3 | LinkedIn : « On a publié notre app hier, voici pourquoi » |
+| Ven | 13 nov. | IG : Reel n° 3 (astuce « le son, pas le nom »), CTA « Commente SONS » (envoi automatique de la fiche) | Mise en place de l'envoi automatique en message privé |
+| Sam | 14 nov. | Facebook : post long « Pourquoi on a créé Petits Savants », avec une question à la fin. Pin : 4 | Rejoindre 8 groupes Facebook, lire leurs règles |
+| Dim | 15 nov. | Stories : coulisses du week-end. Pin : 4 | **Newsletter n° 1** (aux proches et premiers inscrits). Revue des statistiques (20 min) |
+
+**Semaine 2 : « Apprendre les sons » (ouverture de YouTube parents)**
+
+| Jour | Date | Publications | Production et autres |
+|---|---|---|---|
+| Lun | 16 nov. | IG : Reel n° 6 (Fenouil se présente). YouTube parents : création de la chaîne et 3 Shorts déjà publiés repris | **Prod :** fiche son [p] |
+| Mar | 17 nov. | IG : carrousel n° 1 (10 repères de fin de GS). Pin : 5 (fiche [p] en 5 visuels) | — |
+| Mer | 18 nov. | IG : Reel n° 4 (quiz « ton enfant de GS sait-il… ? »). TikTok : n° 17 (47 renards) | Tournage en lot : n° 7, 12, 16, 19 |
+| Jeu | 19 nov. | Facebook : carrousel n° 1 en post photo. Pin : 3 | 3 réponses utiles dans des groupes |
+| Ven | 20 nov. *(Journée des droits de l'enfant)* | IG et Facebook : post « Notre engagement : vous ne verrez jamais le visage de nos enfants ici. » (partie 8) | LinkedIn : la même chose, sous l'angle éthique et produit |
+| Sam | 21 nov. | IG : Reel n° 23 (pourquoi la télé). TikTok : n° 23. Pin : 4 | — |
+| Dim | 22 nov. | Stories : question ouverte « Votre plus grande difficulté avec les devoirs ? ». Pin : 4 | **Newsletter n° 2.** Revue des statistiques |
+
+**Semaine 3 : « Noël approche » (Black Friday et calendrier de l'Avent)**
+
+| Jour | Date | Publications | Production et autres |
+|---|---|---|---|
+| Lun | 23 nov. | IG : carrousel n° 17 (calendrier de l'Avent, « Commente NOËL »). Pin : 5 (Avent) | **Prod :** PDF du calendrier de l'Avent, 24 cases |
+| Mar | 24 nov. | IG : Reel n° 33 (calendrier de l'Avent). TikTok : n° 33 | — |
+| Mer | 25 nov. | IG : Reel n° 19 (b et d). TikTok : n° 18 (parent contre enfant) | Tournage en lot : n° 13, 21, 26, 34. Montage de l'épisode 1 de la chaîne enfants |
+| Jeu | 26 nov. | Facebook : post sur l'Avent, lien en premier commentaire. Pin : 4 | 3 interventions dans des groupes |
+| Ven | 27 nov. *(Black Friday)* | IG, Facebook et TikTok : Reel n° 7 (avant/après sur 7 jours) avec l'offre « abonnement annuel ». Stories : comment l'activer | Mettre en avant l'abonnement annuel à 39,99 € (soit 3,33 €/mois). Pas de fausse réduction |
+| Sam | 28 nov. | IG : carrousel n° 13 (8 phrases quand il se trompe). Pin : 4 | — |
+| Dim | 29 nov. | Stories : « Ouvrez la case n° 1 mardi ! ». Pin : 4 | **Newsletter n° 3** (envoi du calendrier de l'Avent) |
+
+**Semaine 4 : « Le calendrier de l'Avent » (préparation de la chaîne enfants)**
+
+| Jour | Date | Publications | Production et autres |
+|---|---|---|---|
+| Lun | 30 nov. | IG : Reel n° 13 (la couronne pour le renard). TikTok : n° 13. Pin : 3 | **Prod :** fiche du livret de décembre |
+| Mar | 1er déc. | **Avent, case n° 1 :** une Story par jour jusqu'au 24 (rappel du défi). IG : Reel n° 26, jour 1 du défi « 7 jours de flamme » | Les 23 Stories de l'Avent sont créées en lot sur Canva et programmées |
+| Mer | 2 déc. | IG : carrousel n° 25 (lire le livret sans stress). TikTok : n° 26, jour 2 | Tournage en lot. Enregistrement des voix des épisodes 1 à 3 de la chaîne enfants |
+| Jeu | 3 déc. | Facebook : carrousel n° 25. Pin : 4 | 3 interventions dans des groupes |
+| Ven | 4 déc. | IG : Reel n° 26, jour 4 et Reel n° 27 (les chiffres du premier mois). TikTok : n° 27 | LinkedIn : « Premier mois : nos chiffres et nos erreurs » |
+| Sam | 5 déc. | IG : Reel n° 36 (sketch des mascottes). Pin : 4 | — |
+| Dim | 6 déc. *(Saint-Nicolas)* | IG : Reel n° 26, jour 7 (bilan du défi). Pin : 4 | **Newsletter n° 4.** **Bilan du mois** (voir 6.3). Décision sur le lancement de la chaîne enfants en janvier |
+
+### 6.2 Un rythme tenable sur 12 mois
+
+| Période | Objectif | Rythme hebdomadaire | Jalons |
+|---|---|---|---|
+| **Mois 1** (novembre) | Lancer les comptes, trouver le ton, récolter les premiers avis | 4 Reels (diffusés partout), 2 carrousels, 25 épingles, 1 newsletter, 1 post LinkedIn | 300 abonnés Instagram, 100 e-mails, 10 avis Google Play |
+| **Mois 2 et 3** (déc.-janv.) | Préparer la chaîne enfants : 10 vidéos d'avance, lancement en janvier | 3 Reels, 2 carrousels, 25 épingles, 1 vidéo YouTube enfants à partir de janvier | Chaîne enfants : 10 vidéos et 2 playlists. 1 collaboration avec une enseignante |
+| **Mois 4 à 6** (févr.-avr.) | Faire croître Pinterest et la newsletter. Premières pubs Meta (5 à 10 €/jour) sur les 3 meilleurs Reels | 3 Reels, 1 carrousel, 30 épingles, 1 vidéo enfants, 1 vidéo longue parents par mois | 1 000 e-mails. Première compilation de 30 min. Groupe Facebook créé |
+| **Mois 7 à 9** (mai-juil.) | **La saison été / passage au CP** : la période la plus forte | 4 Reels, 2 carrousels, 35 épingles, 1 vidéo enfants et 1 compilation par mois | « Programme d'été Petits Savants » en PDF. Collaborations avec 3 à 5 micro-créatrices (rémunérées, avec la mention « publicité ») |
+| **Mois 10 à 12** (août-oct.) | **Rentrée**, puis bilan de la première année | 3 Reels, 2 carrousels, 30 épingles, 1 vidéo enfants | Contenu « 1 an de Petits Savants ». Dossier de presse. Bilan des plateformes : garder, réduire ou arrêter |
+
+**Garde-fous pour durer :**
+
+- **Une semaine « off » par trimestre**, préparée à l'avance avec des contenus programmés.
+- **Réutiliser les meilleurs contenus :** un Reel performant est republié 3 mois plus tard avec une nouvelle accroche.
+- **Une règle d'arrêt :** si une plateforme rapporte moins de 5 % du trafic vers le site ou des installations après 6 mois, on la passe en mode automatique ou on la met en pause.
+
+### 6.3 Ce qu'on mesure (tableau du dimanche)
+
+| Plateforme | Indicateur principal | Indicateur secondaire |
+|---|---|---|
+| Instagram | Partages et enregistrements par Reel | Clics sur le lien de la bio |
+| TikTok | Durée moyenne de visionnage et taux de complétion | Visites du profil |
+| Pinterest | Clics sortants | Enregistrements |
+| YouTube enfants | Durée moyenne de visionnage, vues par spectateur | Heures de visionnage |
+| YouTube parents | Taux de clic sur les miniatures, rétention | Clics sur la vidéo associée |
+| Newsletter | Taux d'ouverture (au moins 40 %) et taux de clic | Désinscriptions |
+| Global | Installations Google Play par source (liens UTM du site et de la Play Console) | Essais gratuits, abonnements |
