@@ -14,7 +14,7 @@
 4. **Pinterest est l'investissement le plus rentable** pour une marque éducative française : on y cherche « fiche maternelle à imprimer », « son [ch] GS », « calendrier de l'Avent enfant ». Une épingle vit des mois, et elle mène vers le site, où le parent laisse son e-mail en échange d'une fiche.
 5. **La liste d'e-mails est le vrai actif.** Les algorithmes changent, la newsletter reste. Objectif : 1 000 parents inscrits à 6 mois grâce aux fiches à télécharger.
 6. **La chaîne YouTube enfants est un pari à long terme.** Les vidéos « conçues pour les enfants » n'ont ni commentaires, ni cloche de notification, ni fiches, ni écrans de fin, ni pub personnalisée ([Next](https://next.ink/brief-article/des-changements-importants-pour-youtube-kids-fin-des-publicites-ciblees-des-commentaires/), [aide YouTube](https://support.google.com/youtube/answer/9632097?hl=en)). On ne peut donc presque pas y vendre l'app. Elle sert à faire connaître les mascottes et à donner confiance aux parents. On la lance seulement quand la production des vidéos parents tourne bien.
-7. **Les mascottes sont la marque.** Le renard des captures devient un personnage nommé, avec une voix et des expressions récurrentes. Nos propositions : **Fenouil le renard** (mascotte principale), **Moka l'ourse**, **Pépin le lapin**, **Tofu le panda** et **Nacre la licorne**. Avant de les adopter, vérifiez que ces noms ne sont pas déposés à l'INPI dans la classe des jeux et logiciels.
+7. **Les mascottes sont la marque.** Le renard des captures devient un personnage nommé, avec une voix et des expressions récurrentes. Nos propositions : **Fenouil le renard** (mascotte principale), **Moka l'ourse**, **Biscotte le lapin**, **Tofu le panda** et **Nacre la licorne**. Avant de les adopter, vérifiez que ces noms ne sont pas déposés à l'INPI dans la classe des jeux et logiciels. Accordez-les avec le rapport 03 (gamification et mascottes) : ce rapport utilise déjà « Pépin » pour ses petites créatures-graines, c'est pourquoi le lapin s'appelle ici Biscotte.
 8. **Les arguments les plus forts sont déjà dans l'app :** « sur la télé, pas sur le téléphone », « sans pub, sans compte, aucune donnée collectée », « programme de l'Éducation nationale », « 10 minutes par jour », « une erreur, c'est “Presque !” ». Ce sont exactement les inquiétudes des parents en 2026 : les recherches Pinterest sur les activités sans écran progressent de 200 % ([Pinterest, tendances parentales 2026](https://newsroom.pinterest.com/fr/news/parenting-trend-report-2026/)). Il faut présenter l'app comme **« l'écran qu'on regarde ensemble »**.
 9. **Le couple fondateur est un atout de contenu.** Les coulisses (« on a codé ça le soir après le coucher des enfants ») créent l'attachement, et ce sont elles qui permettront d'en parler à la presse et à d'éventuels investisseurs sur LinkedIn.
 10. **Enfants à l'écran : par défaut, on ne montre jamais leur visage.** On filme les mains, la nuque, la télé et la voix (modifiée si besoin). La loi de 2024 impose aux deux parents de décider ensemble de l'image de leur enfant, et la loi de 2020 encadre les vidéos à but lucratif dont un enfant de moins de 16 ans est le sujet principal (voir partie 8).
@@ -153,7 +153,7 @@ Méthode : le mot-clé recherché vient au début, puis la promesse, puis la mar
 | 12 | Les jours de la semaine – Comptine originale pour apprendre lundi, mardi… | Comptine, 2 min | jours de la semaine chanson |
 | 13 | Le son [l] – Lune, lapin, lait : apprendre le son l en maternelle | Leçon, 5 min | son l, phonologie |
 | 14 | Compter jusqu'à 20 – Chanson et jeu des nombres pour enfants | Comptine et jeu, 4 min | compter jusqu'à 20 |
-| 15 | Les syllabes en frappant des mains – Jeu de phonologie GS avec Pépin le lapin | Jeu, 4 min | syllabes maternelle, frapper les syllabes |
+| 15 | Les syllabes en frappant des mains – Jeu de phonologie GS avec Biscotte le lapin | Jeu, 4 min | syllabes maternelle, frapper les syllabes |
 | 16 | **1 heure de sons pour apprendre à lire** – Compilation Fenouil (GS-CP) | Compilation, 60 min | apprendre à lire compilation |
 | 17 | Les formes géométriques pour enfants – Rond, carré, triangle avec Nacre la licorne | Leçon, 4 min | formes géométriques maternelle |
 | 18 | Les animaux en anglais pour les enfants – Animals with Tofu | Leçon, 3 min | animaux en anglais enfant |
@@ -255,7 +255,7 @@ Il est interdit d'inciter directement un enfant à acheter ou à demander l'acha
 | 33 | Calendrier : Noël | « Le calendrier de l'Avent qui apprend à lire (à imprimer gratuitement) » | Défilement de la fiche imprimée : 24 cases, chacune avec un son et un défi | « Commente NOËL et je te l'envoie » |
 | 34 | Réaction des grands-parents | « On a fait tester l'app à mamie. » | Grand-mère (avec son accord) devant la télé avec la télécommande. Elle trouve ça « bien plus simple que la tablette » | « Envoie à ta mère » |
 | 35 | Astuce : motivation | « Ne dites plus “bravo”. Dites plutôt ceci. » | Féliciter l'effort plutôt que le résultat, avec 3 phrases à dire, et le lien avec « Presque ! » | « Enregistre ces 3 phrases » |
-| 36 | Mascotte : sketch | Fenouil s'endort pendant que Pépin explique les nombres | Mini-sketch de 20 s entre les mascottes en 3D, qui finit par « 1, 2, 3… Fenouil se réveille ! » | « Quelle mascotte préfère ton enfant ? » |
+| 36 | Mascotte : sketch | Fenouil s'endort pendant que Biscotte explique les nombres | Mini-sketch de 20 s entre les mascottes en 3D, qui finit par « 1, 2, 3… Fenouil se réveille ! » | « Quelle mascotte préfère ton enfant ? » |
 | 37 | Passage au CP | « Les 5 choses que la maîtresse de CP aimerait que votre enfant sache faire seul » | Liste concrète : s'habiller, ouvrir sa trousse, écrire son prénom, écouter une consigne, tenir son crayon | « Envoie à un parent de GS » |
 | 38 | Vrai ou faux en série | « Vrai ou faux : la tablette fait baisser les notes. » | Nuance appuyée sur des sources, et notre position (temps limité, partagé, actif) | « Ton avis en commentaire, sans jugement » |
 | 39 | Comparatif honnête | « Cahier de vacances ou appli ? On a fait les deux. » | Écran partagé : avantages et limites de chacun, et la conclusion « les deux, 10 min chacun » | « Commente CAHIER pour notre programme d'été » |
@@ -312,7 +312,7 @@ Sur Pinterest, les parents **préparent** : routines, activités, fêtes, rentr�
 | 7 | Écriture maternelle : graphisme et prénom | Tracés, pince, prénom en cursive |
 | 8 | Anglais pour enfants : fiches et jeux | Couleurs, animaux, chiffres avec Tofu |
 | 9 | Découvrir le monde : saisons, corps, animaux | Fiches de sciences pour la maternelle |
-| 10 | Coloriages éducatifs : mascottes Petits Savants | Coloriages de Fenouil, Moka, Pépin, Tofu et Nacre |
+| 10 | Coloriages éducatifs : mascottes Petits Savants | Coloriages de Fenouil, Moka, Biscotte, Tofu et Nacre |
 | 11 | Calendrier de révision enfant (GS, CP, CE1) | Calendriers mensuels de 10 minutes par jour |
 | 12 | Routine enfant : tableaux à imprimer | Routines du matin et du soir, tableau de motivation |
 | 13 | Passage au CP : préparer la rentrée | Checklists, activités d'été |
@@ -548,3 +548,394 @@ Horaires conseillés de départ, à ajuster selon vos statistiques au bout de 3 
 | YouTube parents | Taux de clic sur les miniatures, rétention | Clics sur la vidéo associée |
 | Newsletter | Taux d'ouverture (au moins 40 %) et taux de clic | Désinscriptions |
 | Global | Installations Google Play par source (liens UTM du site et de la Play Console) | Essais gratuits, abonnements |
+
+---
+
+## 7. Scripts prêts à tourner
+
+**Matériel :** un téléphone sur trépied, une lumière de fenêtre de face, un micro-cravate (environ 20 à 30 €), la télé en arrière-plan avec la luminosité baissée pour éviter le scintillement. Les captures de l'app s'enregistrent directement depuis l'Android TV (partie 9).
+
+**Conventions :** **[P]** = plan / image, **[V]** = voix, **[T]** = texte à l'écran.
+
+### 7.1 Dix scripts de vidéos courtes
+
+#### Script 1 : « Presque ! » (idée n° 1, 25 s)
+
+| Temps | [P] Image | [V] Voix | [T] Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Gros plan sur la télé : « Quel mot commence par le son [t] ? » | *(son de la télé)* | « Elle s'est trompée. Et l'app a dit… » |
+| 2-6 s | Petite main sur la télécommande, qui appuie sur le 1 (le ballon) | Enfant (voix seule) : « Le ballon ! » | — |
+| 6-9 s | L'écran affiche « Presque ! » | *(son doux)* | « PRESQUE ! » |
+| 9-14 s | Petite main qui hésite, puis appuie sur le 3 (la tomate) | Enfant : « Ah… Tomate ! Ttt-tomate ! » | « Pas de “faux”. On réessaie. » |
+| 14-19 s | Étoiles, renard qui danse | Enfant : « Ouiii ! » | « +3 ⭐ » |
+| 19-25 s | Parent (de dos ou en voix off) | Parent : « À 5 ans, la peur de se tromper bloque tout. Ici, se tromper fait partie du jeu. » | « Petits Savants, sur la télé. Sans pub. » |
+
+**Légende :** *« Le mot qui a changé son rapport à l'erreur : “Presque !” 🦊 Envoie ça à un parent dont l'enfant déteste perdre. #maternelle #grandesection #apprendreàlire #parentalitépositive »*
+
+#### Script 2 : « Le son, pas le nom » (idée n° 3, 35 s, face caméra)
+
+| Temps | Image | Voix | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Face caméra, un « B » aimanté à la main | « Arrêtez de dire “bé” à votre enfant. » | « ❌ “bé” » |
+| 2-10 s | Face caméra | « Pour lire, votre enfant n'a pas besoin du nom de la lettre, il a besoin de son son. B, ça fait “bbb”, les lèvres qui éclatent. » | « ✅ “bbb” » |
+| 10-20 s | Trois lettres aimantées montrées l'une après l'autre | « M : “mmm”, comme quand c'est bon. S : “sss”, le serpent. F : “fff”, le vent. » | « m = mmm · s = sss · f = fff » |
+| 20-28 s | Écran de l'app (leçon « Les sons [m] [p] [b] ») | « C'est exactement comme ça qu'on l'apprend en grande section, et c'est comme ça qu'on l'a fait dans notre app. » | « Comme à l'école ✏️ » |
+| 28-35 s | Face caméra | « Je vous ai fait une fiche avec les 10 premiers sons. Commentez SONS et je vous l'envoie. » | « Commente SONS 👇 » |
+
+#### Script 3 : « On a créé une app à deux, la nuit » (idée n° 5, 30 s)
+
+| Temps | Image | Voix (fondateur 1, puis fondateur 2) | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Écran Google Play « Petits Savants : Publié » | F1 : « Ça y est. Elle est en ligne. » | « Après [X] mois de soirées… » |
+| 2-8 s | Ordinateur à 23 h, une tasse, le salon dans le noir | F2 : « On a deux enfants, deux boulots, et une idée : une école sur la télé du salon. » | « 2 parents · 1 idée » |
+| 8-14 s | Croquis de renards sur papier | F1 : « J'ai dessiné le renard. Quarante-sept fois. » | « 47 renards » |
+| 14-20 s | Premier test sur la télé, rires (enfants de dos) | F2 : « Premier test : notre fils a fait trois leçons et a réclamé la quatrième. » | « 151 leçons, de la TPS au CE2 » |
+| 20-26 s | Le couple face caméra, dans le canapé | Ensemble : « Pas de pub, pas de compte, aucune donnée collectée. Ce qu'on voulait pour nos enfants. » | « 0 pub · 0 donnée » |
+| 26-30 s | Logo | F1 : « On vous raconte tout ici. » | « Suis l'aventure 🦊 » |
+
+#### Script 4 : Fenouil se présente (idée n° 6, 20 s, mascotte en 3D)
+
+| Temps | Image | Voix de Fenouil (aiguë, joyeuse) | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Fenouil surgit en gros plan | « Psst ! Tu connais mon son préféré ? » | — |
+| 2-6 s | Fenouil fait un tour sur lui-même | « C'est le “fff” ! Comme… Fffenouil ! » | « f = fff » |
+| 6-14 s | Trois images apparaissent : fleur, fraise, fusée | « Fffleur… fffraise… fffusée ! » | « fleur · fraise · fusée » |
+| 14-18 s | Fenouil met la main en cornet | « À toi ! Un mot avec “fff” ? » | « À toi ! » (3 s de pause) |
+| 18-20 s | Fenouil applaudit | « Bravo, Petit Savant ! » | « Enregistre pour ce soir ⭐ » |
+
+*Pour Instagram et TikTok, le Reel s'adresse au parent dans la légende : « À regarder avec votre enfant (3-6 ans). »*
+
+#### Script 5 : b ou d ? (idée n° 19, 30 s)
+
+| Temps | Image | Voix | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Cahier avec « d » écrit à la place de « b » | « Ton enfant confond le b et le d ? » | « b ↔ d 😩 » |
+| 2-6 s | Face caméra | « C'est normal jusqu'à 7 ou 8 ans. Voici le geste des enseignants. » | « Normal jusqu'à 7-8 ans » |
+| 6-16 s | Deux poings fermés, pouces levés, face à la caméra | « Fais deux poings, pouces en l'air. À gauche, ça fait un “b”. À droite, un “d”. Ensemble, ça fait un lit : “bed”, b au début, d à la fin ! » | « 👍👍 = b · d = 🛏️ » |
+| 16-24 s | Exercice de l'app sur la télé (son [b]) | « Et pour l'entendre, on joue avec le son : “bbb” comme ballon. » | — |
+| 24-30 s | Face caméra | « Enregistre, tu vas t'en servir ce soir. » | « Enregistre 📌 » |
+
+#### Script 6 : Quiz des rimes (idée n° 4, 25 s)
+
+| Temps | Image | Voix | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Image d'un chapeau | « Ton enfant de GS trouve-t-il la rime de “chapeau” ? » | « Test GS 🎩 » |
+| 2-5 s | Quatre cases : gâteau, chat, pomme, lune | « Gâteau, chat, pomme ou lune ? » | « 1 gâteau · 2 chat · 3 pomme · 4 lune » |
+| 5-9 s | Compte à rebours | « Laisse-lui trois secondes… » | « 3… 2… 1… » |
+| 9-14 s | La case gâteau s'allume | « Gâteau ! Cha-PEAU, gâ-TEAU : même fin. » | « [o] = rime » |
+| 14-22 s | Face caméra | « Les rimes, c'est le premier pas vers la lecture : l'enfant apprend à entendre les morceaux des mots. En GS, on y joue tous les jours. » | « Rimes → lecture » |
+| 22-25 s | Écran de l'app (« Les rimes ») | « Dis-moi en commentaire s'il a trouvé ! » | « Il a trouvé ? 👇 » |
+
+#### Script 7 : Pourquoi la télé et pas le téléphone (idée n° 23, 35 s)
+
+| Temps | Image | Voix (le couple) | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Un téléphone posé face contre la table | F1 : « On a refusé de faire une app pour téléphone. » | « Pas sur le téléphone. » |
+| 2-10 s | Salon, télé allumée sur la carte des leçons, enfant de dos | F2 : « Le téléphone, l'enfant s'enferme avec. La télé, c'est le salon : on est à côté, on entend, on participe. » | « La télé = le salon » |
+| 10-18 s | Gros plan sur la télécommande (1, 2, 3, 4) | F1 : « Quatre boutons, des réponses de 1 à 4. Pas de scroll infini, pas de vidéos qui s'enchaînent. » | « 1-2-3-4. C'est tout. » |
+| 18-26 s | Écran « Encore 14 min aujourd'hui » | F2 : « Et quand le temps est fini, c'est fini. C'est vous qui le réglez. » | « Minuteur parent ⏱️ » |
+| 26-35 s | Le couple | Ensemble : « Un écran qu'on regarde ensemble. Vous êtes d'accord ? » | « D'accord ou pas ? 👇 » |
+
+#### Script 8 : Le calendrier de l'Avent qui apprend à lire (idée n° 33, 25 s)
+
+| Temps | Image | Voix | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Le PDF imprimé, posé sur la table avec des guirlandes | « Le calendrier de l'Avent qui apprend à lire. » | « GRATUIT à imprimer 🎄 » |
+| 2-10 s | Une main découpe et colle les cases | « Vingt-quatre cases. Dans chaque case, un son et un mini-défi de deux minutes. » | « 24 sons · 24 défis » |
+| 10-16 s | Gros plan sur la case 1 : « [m] : trouve 3 objets en “mmm” dans la cuisine » | « Case 1 : trouve trois objets qui commencent par “mmm” dans la cuisine. » | « Case 1 : [m] » |
+| 16-21 s | Fenouil avec un bonnet de Noël | Fenouil : « Et moi, je te retrouve sur la télé ! » | — |
+| 21-25 s | Face caméra | « Commente NOËL, je t'envoie le PDF. » | « Commente NOËL 👇 » |
+
+#### Script 9 : Avant / après, 7 jours (idée n° 7, 20 s)
+
+| Temps | Image | Voix | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Écran partagé : progrès vide / progrès complet | « Lundi : zéro étoile. Dimanche… » | « Jour 1 → Jour 7 » |
+| 2-10 s | Défilement : les flammes s'allument jour après jour (captures de l'écran « Mon animal ») | « Dix minutes par jour. Pas plus. » | « 10 min/jour » |
+| 10-15 s | Espace parents : progrès sur 7 jours | « Dans l'espace parents, je vois exactement ce qu'il a travaillé. » | « Progrès sur 7 jours » |
+| 15-20 s | Le renard avec sa casquette | « Et son renard a gagné une casquette. Essai gratuit de 7 jours, lien en bio. » | « Essai gratuit 7 j · lien en bio » |
+
+#### Script 10 : Passage au CP, 5 choses à savoir faire seul (idée n° 37, 35 s)
+
+| Temps | Image | Voix | Texte à l'écran |
+|---|---|---|---|
+| 0-2 s | Cartable posé devant une porte | « Les 5 choses que la maîtresse de CP aimerait que votre enfant sache faire seul. Et ce n'est pas lire. » | « Pas lire. 😉 » |
+| 2-8 s | Mains d'enfant qui ferment un manteau | « 1. S'habiller seul, fermer son manteau. » | « 1. Son manteau » |
+| 8-13 s | Une trousse qu'on ouvre et qu'on range | « 2. Ouvrir et ranger sa trousse. » | « 2. Sa trousse » |
+| 13-19 s | Un prénom écrit en cursive | « 3. Écrire son prénom. » | « 3. Son prénom » |
+| 19-25 s | Le parent dit une consigne en deux étapes, l'enfant l'exécute (mains) | « 4. Écouter une consigne en deux étapes. » | « 4. Une consigne » |
+| 25-30 s | Petite main qui tient un crayon | « 5. Tenir son crayon correctement. » | « 5. Son crayon » |
+| 30-35 s | Face caméra | « Envoie ça à un parent de grande section. Et pour les sons, on a une app 🦊 » | « Envoie à un parent de GS 📩 » |
+
+### 7.2 Script long n° 1, chaîne enfants : « Le son [m] [p] [b] avec Fenouil + Le Train des Sons » (environ 8 min)
+
+**Titre :** *Les sons [m] [p] [b] pour apprendre à lire en GS – Comptine Le Train des Sons avec Fenouil le renard*
+**Réglage YouTube :** « Conçue pour les enfants ». Playlist « Les sons de la GS ».
+**Visuel :** le décor de l'app (fond bleu clair), Fenouil en 3D, et de vraies illustrations dessinées, pas des emojis, si possible. Le narrateur est la voix humaine d'un fondateur (N), Fenouil a une voix modifiée (F).
+
+| Temps | Séquence | Image | Texte dit |
+|---|---|---|---|
+| 0:00-0:10 | Générique | Logo, Fenouil saute, musique de 5 s | N : « Bonjour les Petits Savants ! » F : « Bonjour ! » |
+| 0:10-0:40 | Introduction | Fenouil devant trois wagons vides | F : « Aujourd'hui, on prend le train des sons ! Trois sons vont monter dans mes wagons : “mmm”, “ppp” et “bbb”. Tu es prêt ? Ouvre grand tes oreilles ! » |
+| 0:40-2:00 | **Le son [m]** | Gros « m » minuscule, bouche fermée (dessin), puis 4 images : moto, mouton, miel, main | N : « Écoute : “mmm”. On ferme la bouche, ça chatouille les lèvres. Répète avec moi : “mmm”. » *(pause 2 s)* « Mmm-moto. Mmm-mouton. Mmm-miel. Mmm-main. » F : « Mmm, j'adore le miel ! » N : « À toi ! Est-ce que tu entends “mmm” dans… *pomme* ? » *(pause 3 s)* « Oui ! Pom-mmme, à la fin ! » |
+| 2:00-3:15 | **Le son [p]** | Gros « p », puis : pomme, papa, pain, pied | N : « Maintenant : “p”. Les lèvres font une petite explosion, “p” ! Mets ta main devant ta bouche : tu sens le petit vent ? » *(pause)* « P-pomme. P-pain. P-pied. » F : « Et… p-pizza ! Miam ! » |
+| 3:15-4:30 | **Le son [b]** | Gros « b », puis : ballon, bateau, banane, bébé | N : « Et le dernier : “b”. Comme “p”, mais ta gorge vibre. Mets ta main sur ton cou : “bbb”. Ça vibre ! » *(pause)* « B-ballon. B-bateau. B-banane. » F : « Et b-Biscotte, mon ami le lapin ! » |
+| 4:30-5:30 | **Jeu : « Quel wagon ? »** | Une image apparaît, 3 wagons [m] [p] [b], la bonne réponse s'allume après la pause | N : « À toi de jouer ! Dans quel wagon va… le *bateau* ? » *(3 s)* « Le wagon “b” ! » … *(5 images : bateau, mouton, pain, banane, moto)*. Si l'enfant se trompe ? F : « Presque ! On réécoute ensemble ? » |
+| 5:30-7:30 | **Comptine : Le Train des Sons** (texte original ci-dessous) | Le train défile, chaque wagon s'allume en rythme, les paroles s'affichent en karaoké pour le parent | Chantée (voix humaine et musique originale, tempo d'environ 100 battements par minute) |
+| 7:30-7:50 | Récapitulatif | Les 3 wagons pleins | F : « Bravo ! Aujourd'hui, tu as appris “mmm”, “ppp” et “bbb”. Tu es un vrai Petit Savant ! » |
+| 7:50-8:00 | Fin (sans appel à télécharger) | Fenouil fait au revoir. Carton neutre « Coin des parents » de 5 s, voix différente | Parents : « Les fiches de ces sons sont à imprimer gratuitement sur notre site. » *(pas de QR code)* |
+
+**Comptine originale « Le Train des Sons »** (paroles © Petits Savants, à déposer, par exemple à la SACEM si vous souhaitez percevoir des droits) :
+
+> *Refrain :*
+> Tchou-tchou, voilà le train des sons,
+> Fenouil chante et nous chantons !
+> Ouvre grand tes deux oreilles,
+> Chaque son est une merveille !
+>
+> *Couplet 1 :*
+> Mmm… comme miel et comme mouton,
+> Les lèvres serrées, ça fait bon bon !
+> Le « m » monte dans le wagon !
+>
+> *Couplet 2 :*
+> P… comme pomme et comme papa,
+> Un petit vent, le voilà !
+> Le « p » saute, hop, et voilà !
+>
+> *Couplet 3 :*
+> B… comme banane et comme ballon,
+> Ma gorge vibre, c'est rigolo !
+> Le « b » rejoint les copains là-haut !
+>
+> *Refrain final :*
+> Tchou-tchou, le train est plein de sons,
+> Demain encore nous voyagerons !
+
+**Chapitres** (pour les parents, sur YouTube classique) : 0:00 Bonjour · 0:40 Le son m · 2:00 Le son p · 3:15 Le son b · 4:30 Jeu des wagons · 5:30 Comptine · 7:30 Bravo !
+
+**Description :** *« Apprends les sons [m], [p] et [b] avec Fenouil le renard ! Une leçon de phonologie pour la grande section (5-6 ans) et le début du CP : écouter, répéter, trouver le son, puis chanter la comptine originale “Le Train des Sons”. Conforme au programme de l'école maternelle. Parents : à regarder ensemble, puis jouez à “trouve un objet en mmm” dans la maison. »* Pas de lien commercial.
+
+### 7.3 Script long n° 2, chaîne parents : « Ce que votre enfant doit savoir en fin de grande section » (environ 12 min)
+
+**Titre :** *Ce que votre enfant doit savoir en fin de grande section (avant le CP) – les 10 repères*
+**Réglage :** « Non conçue pour les enfants ». Écran de fin vers « Installer Petits Savants sur votre télé » et vers la playlist « Préparer le CP ». Le lien vers la fiche PDF « 10 repères » (contre e-mail) va en description et en commentaire épinglé.
+
+> ⚠️ **Avant de tourner,** relisez les attendus de fin de maternelle sur [Eduscol](https://eduscol.education.fr), car le programme de maternelle a été révisé récemment. Les repères ci-dessous suivent les grandes lignes du programme et doivent être recoupés et formulés avec prudence.
+
+| Temps | Séquence | Image | Texte (fondateur face caméra, ou duo) |
+|---|---|---|---|
+| 0:00-0:30 | Accroche | Face caméra, cartable sur la table | « Votre enfant entre au CP en septembre et vous vous demandez s'il est prêt ? Bonne nouvelle : on ne lui demande pas de savoir lire. Voici les 10 choses qui comptent vraiment, et comment les travailler en 10 minutes par jour. » |
+| 0:30-1:15 | Qui on est | Plans du couple et de la télé | « On est [Prénom] et [Prénom], parents de deux enfants et créateurs de Petits Savants. On a passé des mois dans les programmes officiels pour construire notre app. Voici ce qu'on en a retenu, en clair. » |
+| 1:15-2:15 | **Repère 1 : entendre les sons** | Démonstration avec des objets | « Votre enfant sait-il dire si “moto” commence par “mmm” ? C'est la conscience phonologique, le meilleur prédicteur de la réussite en lecture. » Jeu : le pigeon vole des sons. |
+| 2:15-3:00 | **Repère 2 : les syllabes** | Frapper dans les mains | « Ba-na-ne : trois syllabes. » Jeu : frapper son prénom. |
+| 3:00-3:45 | **Repère 3 : les rimes** | Images | « Chapeau, gâteau. » Jeu : « ça rime ou pas ? » |
+| 3:45-4:45 | **Repère 4 : lettres et sons** | Lettres aimantées | « Connaître la plupart des lettres et, surtout, leur son. » Rappel : le son, pas le nom. |
+| 4:45-5:30 | **Repère 5 : écrire son prénom** | Main d'adulte, cursive | « Écrire son prénom, et commencer à copier en cursive selon les pratiques de la classe. » |
+| 5:30-6:15 | **Repère 6 : tenir son crayon** | Gros plan sur la pince | Astuce de la pince à linge |
+| 6:15-7:15 | **Repère 7 : les nombres jusqu'à 10** | Haricots, maisons des nombres | « Il ne s'agit pas de réciter jusqu'à 100 mais de comprendre que 5, c'est 3 et 2. » Jeu des doigts cachés. |
+| 7:15-7:45 | **Repère 8 : la suite des nombres** | Escalier | « Réciter la comptine numérique assez loin, et dénombrer une collection. » Compter les marches. |
+| 7:45-8:30 | **Repère 9 : le langage** | Livre du soir | « Raconter une histoire dans l'ordre, poser des questions. » La lecture du soir et ses 3 questions. |
+| 8:30-9:15 | **Repère 10 : l'autonomie et l'attention** | Manteau, consigne | « Écouter une consigne, finir une tâche, accepter de se tromper. » |
+| 9:15-10:30 | Ce qui n'est **pas** attendu | Face caméra | « Lire couramment, écrire sans modèle, faire des additions posées : ce n'est pas le travail de la GS. Ne mettez pas la pression : un enfant stressé apprend moins bien. » |
+| 10:30-11:30 | Notre routine de 10 minutes | Télé : Petits Savants, leçon « Les sons [m] [p] [b] », espace parents | « Chez nous : 10 minutes sur la télé avec Petits Savants, puis un jeu de sons au dîner. L'app suit le programme de la TPS au CE2, sans pub, sans compte. Les 2 premières leçons de chaque matière sont gratuites pour toujours. » (Mention honnête : « c'est notre app ».) |
+| 11:30-12:00 | Conclusion et CTA | Face caméra | « La fiche des 10 repères est à télécharger en description. Dites-nous en commentaire ce qui vous inquiète le plus pour le CP, on y répondra dans une prochaine vidéo. » |
+
+**Chapitres** : un par repère. **Commentaire épinglé :** le lien vers la fiche et une question ouverte.
+
+---
+
+## 8. La charte de la marque
+
+### 8.1 Le ton
+
+**La personnalité de Petits Savants :** un parent qui a été un peu enseignant. **Chaleureux, précis, rassurant, drôle sans moquerie.**
+
+| On dit | On ne dit pas |
+|---|---|
+| « Presque ! On réessaie ? » | « Faux », « Raté » |
+| « 10 minutes par jour suffisent » | « Ne laissez pas votre enfant prendre du retard ! » (pas de peur) |
+| « L'écran qu'on regarde ensemble » | « Zéro écran, c'est mal » ou « Plus d'écran, c'est mieux » |
+| « Selon le programme de l'Éducation nationale » (avec la source) | « Méthode révolutionnaire », « garanti », « QI » |
+| « C'est notre app » (transparence) | Faux témoignages, faux avis |
+| Des emojis avec parcimonie (🦊 ⭐ 🔥, au plus 1 à 3 par post) | Des murs d'emojis, des MAJUSCULES racoleuses |
+
+**Les mots de la marque :** Petit Savant / Petits Savants, « Presque ! », la flamme (série de jours), la quête du jour, le coffre, « à toi ! ».
+
+**Vouvoiement ou tutoiement :** on tutoie sur TikTok, Instagram et dans les Stories. On vouvoie sur Facebook, YouTube parents, la newsletter, LinkedIn et le site.
+
+### 8.2 Les noms de comptes
+
+**Principal : @petitssavants**, à réserver **le jour 1** sur toutes les plateformes, même celles qu'on n'utilise pas (Snapchat, X, Threads, Bluesky), pour éviter qu'un autre ne le prenne.
+
+**Variantes de secours, par ordre de préférence :**
+
+1. @petitssavants.app
+2. @petitssavants_fr (ou @petitssavantsfr sur TikTok, qui accepte « _ » et « . »)
+3. @lespetitssavants
+4. @petitssavants.tv (renforce le positionnement télé)
+5. @petits.savants
+6. @petitssavantsofficiel (en dernier recours, un peu lourd)
+7. Pour la chaîne enfants : @fenouiletsesamis ou @petitssavantskids
+
+**À vérifier avant de lancer :**
+
+- l'existence de marques ou d'activités homonymes (« Les Petits Savants » est une expression courante, on la retrouve dans des ateliers scientifiques pour enfants) ;
+- un dépôt de la marque à l'INPI (classes 9 et 41) ;
+- la disponibilité d'un domaine **petitssavants.fr**.
+
+Il faut aussi renseigner le nom de l'éditeur sur le site (le site affiche encore « [NOM DE L'ÉDITEUR] »), car les parents, la presse et Google Play vérifient.
+
+### 8.3 Les bios
+
+| Réseau | Bio prête à coller |
+|---|---|
+| **Instagram** (150 caractères) | `L'école sur la télé du salon 📺🦊` / `151 leçons TPS→CE2 · programme officiel` / `0 pub · 0 donnée` / `Par 2 parents · Fiches gratuites 👇` (+ lien vers une page de liens sur le site) |
+| **TikTok** (80 caractères) | `Une école sur la télé, créée par 2 parents 🦊 Fiches gratuites 👇` |
+| **Facebook** (Page, catégorie Éducation) | « Petits Savants, c'est l'app éducative qu'on regarde ensemble, sur la télé du salon : 151 leçons de la TPS au CE2, conformes au programme de l'Éducation nationale. Sans publicité, sans compte, aucune donnée collectée. Créée par deux parents. Ici : astuces d'enseignants, fiches gratuites et coulisses. » |
+| **Pinterest** | « Fiches à imprimer gratuites de la maternelle au CE2 : sons, lettres, nombres, écriture, anglais. Coloriages, calendriers de révision et routines. Par les créateurs de Petits Savants, l'app éducative sur la télé. » |
+| **YouTube enfants** (« À propos ») | « Bonjour les Petits Savants ! Avec Fenouil le renard, Moka l'ourse, Biscotte le lapin, Tofu le panda et Nacre la licorne, apprends les sons, les lettres, les nombres et l'anglais en chantant. Pour les 2 à 7 ans, à regarder avec un adulte. Parents : retrouvez nos fiches et nos conseils sur la chaîne Petits Savants Parents. » |
+| **YouTube parents** | « Aider son enfant de la maternelle au CE2 en 10 minutes par jour : programme expliqué, astuces d'enseignants, tutoriels. Par les créateurs de Petits Savants, l'app éducative pour la télé, sans pub et sans données collectées. Nouvelle vidéo chaque mois, Shorts chaque semaine. » |
+| **LinkedIn** (fondateur) | « Cofondateur·rice de Petits Savants, l'app éducative pour la télé (TPS-CE2, 151 leçons, sans pub, sans données) · Parent · On construit l'écran qu'on regarde en famille. » |
+| **Threads** | Reprise de la bio Instagram |
+
+### 8.4 Les hashtags
+
+Sur Instagram, 3 à 5 hashtags suffisent : les légendes et les mots-clés comptent davantage. Sur TikTok, 3 à 5 aussi. Sur Pinterest, les hashtags ne servent à rien : misez sur les mots-clés.
+
+| Famille | Hashtags |
+|---|---|
+| Marque (toujours 1) | #PetitsSavants · #DéfiPetitsSavants · #FenouilLeRenard |
+| Classe | #maternelle · #petitesection · #moyennesection · #grandesection · #CP · #CE1 · #CE2 · #passageauCP |
+| Apprentissage | #apprendreàlire · #phonologie · #lecture · #écriture · #mathsmaternelle · #anglaisenfant |
+| Parents | #parentalité · #parentalitépositive · #vieDeParents · #activitésenfants · #écransenfants |
+| Niches | #instructionenfamille · #IEF · #écoleàlamaison · #fichesàimprimer · #cahierdevacances |
+
+*#montessori seulement si le contenu s'en inspire réellement : l'app n'est pas Montessori, et cette communauté repère vite l'opportunisme.*
+
+### 8.5 Les visuels
+
+- **Couleurs :** bleu clair de fond (#EAF4FF), bleu principal (#1E88D8, la bannière de leçon), jaune étoile (#FFC93C), orange renard (#F28C28), violet coffre (#9B7BF0), gris texte (#2B3445). Une couleur par matière : Langage en bleu, Nombres en jaune, Découvrir en vert, Anglais en violet, Écriture en orange.
+- **Typographies :** Fredoka (titres) et Nunito (texte), les mêmes que l'app.
+- **Formes :** coins arrondis (24 px), boutons « pilule », ombres douces, beaucoup d'espace blanc.
+- **Personnages :** les mascottes en 3D sur fond uni, à décliner en **poses fixes** (bonjour, applaudit, réfléchit, dort, danse, triste-mais-encourageant) et en **coloriages au trait noir**.
+- **Photos :** lumière naturelle, intérieurs réels mais rangés, la télé visible. **Mains et nuques d'enfants seulement.**
+- **Modèles Canva à créer le jour 1 :** couverture de carrousel, slide « méthode », slide « mythe ou réalité », épingle de fiche, épingle d'infographie, miniature YouTube enfants, miniature YouTube parents, couverture de Reel, Story de sondage, carton « Coin des parents ».
+- **Améliorer l'image de marque :** les emojis comme illustrations d'exercices sont un point faible déjà repéré. Sur les réseaux, utilisez des **dessins originaux simples** (un set de 100 pictogrammes au style plat et arrondi, commandé à un illustrateur ou produit en IA puis retouché, avec une licence vérifiée) plutôt que des emojis.
+
+### 8.6 Protéger l'image des enfants : nos règles et ce que dit la loi
+
+**Ce que dit le droit français :**
+
+- **Loi n° 2024-120 du 19 février 2024**, « visant à garantir le respect du droit à l'image des enfants » (dite loi Studer 2). Elle ajoute la **vie privée de l'enfant** aux missions de l'autorité parentale (article 371-1 du Code civil). Les **deux parents exercent ensemble** le droit à l'image de leur enfant et chacun peut s'opposer à une diffusion. Le juge peut interdire à un parent de publier, et la CNIL peut saisir le juge des référés ([Club des juristes](https://www.leclubdesjuristes.com/en-bref/que-contient-la-loi-visant-a-garantir-le-respect-du-droit-a-limage-des-enfants-4932/), [Dalloz](https://www.dalloz-actualite.fr/document/loi-n-2024-120-19-fevr-2024-jo-20-fevr), [circulaire de présentation, CNB](https://cnb.avocat.fr/sites/default/files/documents/circulaire_de_presentation_des_dispositions_de_loi_n_2024-120_du_19_fevrier_2024_visant_a_garantir_le_respect_du_droit_a_limage_des_enfants_-_240523.pdf)). Le Code civil prévoit aussi que les parents associent l'enfant aux décisions qui le concernent, selon son âge et sa maturité.
+- **Loi n° 2020-1266 du 19 octobre 2020** sur l'exploitation commerciale de l'image des enfants de moins de 16 ans sur les plateformes en ligne ([Légifrance](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042439054), [vie-publique.fr](https://www.vie-publique.fr/node/273385), [Better Internet for Kids](https://better-internet-for-kids.europa.eu/en/rules-guidelines/law-october-19-2020-aimed-regulating-commercial-exploitation-image-children-under)). Elle s'applique quand **un enfant de moins de 16 ans est le sujet principal** de vidéos diffusées **dans un but lucratif**. Selon les cas, c'est le régime du **travail des enfants du spectacle** (autorisation préalable de l'administration) ou une **déclaration** au-delà de seuils de durée, de nombre de contenus et de revenus fixés par le décret n° 2022-727. Les revenus de l'enfant doivent être **consignés à la Caisse des dépôts** jusqu'à sa majorité, et l'enfant dispose d'un **droit à l'effacement**.
+- **Un contenu de marque est une publicité.** Une vidéo Petits Savants où un enfant joue avec l'app sert à vendre un produit. Si l'enfant en est le sujet principal, on se rapproche du régime de l'**enfant mannequin ou artiste**, avec une autorisation préfectorale (DDETS) et une rémunération consignée. **Même avec vos propres enfants**, cela vaut s'ils deviennent les « vedettes » de la marque.
+- **Collaborations avec des créateurs :** la loi n° 2023-451 du 9 juin 2023 sur l'influence commerciale impose la mention « Publicité » ou « Collaboration commerciale ». Ne travaillez jamais avec des comptes d'« enfants influenceurs » qui ne respectent pas la loi de 2020.
+
+**Nos 10 règles internes (à publier sur le site et à rappeler le 20 novembre) :**
+
+1. **Aucun visage d'enfant**, jamais. On filme les mains, la nuque, le dos ou une silhouette floue.
+2. **Pas de prénom réel**, d'école, de ville ou d'uniforme reconnaissable, ni de géolocalisation. Dans les vidéos, on utilise « Léa » et d'autres prénoms fictifs de l'app.
+3. **La voix d'enfant est rare et courte** (moins de 5 s), et modifiée si l'enfant le souhaite.
+4. **L'enfant n'est jamais le sujet principal** de la vidéo : c'est l'app, l'astuce ou la mascotte.
+5. **Le consentement est écrit, signé par les deux parents** pour chaque enfant filmé (y compris les nôtres), et **l'enfant donne son accord** à sa mesure. S'il dit non, on ne filme pas, et une vidéo est retirée à sa demande, même des années après.
+6. **Pas de scène de pleurs**, de colère, de bain, de chambre, de pyjama ou de maladie, ni de ridicule.
+7. **Enfants d'autres familles** (testeurs) : une autorisation écrite des deux parents, la même règle « sans visage », et **pas de rémunération** de l'enfant sans passer par le cadre légal.
+8. **Les mascottes d'abord :** dès qu'on hésite, on remplace l'enfant par Fenouil.
+9. **Commentaires modérés :** on filtre les mots-clés (outil de filtrage d'Instagram et de TikTok) et on supprime tout commentaire déplacé sur un enfant.
+10. **Revue annuelle :** chaque année, on revoit les anciennes vidéos montrant des enfants, et on en retire si nécessaire.
+
+> Faites relire ces règles et un modèle d'autorisation parentale par un avocat spécialisé avant de tourner avec un enfant extérieur à la famille. Ce rapport ne remplace pas un conseil juridique.
+
+---
+
+## 9. Les outils pour produire vite et pas cher
+
+### 9.1 La boîte à outils
+
+| Besoin | Outil conseillé | Coût indicatif | Astuce |
+|---|---|---|---|
+| **Montage vidéo** | **CapCut** (ordinateur et mobile) | Gratuit. CapCut Pro est payant pour certains effets | Modèles de sous-titres automatiques en français, effet de voix pour Fenouil, recadrage 9:16 vers 16:9. **Relisez les conditions d'utilisation de CapCut** sur la licence accordée sur vos contenus. En cas de doute, montez les contenus sensibles sur DaVinci Resolve (gratuit) |
+| **Visuels, fiches, épingles, miniatures** | **Canva** (Pro) | Environ 12 €/mois (prix à vérifier) | Kit de marque (couleurs, Fredoka, Nunito, logos), redimensionnement magique (une fiche donne une épingle, un carrousel et une Story), mockups, planificateur intégré |
+| **Capture de l'écran de la télé** | **scrcpy** (gratuit, open source) en ADB sur Android TV / Google TV : `scrcpy --record=lecon.mp4` | Gratuit | Image parfaite en 1080p, sans reflet ni moiré. Activez les options développeur et le débogage ADB sur la télé |
+| | **Carte d'acquisition HDMI USB** et OBS Studio | Environ 15 à 30 € pour la carte, OBS gratuit | Pour les télés LG, Samsung ou Fire TV, ou pour filmer le son de la télé |
+| | Filmer la télé au téléphone | Gratuit | Pour l'authenticité (« vraie vie »). Baissez la luminosité de la télé et réglez l'exposition du téléphone à la main |
+| **Voix off** | **Votre voix** et un micro-cravate (environ 20 à 30 €) | — | La voix humaine crée la confiance. Enregistrez dans un placard à vêtements, l'acoustique y est très bonne |
+| **Voix de mascotte** | Effet de voix CapCut, ou une voix IA (par exemple ElevenLabs) sous **licence commerciale** | Gratuit ou abonnement | Créez une voix unique et stable pour Fenouil. N'imitez jamais une voix réelle (doublage, célébrité) |
+| **Musique** | Bibliothèque audio YouTube (gratuite), comptines composées par vous ou avec un musicien | Gratuit, ou environ 100 à 300 € par comptine chez un musicien indépendant | Avec les générateurs de musique IA, **vérifiez les droits commerciaux** de l'offre choisie et gardez les preuves |
+| **IA pour écrire** | Assistants IA (Claude, ChatGPT…) | Gratuit ou environ 20 €/mois | Idées d'accroches, variantes de titres, descriptions Pinterest, premiers jets de scripts. **Relisez toujours la pédagogie** : l'IA se trompe sur les programmes |
+| **Images IA** | Avec prudence | — | Pas d'enfants générés en IA « réalistes ». Sur YouTube, déclarez tout contenu synthétique réaliste |
+| **Sous-titres** | Sous-titres automatiques de CapCut, d'Instagram ou de TikTok | Gratuit | Corrigez toujours les sons : la transcription automatique écrit « bé » pour [b] |
+| **Envoi automatique en message privé** (« Commente FICHE ») | ManyChat, ou les réponses automatiques de Meta | Offre gratuite limitée | Pour transformer les commentaires en e-mails |
+| **E-mails** | Brevo ou MailerLite | Gratuit au démarrage | Formulaires intégrables sur GitHub Pages |
+| **Liens de bio** | Une page « liens » sur votre site (et non un service tiers) | Gratuit | Ajoutez des paramètres UTM pour savoir d'où viennent les installations |
+
+### 9.2 Programmer les publications
+
+| Outil | Pour quoi | Prix indicatif | Notre avis |
+|---|---|---|---|
+| **Meta Business Suite** | Instagram et Facebook (posts, Reels, Stories) | Gratuit | **Indispensable.** Programmation native, sans risque de baisse de portée |
+| **Planificateurs natifs** de TikTok (ordinateur), de YouTube Studio et de Pinterest | Chaque plateforme | Gratuit | Suffisants au début |
+| **Metricool** | Tout en un : Instagram, Facebook, TikTok, YouTube, Pinterest, Threads, LinkedIn, et des statistiques comparées | Offre gratuite limitée (1 marque, un nombre limité de publications par mois selon les sources), offres payantes à partir d'environ 16 à 22 €/mois ([comparatif SocialKit, un concurrent](https://socialk.it/fr/pricing/metricool), [Metricool](https://metricool.com/pt/premium-vs-gratuito-metricool/)) | **Notre choix à partir du mois 2**, pour gagner du temps et avoir un seul tableau de statistiques |
+| **Later** | Instagram, TikTok, Pinterest (calendrier visuel, page de liens) | Payant, avec un essai | Bon pour la vue « grille Instagram » |
+| **Buffer** | Simple, multiplateforme | Offre gratuite limitée à quelques comptes | Alternative légère à Metricool |
+| **Tailwind** | Spécialiste de Pinterest | Payant | Seulement si Pinterest devient votre premier canal |
+
+Les prix et les limites des offres gratuites changent souvent : vérifiez-les sur les sites officiels avant de vous abonner.
+
+**Budget outils de départ :** environ **35 à 60 €/mois** (Canva Pro, Metricool Starter, éventuellement une voix IA), plus environ **60 €** de matériel une fois (micro-cravate, trépied, carte HDMI).
+
+### 9.3 La semaine type et le temps nécessaire (à deux)
+
+| Moment | Tâche | Qui | Durée |
+|---|---|---|---|
+| **Dimanche soir** | Revue des statistiques, choix des 4 vidéos et de la fiche de la semaine, envoi de la newsletter (préparée le samedi) | Les deux | 45 min |
+| **Lundi soir** | Création de la fiche de la semaine sur Canva (PDF et page du site) | Fondateur B | 1 h 30 |
+| **Mardi soir** | 5 visuels Pinterest par fiche, puis 25 épingles programmées sur 7 jours | Fondateur B | 1 h 30 |
+| **Mercredi** (après-midi ou soir) | **Tournage en lot** de 4 Reels (avec les scripts de la partie 7) et captures de la télé | Fondateur A (devant la caméra) et B | 2 h |
+| **Jeudi soir** | Montage des 4 Reels sur CapCut, sous-titres, 1 carrousel sur Canva | Fondateur B | 2 h |
+| **Vendredi soir** | Programmation sur Meta Business Suite, TikTok, YouTube et Metricool. Légendes et hashtags | Fondateur A | 45 min |
+| **Tous les jours** | 20 à 30 min : répondre aux commentaires et messages, 1 Story, 1 intervention dans un groupe | En alternance | 2 h 30 par semaine |
+| **Samedi** | Post LinkedIn et brouillon de la newsletter | Fondateur A | 45 min |
+| **Total** | | | **Environ 11 h par semaine** (soit environ 5 h 30 chacun) |
+
+**Avec la chaîne YouTube enfants (à partir du mois 3) :** comptez **4 à 6 h de plus par semaine** pour une vidéo de 4 à 6 min (voix, animation de la mascotte, montage), et une journée par mois pour une compilation. Si le temps manque, on réduit d'abord les Reels (de 4 à 3) et les carrousels (de 2 à 1), jamais Pinterest ni la newsletter.
+
+**Le mois 1** demande environ **15 h par semaine** à cause de la mise en place : comptes, modèles Canva, page de fiche, formulaire Brevo, vérification Pinterest et premières fiches.
+
+---
+
+## 10. Sources
+
+**Plateformes et algorithmes**
+- YouTube « conçu pour les enfants » : [Next](https://next.ink/brief-article/des-changements-importants-pour-youtube-kids-fin-des-publicites-ciblees-des-commentaires/) · [Blog du Modérateur](https://www.blogdumoderateur.com/youtube-renforce-regles-donnees-enfants/) · [Presse-citron](https://www.presse-citron.net/les-videos-youtube-destinees-aux-enfants-ne-proposeront-plus-de-publicites-ciblees/) · [L'ADN, COPPA](https://www.ladn.eu/media-mutants/tv-et-nouvelles-images/loi-coppa-youtube-limite-monetisation-videos-pour-enfants/) · [Aide YouTube, contenu pour enfants](https://support.google.com/youtube/answer/9632097?hl=en) · [Aide YouTube, écrans de fin](https://support.google.com/youtube/answer/6388789) · [Aide YouTube, fiches](https://support.google.com/youtube/answer/6140493?hl=en)
+- Qualité des contenus pour enfants : [Bonnes pratiques YouTube](https://support.google.com/youtube/answer/10774223) · [Principes de qualité (PDF, en français)](https://services.google.com/fh/files/misc/quality-content-principals-fr-fr.pdf) · [TechCrunch 2021](https://techcrunch.com/2021/10/25/youtube-warns-creators-it-will-start-to-demonetize-low-quality-kids-videos-next-month/)
+- YouTube Shorts : [Shorts de 3 minutes (BDM)](https://www.blogdumoderateur.com/youtube-etend-duree-shorts-3-minutes/) · [Liens désactivés dans les Shorts (TechCrunch)](https://techcrunch.com/2023/08/10/youtube-is-disabling-links-on-shorts-to-cut-down-on-spam) · [Tubefilter](https://tubefilter.com/2023/08/10/youtube-shorts-comments-spam/) · [Lien vers les vidéos longues (BDM)](https://www.blogdumoderateur.com/youtube-shorts-desormais-lies-videos-plus-longues/) · [Comptage des vues 2025 (TechCrunch)](https://techcrunch.com/2025/03/26/youtube-is-changing-how-youtube-shorts-views-are-counted)
+- Instagram : [BDM, l'algorithme en 2025](https://www.blogdumoderateur.com/instagram-algorithme-2025/) · [Agorapulse](https://www.agorapulse.com/fr/blog/comment-fonctionne-algorithme-instagram-2025/)
+- TikTok : [Buffer](https://buffer.com/library/tiktok-algorithm/) · [Ahrefs, le SEO sur TikTok](https://ahrefs.com/fr/blog/seo-tiktok/) · [Kolsquare](https://www.kolsquare.com/fr/blog/comment-maitriser-lalgorithme-tiktok)
+- Facebook : [Kolsquare](https://www.kolsquare.com/fr/blog/comprendre-lalgorithme-de-facebook) · [Metricool](https://metricool.com/facebook-algorithm/)
+- Pinterest : [Tendances parentales 2026](https://newsroom.pinterest.com/fr/news/parenting-trend-report-2026/) · [Today's Parent](https://www.todaysparent.com/family/pinterest-parenting-trends-2026/) · [Tailwind, le SEO sur Pinterest en 2025](https://www.tailwindapp.com/blog/pinterest-seo-in-2025) · [Tailwind, le marketing sur Pinterest en 2025](https://www.tailwindapp.com/blog/pinterest-marketing-2025) · [Pinterest Business](https://business.pinterest.com/en-gb/blog/how-to-build-audience-pinterest/) · [Pinterest Create, les tableaux](https://create.pinterest.com/blog/boards-gift-guides-curated-inspiration)
+
+**Marché et comptes de référence**
+- Comptines : [Social Blade, Titounis](https://socialblade.com/youtube/handle/titounis) · [L'ADN, l'empire Titounis](https://www.ladn.eu/media-mutants/tv-et-nouvelles-images/titounis-lama-fache-secrets-empires-mediatiques-youtube/) · [BDM, chaînes les plus suivies](https://www.blogdumoderateur.com/chaines-youtube-suivies-france-monde/)
+- Profs créateurs de contenu : [France 3 Occitanie](https://france3-regions.franceinfo.fr/occitanie/haute-garonne/toulouse/tiktok-instagram-ces-professeurs-de-toulouse-captivent-des-millions-d-eleves-sur-les-reseaux-sociaux-2747986.html) · [digiSchool](https://www.digischool.fr/articles/education/top-5-des-professeurs-influenceurs-litteraires-des-reseaux-sociaux/) · [Orange, Bien vivre le digital](https://bienvivreledigital.orange.fr/societe/tendances/6-profs-influenceurs-a-suivre-quel-que-soit-son-age.html) · [Blast, enquête](https://www.blast-info.fr/articles/2025/enseignants-createurs-de-contenus-quand-le-business-sinvite-au-tableau-UCHbuT9vSYCWpOtY8tPF0g)
+- Montessori et imprimables : [Marie Claire Belgique](https://marieclaire.be/fr/?p=89330) · [@healthylifemaman](https://socialveins.com/influencer/instagram/healthylifemaman) · [@lesimprimablesmontessori](https://socialveins.com/influencer/instagram/lesimprimablesmontessori)
+- Instruction en famille : [vie-publique.fr](https://www.vie-publique.fr/en-bref/299312-instruction-en-famille-quel-bilan-quatre-ans-apres-la-reforme) · [Banque des Territoires](https://www.banquedesterritoires.fr/instruction-en-famille-letonnant-rapport-de-la-cour-des-comptes) · [Banque des Territoires, baisse des demandes](https://www.banquedesterritoires.fr/instruction-en-famille-en-deux-ans-le-nouveau-regime-fait-fondre-le-nombre-de-demandes)
+
+**Droit**
+- Loi de 2024 sur le droit à l'image des enfants : [Club des juristes](https://www.leclubdesjuristes.com/en-bref/que-contient-la-loi-visant-a-garantir-le-respect-du-droit-a-limage-des-enfants-4932/) · [Dalloz Actualité](https://www.dalloz-actualite.fr/document/loi-n-2024-120-19-fevr-2024-jo-20-fevr) · [Circulaire (CNB)](https://cnb.avocat.fr/sites/default/files/documents/circulaire_de_presentation_des_dispositions_de_loi_n_2024-120_du_19_fevrier_2024_visant_a_garantir_le_respect_du_droit_a_limage_des_enfants_-_240523.pdf) · [Lefebvre Dalloz](https://formation.lefebvre-dalloz.fr/actualite/respect-du-droit-limage-des-enfants-ce-que-dit-la-nouvelle-loi-2024)
+- Loi de 2020 sur les enfants influenceurs : [Légifrance](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042439054) · [vie-publique.fr](https://www.vie-publique.fr/node/273385) · [Better Internet for Kids (UE)](https://better-internet-for-kids.europa.eu/en/rules-guidelines/law-october-19-2020-aimed-regulating-commercial-exploitation-image-children-under) · [Fiche de l'association OPEN (PDF)](https://www.open-asso.org/wp-content/uploads/2025/11/Fiche-loi-enfants-influenceurs.pdf)
+
+**Outils**
+- Metricool : [SocialKit (un concurrent, prudence)](https://socialk.it/fr/pricing/metricool) · [Metricool, gratuit ou premium](https://metricool.com/pt/premium-vs-gratuito-metricool/)
+
+### Points à vérifier avant d'agir
+
+Le quota de recherche web de cette session a été atteint, et l'aide YouTube n'était pas accessible depuis notre environnement. Ces points n'ont donc pas pu être recoupés :
+
+1. **La liste exacte des fonctions désactivées sur les vidéos « conçues pour les enfants »**, notamment le statut des liens dans les descriptions. Relisez la page officielle de l'aide YouTube.
+2. **Les seuils du décret n° 2022-727** (durée, nombre de vidéos, revenus) qui déclenchent l'obligation de déclaration de la loi de 2020. Lisez le texte sur Légifrance ou consultez la DDETS de votre département.
+3. **Les attendus exacts de fin de maternelle et de cycle 2** (programmes révisés récemment), sur Eduscol, avant de tourner la vidéo « 10 repères ».
+4. **Les noms de comptes, la marque et les noms des mascottes**, auprès de l'INPI et sur chaque plateforme.
+5. **Les prix et limites des outils** (Canva, Metricool, Brevo, ManyChat, voix IA) au moment de vous abonner.
+6. **Les chiffres d'abonnés cités**, qui viennent d'outils tiers à des dates variables et évoluent vite.
