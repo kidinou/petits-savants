@@ -11,7 +11,7 @@
 | 05 | [Réseaux sociaux et contenus](05-reseaux-sociaux-contenus.md) | 30 titres YouTube, 40 idées de vidéos courtes, 12 scripts, calendrier jour par jour, bios |
 | 06 | [Acquisition et partenariats](06-acquisition-partenariats.md) | Communiqué de presse, e-mails types (influenceuse, école, partenaire), plan à 90 jours, 3 budgets |
 | 07 | [Marque, juridique et organisation](07-marque-juridique-organisation.md) | Plateforme de marque, 10 slogans, check-lists légales, 15 risques, répartition des rôles |
-| 08 | Identité de marque *(en cours)* | Positionnement, univers unifié, logo, palette, planche visuelle |
+| 08 | [Identité de marque](08-identite-de-marque.md) + [planche visuelle](08-planche-identite.html) | Positionnement, manifeste, Tilou, logo, palette, jingle, comptine, brief illustrateur, budget |
 
 ---
 
