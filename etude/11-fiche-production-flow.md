@@ -8,6 +8,15 @@
 
 Pour les éléments qui le demandent, joignez aussi les fiches validées aux étapes précédentes (`PS-xx`).
 
+> **Mise à jour du 8 novembre 2026 (étude 15, design 2026).** Décision des fondatrices : l'enfant choisit **un animal** comme compagnon et l'habille ; **Tilou** reste la mascotte de la marque (guide, chargement, logo, réseaux) ; les autres Pétillous ne sont plus des compagnons à choisir. Conséquences pour cette fiche :
+> - **la nouvelle partie 0 (les animaux compagnons) passe en premier** ;
+> - les parties 1.1 à 1.6 (fiches des 5 autres Pétillous) sont **suspendues** : à ne générer que si les fondatrices veulent garder ces personnages comme guides de matières ;
+> - la partie 3 (accessoires) vise désormais **les animaux** (prompts adaptés au § 0.3) ; la 3.6 (Tilou en panoplies) reste utile pour les réseaux ;
+> - la 4.1 (les doudous) est **abandonnée** : les animaux ne sont plus des doudous, ce sont les compagnons ;
+> - la partie 9 bis (décors des thèmes) est nouvelle.
+>
+> Référence de style pour toute la partie 0 : `design-2026/00-planche-compagnons.png` (rendu « soft 3D » des maquettes) ; référence de proportions : `planches/P01-tilou-v2.jpg`.
+
 **Règles pour toutes les images**
 - Générez **4 variantes**, gardez la meilleure, et envoyez-la-moi avec son nom de fichier. Je la valide ou je vous renvoie un prompt corrigé.
 - Le style est déjà décrit dans chaque prompt : rien à ajouter.
@@ -19,7 +28,14 @@ Pour les éléments qui le demandent, joignez aussi les fiches validées aux ét
 
 | N° | Élément | Format | Qualité | Images à joindre | Nom du fichier |
 |---|---|---|---|---|---|
-| **1. Les mascottes** ||||||
+| **0. Les animaux compagnons (nouveau, en premier)** ||||||
+| 0.1 à 0.8 | Fiche de chaque animal (licorne, dinosaure, chat, chien, lapin, panda, renard, ours) | Paysage 16:9 | 2K | 00-planche-compagnons, P01-tilou-v2 | `PS-A1-licorne.png` … `PS-A8-ours.png` |
+| 0.9 | Les 8 animaux côte à côte | Paysage 16:9 | 2K | les 8 fiches validées | `PS-A9-famille-animaux.png` |
+| 0.10 | Expressions d'un animal (test sur la licorne, puis les autres) | Paysage 16:9 | 2K | sa fiche | `PS-A10-expr-licorne.png` … |
+| 0.11 à 0.14 | Test d'habillage : les 8 avec la même tenue (4 tenues) | Paysage 16:9 | 2K | PS-A9 + planches d'accessoires | `PS-B1-casquette.png` … `PS-B4-pyjama.png` |
+| 0.15 | La chambre de l'animal, de jour | Paysage 16:9 | 2K | aucune | `PS-C1-chambre-jour.png` |
+| 0.16 | La même chambre, la nuit | Paysage 16:9 | 2K | PS-C1 | `PS-C2-chambre-nuit.png` |
+| **1. Les mascottes (suspendu, voir la note en tête)** ||||||
 | 1.1 | Fiche de Babil (rose) | Paysage 16:9 | 2K | P01-tilou-v2, P01bis-compagnons-pop-v2 | `PS-11-babil.png` |
 | 1.2 | Fiche de Pila (bleu) | Paysage 16:9 | 2K | idem | `PS-12-pila.png` |
 | 1.3 | Fiche de Feuillette (vert) | Paysage 16:9 | 2K | idem | `PS-13-feuillette.png` |
@@ -62,11 +78,93 @@ Pour les éléments qui le demandent, joignez aussi les fiches validées aux ét
 | 8.3 | Bonne nuit (fin du temps d'écran) | Paysage 16:9 | 1080p | P01-tilou-v2 + PS-44-chambre | `PS-83-bonne-nuit.mp4` |
 | 8.4 | La révélation : Tilou sort de la télé | Vertical 9:16 | 1080p | P01-tilou-v2 | `PS-84-revelation.mp4` |
 
+| **9 bis. Les décors des thèmes (nouveau)** ||||||
+| 9.1 à 9.4 | Jeu de décor par thème : jungle, princesse, espace, océan | Paysage 16:9 | 2K | 03-parcours.png (mise en page) | `PS-T1-jungle.png` … `PS-T4-ocean.png` |
+
 **L'ordre compte** : faites d'abord la partie 1 et envoyez-la-moi. Les parties 2 et 3 en dépendent. Les parties 4 à 8 peuvent se faire dans n'importe quel ordre ensuite.
 
 ---
 
 ## Les prompts à copier-coller
+
+### 0. Les animaux compagnons
+
+**Le principe** : 8 animaux qui partagent **la même base** (même hauteur, grosse tête ronde, corps en haricot, petits bras, pieds ronds, mêmes points d'accroche : sommet de la tête, yeux, cou, torse, pieds). C'est ce qui permet de dessiner chaque accessoire une seule fois. Le style est celui des maquettes : **volume doux de jouet en vinyle mat, lumière d'en haut à gauche, ombres teintées, pas de contour noir**, grands yeux brillants indigo à deux reflets, joues roses.
+
+**La liste**
+
+| N° | Animal | Couleurs (corps · ventre · détail) | Signes distinctifs | Nom proposé dans l'app |
+|---|---|---|---|---|
+| 0.1 | Licorne | blanc lilas `#F7F1FF` · blanc · ombre lilas `#BBA6EE` | corne dorée torsadée, crinière et queue en boules pastel (rose `#FF8CC6`, lilas `#B48CFF`, bleu `#7CC7FF`, menthe `#7FE3C4`), oreilles pointues | Praline |
+| 0.2 | Dinosaure | vert `#4FC27F` · crème jaune `#FFF0B5` | plaques orange `#FF9A3C` sur la tête et la queue, museau large, taches vertes plus foncées, pas d'oreilles | Croc |
+| 0.3 | Chat | bleu lavande `#9DB3E8` · blanc bleuté | oreilles pointues roses dedans, trois rayures sur le front, moustaches, queue fine en S | Myrtille |
+| 0.4 | Chien | biscuit `#F6CF9A` · crème | grandes oreilles tombantes marron `#A9693A`, tache autour d'un œil, petite langue rose | Biscotte |
+| 0.5 | Lapin | rose très pâle `#FBEFF3` · blanc | longues oreilles roses dedans, queue en pompon, truffe rose | Guimauve |
+| 0.6 | Panda | blanc `#FAFAF6` · noir bleuté `#2E3352` | taches autour des yeux, oreilles, bras et pieds noirs | Bambou |
+| 0.7 | Renard | orange `#FF8D3F` · crème | masque blanc des joues, oreilles pointues à bout brun, grande queue à bout blanc | Noisette |
+| 0.8 | Ours | brun `#B9835A` · beige `#F3D9B8` | oreilles rondes, museau beige, petite queue | Caramel |
+
+*Évitez l'orange vif pour un autre animal que le renard : c'est la couleur de Tilou.*
+
+**0.1 à 0.8 · Fiche de chaque animal** — Paysage 16:9 · 2K · joindre `design-2026/00-planche-compagnons.png` et `planches/P01-tilou-v2.jpg`
+
+Copiez ce prompt et remplacez la partie entre crochets par la ligne de l'animal :
+
+```
+Character turnaround sheet of a cute baby [ANIMAL] for a children's TV learning app, in the exact style of the attached companion sheet: soft 3D look like a matte vinyl toy, gentle light from the top left, soft colored shadows, subtle bright rim light on the edges, no black outline. Chibi proportions: very big round head (about 55 % of the height), small bean-shaped body with a lighter belly, short rounded arms, round feet, big glossy dark indigo eyes with two white highlights, soft pink cheeks, tiny closed smile, no teeth. Four views side by side at exactly the same height, evenly spaced, not overlapping: front, three-quarter, side, back. Plain warm cream background, soft contact shadow under each view, no text, no labels.
+```
+
+| N° | Remplacer [ANIMAL] par |
+|---|---|
+| 0.1 | `unicorn, lilac-white body (#F7F1FF) with lilac shadows, a golden twisted horn, a mane and tail made of soft pastel puffs (pink, lilac, sky blue, mint), small pointed ears with pink inside` |
+| 0.2 | `dinosaur, fresh green body (#4FC27F), pale yellow belly, rounded orange plates (#FF9A3C) on top of the head and along the tail, wide friendly snout with two small nostrils, a few darker green spots, no ears, thick short tail` |
+| 0.3 | `kitten, soft lavender-blue body (#9DB3E8), white-blue belly, pointed ears pink inside, three small darker stripes on the forehead, thin whiskers, thin S-shaped tail` |
+| 0.4 | `puppy, biscuit-beige body (#F6CF9A), cream belly and muzzle, big floppy brown ears (#A9693A), a light brown patch around one eye, tiny pink tongue, short wagging tail` |
+| 0.5 | `bunny, very pale pink body (#FBEFF3), white belly, long upright ears pink inside, pink nose, round pompom tail` |
+| 0.6 | `panda cub, white body, dark navy-black (#2E3352) round ears, eye patches, arms and feet, white belly, small round tail` |
+| 0.7 | `fox cub, bright orange body (#FF8D3F), cream belly and white cheek mask, pointed ears with dark brown tips, big fluffy tail with a white tip` |
+| 0.8 | `bear cub, warm brown body (#B9835A), beige muzzle and belly (#F3D9B8), round ears, small round tail` |
+
+**0.9 · Les 8 ensemble** — Paysage 16:9 · 2K · joindre les 8 fiches validées
+
+```
+The 8 reference baby animals standing in a row, left to right: unicorn, dinosaur, kitten, puppy, bunny, panda, fox, bear. Exactly the same height and the same body base, evenly spaced with clear space between each one, nobody overlapping, all fully visible, front view, same happy idle pose. Same soft 3D matte vinyl toy style, light from the top left, soft contact shadows. Plain warm cream background, no text.
+```
+
+**0.10 · Expressions** — Paysage 16:9 · 2K · joindre la fiche de l'animal
+
+```
+Expression and pose sheet of the reference baby animal only, 8 full-body poses in a 4 × 2 grid, evenly spaced: idle smiling, waving with one arm, jumping for joy with both arms up and eyes as happy crescents, head tilted wondering (never sad), dancing, hugging itself with eyes closed, sleeping with a small night cap, looking to its right. Same body, colors and soft 3D style as the reference. No teeth. Plain cream background, no text.
+```
+
+**0.11 à 0.14 · Test d'habillage** — Paysage 16:9 · 2K · joindre `PS-A9` et la planche d'accessoires concernée
+
+```
+The same 8 baby animals in a row as in the reference, evenly spaced, not overlapping, all wearing the same outfit, placed identically: [TENUE]. Ears, horn and head features stay visible (the unicorn horn goes through the hat). Same soft 3D style. Plain cream background, no text.
+```
+
+| N° | Remplacer [TENUE] par |
+|---|---|
+| 0.11 | `a red baseball cap with a yellow button, a red and cream striped sailor shirt, blue sneakers with white soles` |
+| 0.12 | `a blue knitted beanie with a cream pompom and a yellow band, a pink knitted scarf` |
+| 0.13 | `round dark indigo glasses, a yellow raincoat with two buttons, yellow rain boots` |
+| 0.14 | `a starry night cap and cloud-pattern pyjamas` |
+
+**0.15 · La chambre de l'animal, de jour** — Paysage 16:9 · 2K · aucune image
+
+```
+Wide illustration of a cosy child-sized bedroom for a small toy animal, seen from the front like a stage, soft 3D matte toy style, light from the top left: warm peach walls, a big arched window on the left showing green rolling hills and a sun, light wooden floor, a round striped rug in the center-left (empty, to place a character on it), a small shelf and a plant on the sides. Large simple shapes readable from far away, empty right half (a menu will be placed there). No characters, no text.
+```
+
+**0.16 · La chambre, la nuit** — Paysage 16:9 · 2K · joindre `PS-C1`
+
+```
+The same bedroom as the reference at night: the window shows a deep blue starry sky and a crescent moon, warm light from a small paper lantern, a small leaf-shaped bed on the rug with a pillow and a blanket. Calm, soft, no characters, no text.
+```
+
+**Les accessoires adaptés aux animaux** — dans la partie 3, remplacez dans chaque prompt `sized for the small creatures of the reference` par `sized for the baby animals of the reference (big round head, small body)`, joignez `PS-A9` à la place de `PS-16-famille`, et ajoutez à la fin : `Soft 3D matte vinyl toy style, light from the top left, no black outline.` Les 12 objets des maquettes (casquette, bonnet, couronne, chapeau de fête, fleurs, lunettes, écharpe, nœud, marinière, ciré, baskets, bottes) sont prioritaires ; le reste des listes peut suivre.
+
+---
 
 ### 1. Les mascottes
 
@@ -278,15 +376,34 @@ Inside the reference cabin room at night, the orange reference character yawns, 
 A cosy living room at night, a TV screen softly lights up, and the orange reference character peeks over the bottom edge of the screen, hands on the frame, then pops its head out, antenna snapping into an exclamation mark with a glowing pearl, and waves at the viewer. Warm, magical, slow push-in camera, 6 seconds, no text.
 ```
 
+
+### 9 bis. Les décors des thèmes
+
+Chaque thème à univers (étude 15, § 5) a besoin d'un jeu d'images qui remplace les collines et les nuages du thème Pop. Une image par thème suffit pour commencer : je la découpe en plans.
+
+**9.1 à 9.4 · Jeu de décor** — Paysage 16:9 · 2K · joindre `design-2026/03-parcours.png` (pour la place laissée à la route et aux leçons)
+
+```
+Wide background for a children's TV learning app in a soft 3D matte toy style, light from the top left, made of three clearly separated horizontal layers (far, middle, front) so it can be cut apart: [UNIVERS]. Keep the middle third of the image calm and low in detail because a winding path with round lesson buttons will be drawn over it. Large simple shapes readable from far away, soft colors, no characters, no text.
+```
+
+| N° | Fichier | Remplacer [UNIVERS] par |
+|---|---|---|
+| 9.1 | `PS-T1-jungle.png` | `a friendly jungle: big round leaves and lianas in the far layer, soft green hills in the middle, ferns and a few flowers in the front, a small colorful parrot sitting on a branch on the right edge` |
+| 9.2 | `PS-T2-princesse.png` | `a pastel fairy-tale land: a small lilac castle with pointed towers far away, soft lilac and pink hills in the middle, flowers and little pennant flags in the front` |
+| 9.3 | `PS-T3-espace.png` | `a gentle outer space at night: deep indigo sky with soft stars and two small round planets with rings far away, smooth violet moon hills in the middle, small craters and a tiny friendly rocket in the front corner` |
+| 9.4 | `PS-T4-ocean.png` | `a sunny seaside: turquoise sea with soft waves far away, sandy dunes in the middle, shells, a starfish and small rocks in the front corners` |
+
 ---
 
 ## Ce que je fais avec vos fichiers
 
 - **Je valide ou je corrige** : je compare à la fiche de référence (forme, couleurs, antenne, lisibilité de loin) et je vous renvoie un prompt ajusté si besoin.
 - **Je les intègre dans l'application** :
-  - les mascottes et leurs expressions remplacent les animaux 3D ;
+  - les fiches des animaux servent de référence aux modèles 3D et aux dessins de secours (les animaux restent les compagnons, Tilou reste la mascotte) ;
   - les accessoires deviennent les cadeaux ;
-  - la cabane devient l'écran « Mon animal » ;
+  - la chambre (0.15, 0.16) devient le décor de « Mon animal » et de l'écran de pause ;
+  - les décors des thèmes (9 bis) vont dans `media/themes/` ;
   - l'imagier remplace les emojis ;
   - la vidéo 8.1 remplace le dessin de l'écran de chargement.
 - **Je prépare les formats des magasins** : je recadre l'icône, l'image de présentation Google Play et la bannière télé aux tailles exigées, et j'ajoute les textes.
