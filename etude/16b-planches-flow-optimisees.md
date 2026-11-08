@@ -108,6 +108,8 @@ Les prompts de Tilou (TI-1, TI-2, BR-1) utilisent le bloc Tilou à la place du b
 
 Les maquettes de l'étude 15 sont des pages HTML : Claude les affiche dans un navigateur sans interface en **masquant** les textes et les éléments gênants, et enregistre des images propres. Avant la première planche, il dépose dans `etude/flow/ingredients/` :
 
+> ✅ **Prêtes** (8 novembre) : `ING-animaux.png`, `ING-accessoires.png`, `ING-tilou.png`, `ING-tilou-signe.png`, `ING-chambre.png`, `ING-paysage.png` et `ING-objets.png` sont dans `etude/planches/`. `ING-test.png` et `ING-themes.png` se font plus tard, à partir de vos planches validées.
+
 | Fichier | Contenu | Fabriqué à partir de | Sert à |
 |---|---|---|---|
 | `ING-animaux.png` | Les 8 animaux de face, sans accessoire, sans nom, sur fond uni | `design-2026/00-planche-compagnons.html` (rangée du haut) | A0, A1-A8 |
