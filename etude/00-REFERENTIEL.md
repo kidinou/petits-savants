@@ -113,7 +113,7 @@
 
 ## 6. La fiche Google Play et le site (rapport 04)
 
-- Les textes disent la vérité sur ce que fait l'application. Le nombre de leçons est toujours à jour (aujourd'hui 380).
+- Les textes disent la vérité sur ce que fait l'application. Le nombre de leçons est toujours à jour (aujourd'hui 551, de la TPS au CM2).
 - On écrit « aucune donnée sur votre enfant n'est envoyée », et non « aucune donnée collectée » dès qu'on suit les abonnements.
 - On ne demande jamais d'avis en échange d'une récompense.
 - Les prix et l'essai gratuit affichés sont ceux réglés dans la Play Console.
