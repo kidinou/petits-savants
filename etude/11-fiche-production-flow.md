@@ -1,5 +1,7 @@
 # Fiche de production Google Flow
 
+> **Mise à jour du 8 novembre 2026 : le plan de production est désormais dans [`16b-planches-flow-optimisees.md`](16b-planches-flow-optimisees.md).** Il remplace la liste, l'ordre et les prompts ci-dessous par **34 grandes planches** (au lieu de 62 prompts), découpées automatiquement par Claude, et **2 vidéos** seulement (+ 1 en option), les petites animations étant faites par Claude à partir d'images fixes. Ne lancez plus les prompts de cette fiche : gardez-la comme historique et comme référence des couleurs et des intentions.
+
 *Tout ce qu'il faut générer, dans l'ordre. Pour chaque élément : le format, la qualité, les images à joindre en « ingrédients », le nom à donner au fichier, puis le prompt à copier-coller.*
 
 **Les images de référence** sont dans le dossier `etude/planches/` :
