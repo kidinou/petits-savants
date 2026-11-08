@@ -204,3 +204,66 @@ Il est interdit d'inciter directement un enfant à acheter ou à demander l'acha
 8. **Le site :** une page « Vidéos » qui intègre les playlists YouTube, avec les fiches PDF correspondantes à télécharger.
 
 **À ne jamais faire :** « Télécharge l'app ! », « Demande à papa et maman », un QR code destiné à l'enfant, des « cadeaux » promis dans l'app aux enfants qui regardent, ou des commentaires à faux public parent sur la chaîne enfants.
+
+---
+
+## 3. TikTok et Reels : 40 idées de vidéos courtes
+
+**Règles communes :**
+
+- **Format :** vertical 9:16, 1080 × 1920 px. Durée de 12 à 45 s. Pour le texte à l'écran, prévoir une marge de 250 px en bas et 150 px en haut (zones masquées par l'interface).
+- **Accroche :** une **image surprenante** et une **phrase à l'écran** dans les deux premières secondes. Le mot-clé est dit à voix haute, car TikTok retranscrit la voix pour sa recherche ([Ahrefs](https://ahrefs.com/fr/blog/seo-tiktok/)).
+- **Sous-titres** systématiques (la majorité regarde sans le son), en Fredoka, blancs avec un contour bleu.
+- **Appel à l'action (CTA) :** un seul par vidéo, en alternant **« Enregistre »**, **« Envoie à… »** (les partages en message privé sont le signal le plus fort sur Instagram), **« Commente [mot] »** pour recevoir la fiche (envoi automatique en message privé avec ManyChat ou l'outil intégré de Meta) et, au maximum 1 fois sur 4, **« Lien en bio »**.
+- **Enfants :** jamais de visage. On filme les mains, la nuque, une silhouette de dos devant la télé, ou la voix seule. Il faut l'accord écrit des deux parents, et celui de l'enfant à sa mesure (voir partie 8).
+- **Musique :** utilisez les sons tendance de la bibliothèque commerciale TikTok ou Instagram (les comptes professionnels n'ont pas accès à toute la bibliothèque), sinon les comptines maison.
+
+| # | Format | Accroche (0 à 2 s) | Déroulé | Appel à l'action |
+|---|---|---|---|---|
+| 1 | Réaction d'enfant (mains et voix) | Plan sur la télé : « Elle a dit “Presque !” et ma fille a… » | Les petites mains appuient sur la télécommande, mauvaise réponse, l'écran dit « Presque ! », l'enfant (en voix off) dit « Ah ! Je réessaie », elle trouve la bonne réponse, les étoiles tombent | « Envoie à un parent dont l'enfant déteste se tromper » |
+| 2 | POV parent | « POV : il est 18 h, tu cuisines, et ton fils fait ses sons [ch] tout seul » | Plan cuisine, puis plan large sur la télé avec la nuque de l'enfant, puis le parent qui sourit en coupant des carottes, et l'écran « Quête du jour 3/3 » | « Enregistre pour l'essayer cette semaine » |
+| 3 | Astuce d'enseignant | « Arrêtez de dire “B comme bé” à votre enfant. » | Face caméra : « On ne dit pas le nom de la lettre, on dit son son : “bbb”. » Démonstration de 3 lettres, puis montrer la même chose dans l'app | « Commente SONS et je t'envoie la fiche » |
+| 4 | Quiz « Ton enfant de GS sait-il… ? » | « Ton enfant de grande section sait-il trouver la rime de “chapeau” ? » | 4 images à l'écran (gâteau, chat, pomme, lune), une pause de 3 s, la réponse, puis « En GS, on travaille les rimes, voici pourquoi » | « Fais le test avec lui et dis-moi en commentaire » |
+| 5 | Coulisses des fondateurs | « On a créé une app éducative à deux, la nuit, avec deux enfants. » | 6 plans rapides : un ordinateur à 23 h, une tasse, des dessins du renard sur papier, le premier test sur la télé, l'écran Google Play « Publié », le couple qui trinque au jus de pomme | « Suis l'aventure, on raconte tout » |
+| 6 | Mascotte qui parle | Fenouil, en gros plan : « Psst… tu connais mon son préféré ? » | Fenouil (voix modifiée) explique le son [f] comme « Fenouil », donne 3 mots, fait un clin d'œil | « Enregistre pour ce soir avec ton enfant » |
+| 7 | Avant / après | Écran partagé : « Lundi : 0 étoile. Vendredi : … » | Captures du progrès sur 7 jours (espace parents), avec des flammes qui s'allument jour après jour | « 10 minutes par jour, ça se voit. Essai gratuit, lien en bio » |
+| 8 | Défi | « Défi : trouve 5 mots qui commencent par [m] avant que Fenouil compte jusqu'à 10 » | Compte à rebours, des objets de la maison filmés (main qui montre : mouchoir, moufle…), et la réponse | « Duo / Remix avec ton enfant (sans visage) » #DéfiPetitsSavants |
+| 9 | Tendance « tell me without telling me » | « Dis-moi que tu as un enfant en GS sans me le dire » | Plans : des lettres aimantées sur le frigo, un « b » écrit à l'envers, un prénom en majuscules partout, la télé sur Petits Savants | « Commente la tienne » |
+| 10 | Astuce écran | « La différence entre un écran qui calme et un écran qui apprend. » | Deux plans : un enfant passif devant un dessin animé (de dos), puis un enfant actif qui répond à la télécommande. Trois critères : il répond, ça s'arrête tout seul, on en parle après | « Envoie à ton/ta partenaire » |
+| 11 | Coulisses : « on a écouté vos critiques » | « Un papa nous a écrit : “La voix est robotique.” Il avait raison. » | On montre l'avis, puis le chantier d'enregistrement des voix (micro, couverture sur la tête), avant/après de l'audio | « Dites-nous ce qu'on doit améliorer » |
+| 12 | Quiz CP | « Ton enfant de CP sait-il lire ce mot sans image ? » | Le mot « moto » apparaît, une pause, la syllabation « mo-to » en couleurs, puis l'astuce des syllabes colorées | « Enregistre la méthode des couleurs » |
+| 13 | Réaction d'enfant : la mascotte | « Le moment où il a offert la couronne à son renard » | Son de la télécommande, écran « Mon animal », achat de la couronne à 100 étoiles, le renard danse, la voix de l'enfant : « Il est trop beau ! » | « Les étoiles, ça motive plus que les bonbons. Suis-nous » |
+| 14 | POV enseignant | « POV : tu es maîtresse de GS et une maman te demande comment l'aider à la maison » | Une enseignante partenaire (avec son accord, sans nommer son école) donne 3 conseils : lire tous les soirs, jouer aux rimes, compter les marches | « Envoie à la maîtresse de ton enfant » |
+| 15 | Mythe / réalité | « “Il faut apprendre à lire avant le CP.” Faux. » | Face caméra : ce que dit vraiment le programme de maternelle (les sons, les lettres, sans exiger la lecture), avec un renvoi vers le carrousel | « Commente MYTHE pour le carrousel complet » |
+| 16 | Tutoriel télé | « Ta télé Samsung peut devenir une école. Voici comment. » | Pas-à-pas rapide filmé sur la télé, en 4 étapes à l'écran, avec la mention « sans compte, sans pub » | « Lien du tuto complet en bio » |
+| 17 | Coulisses du design | « On a dessiné 47 renards avant le bon. » | Défilement rapide des croquis, votes du couple, le renard final en 3D qui tourne | « Lequel tu aurais choisi ? 1, 2 ou 3 ? » |
+| 18 | Défi famille | « Le parent perd s'il se trompe plus que l'enfant. » | Le parent (visage) contre l'enfant (mains) sur 5 questions de CE1, score à l'écran, et le parent qui perd sur une question d'anglais | « Tag le parent qui perdrait aussi » |
+| 19 | Astuce d'enseignant : b et d | « Ton enfant confond b et d ? Fais-lui ce geste. » | Démonstration du « lit » avec les deux poings (b à gauche, d à droite), puis l'exercice dans l'app | « Enregistre, tu vas en avoir besoin » |
+| 20 | Mascotte : tendance audio | Moka l'ourse fait un mouvement de danse tendance | La danse de la mascotte en 3D sur un son tendance, avec le texte « Quand ton enfant fait sa leçon sans qu'on lui demande » | « Suis Moka » |
+| 21 | Avant / après : la routine | « Avant : “10 minutes de plus !” Après : … » | Comparaison du temps d'écran illimité et du minuteur de l'espace parents, avec l'écran « Encore 14 min aujourd'hui » | « Le minuteur est gratuit. Lien en bio » |
+| 22 | Quiz maternelle (MS) | « Ton enfant de moyenne section reconnaît-il ces 4 formes ? » | Des formes qui apparaissent, une pause, la réponse, et Nacre la licorne qui félicite | « Joue avec lui et dis-nous son score » |
+| 23 | Storytelling des fondateurs | « Pourquoi on a mis l'app sur la télé et pas sur le téléphone » | Face caméra du couple : « On ne voulait pas que notre fils s'isole avec un téléphone. La télé, c'est le salon, on est à côté. » | « Tu es d'accord ? Dis-le en commentaire » |
+| 24 | IEF | « Instruction en famille : notre rituel de 9 h en 3 étapes » | Plan d'une table : rituel de la date, 10 min de Petits Savants à la télé, une fiche imprimée | « Enregistre si tu fais l'IEF » |
+| 25 | Conseil anglais | « 3 mots d'anglais à dire au petit-déjeuner dès 4 ans » | Tofu le panda dit « milk », « bread », « apple » sur des plans de petit-déjeuner | « Envoie à quelqu'un qui veut que son enfant parle anglais » |
+| 26 | Défi « 7 jours de flamme » | « Jour 1 du défi : 7 jours de suite, 10 minutes. » | Série de 7 courtes vidéos. Chaque jour : la flamme, une anecdote, et la réaction (mains) | « Fais le défi avec nous, #DéfiPetitsSavants » |
+| 27 | Coulisses : les chiffres | « Jour 7 après la sortie : voici nos vrais chiffres. » | Captures de la Play Console, du nombre d'installations et du premier avis, avec honnêteté | « Chaque avis nous aide énormément » |
+| 28 | Astuce : écriture | « Votre enfant tient mal son crayon ? Test de la pince en 10 secondes. » | Les mains d'un adulte montrent la pince avec une pince à linge, puis l'exercice d'écriture sur le téléphone en mode ardoise | « Enregistre ce test » |
+| 29 | Tendance « things that just make sense » | « Des choses qui ont du sens dans notre app » | Liste rapide : « Presque ! » au lieu de « Faux », zéro pub, la télé s'arrête toute seule, le code parent | « Lequel te plaît le plus ? » |
+| 30 | POV enfant (vue subjective) | « POV : tu as 5 ans et tu viens de gagner ta 100e étoile » | Caméra à hauteur d'enfant, la télécommande en main, les étoiles, la couronne, le renard qui danse | « Envoie à un futur Petit Savant » |
+| 31 | Quiz CE1 | « 7 + 8 sans compter sur ses doigts : l'astuce du double » | « 7 + 7 = 14, donc 7 + 8 = 15 », avec 3 exemples | « Commente DOUBLES pour la fiche » |
+| 32 | Coulisses : le bug | « Notre plus gros bug : le renard dormait pendant les leçons. » | Écran du bug, rires, correction, avec humour | « Suis-nous pour la suite » |
+| 33 | Calendrier : Noël | « Le calendrier de l'Avent qui apprend à lire (à imprimer gratuitement) » | Défilement de la fiche imprimée : 24 cases, chacune avec un son et un défi | « Commente NOËL et je te l'envoie » |
+| 34 | Réaction des grands-parents | « On a fait tester l'app à mamie. » | Grand-mère (avec son accord) devant la télé avec la télécommande. Elle trouve ça « bien plus simple que la tablette » | « Envoie à ta mère » |
+| 35 | Astuce : motivation | « Ne dites plus “bravo”. Dites plutôt ceci. » | Féliciter l'effort plutôt que le résultat, avec 3 phrases à dire, et le lien avec « Presque ! » | « Enregistre ces 3 phrases » |
+| 36 | Mascotte : sketch | Fenouil s'endort pendant que Pépin explique les nombres | Mini-sketch de 20 s entre les mascottes en 3D, qui finit par « 1, 2, 3… Fenouil se réveille ! » | « Quelle mascotte préfère ton enfant ? » |
+| 37 | Passage au CP | « Les 5 choses que la maîtresse de CP aimerait que votre enfant sache faire seul » | Liste concrète : s'habiller, ouvrir sa trousse, écrire son prénom, écouter une consigne, tenir son crayon | « Envoie à un parent de GS » |
+| 38 | Vrai ou faux en série | « Vrai ou faux : la tablette fait baisser les notes. » | Nuance appuyée sur des sources, et notre position (temps limité, partagé, actif) | « Ton avis en commentaire, sans jugement » |
+| 39 | Comparatif honnête | « Cahier de vacances ou appli ? On a fait les deux. » | Écran partagé : avantages et limites de chacun, et la conclusion « les deux, 10 min chacun » | « Commente CAHIER pour notre programme d'été » |
+| 40 | « Une journée avec nous » | « Une journée de deux parents qui créent une app éducative » | Vlog de 45 s : école, travail, soirée de code, test sur la télé, coucher | « Suis l'aventure Petits Savants » |
+
+**Classement des vidéos par plateforme :**
+
+- **TikTok :** les n° 5, 9, 17, 18, 23, 27, 29, 32 et 40 (fondateurs, tendances, humour).
+- **Instagram :** les n° 3, 4, 12, 15, 19, 31, 33 et 35 (astuces à enregistrer).
+- **Facebook :** les n° 14, 16, 24, 34, 37 et 39 (parents plus âgés et grands-parents).
+- **Partout :** les n° 1, 2, 6, 7, 13 et 26.
