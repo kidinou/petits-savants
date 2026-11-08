@@ -135,3 +135,20 @@ Pour les réseaux et l'application, avec P01 en ingrédient :
 - Je vous renvoie des prompts corrigés pour ce qui ne va pas.
 - Pour les accessoires, je note les points d'accroche (tête, cou, dos, mains) pour que l'application puisse poser chaque objet au bon endroit.
 - J'assemble les images validées dans une planche de référence pour l'illustrateur.
+
+---
+
+## Mise à jour du 8 novembre : des couleurs « pop » pour les mascottes
+
+Retour des fondateurs sur la planche P01 bis v1 : les couleurs sont trop sombres, et il manque un vrai rose. Les couleurs des matières du rapport 08 avaient été choisies foncées pour que le **texte** reste lisible à l'écran. **Les mascottes ont désormais leur propre palette, plus vive** ; les couleurs foncées restent pour les textes et les boutons de l'application.
+
+| Mascotte | Couleur pop | Code |
+|---|---|---|
+| Tilou | Abricot vif | `#FF8C1A` |
+| Babil | Rose bonbon | `#FF4FA3` |
+| Pila | Bleu électrique | `#1E90FF` |
+| Feuillette | Vert pomme | `#4CD137` |
+| Nimbo | Lilas vif (nuage blanc sur la tête) | `#A66BFF` |
+| Plumo | Turquoise vif | `#00C9C8` |
+
+Règles ajoutées : aucune dent (un simple sourire), les 6 bien espacés sans se chevaucher.
