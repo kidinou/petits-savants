@@ -1,0 +1,13 @@
+# Contexte : Petits Savants (fiche commune à tous les agents)
+
+- App éducative française, publiée sur Google Play le 8 nov. 2026 : com.petitssavants.android. Fondée par un couple (petite équipe, budget limité).
+- Site : https://kidinou.github.io/petits-savants/ (source locale : /home/user/petits-savants/index.html, captures dans /home/user/petits-savants/img/).
+- Cible : enfants de 2 à 9 ans, de la TPS au CE2, programme de l'Éducation nationale. Acheteurs : les parents.
+- Plateforme principale : **la télé** (application Android TV / Google TV, Fire TV installée à la main, LG webOS et Samsung Tizen en mode développeur, navigateur des autres télés). Se joue à la télécommande : réponses numérotées de 1 à 4. Le téléphone peut servir de manette ou d'ardoise en scannant un QR code (même Wi-Fi). Les parents veulent aussi viser **tablette et téléphone**.
+- Contenu : 5 matières (Langage et français, Nombres et maths, Découvrir le monde, Anglais, Écriture), 151 leçons. Chaque leçon = quelques images expliquées et lues à voix haute (synthèse vocale de la télé), puis 5 exercices en QCM à 4 réponses. Une erreur donne « Presque ! » et on réessaie, sans pénalité. Parcours en carte : unités, révision, coffre.
+- Gamification actuelle : étoiles, badges, série de jours (flamme), quête du jour (« Termine 3 leçons »). Un animal-compagnon en 3D choisi par l'enfant (renard, ours, lapin, panda, licorne…) saute, danse et dort. 6 cadeaux à acheter avec les étoiles (fleur 20, chapeau, nœud 40, lunettes 50, casquette 70, couronne 100).
+- Espace parents protégé par un code à 4 chiffres : profils, temps d'écran par jour, progrès sur 7 jours. Ni compte, ni publicité, aucune donnée collectée, tout reste sur l'appareil.
+- Modèle économique : gratuit pour toujours = 2 premières leçons par matière et par classe (42 leçons). Premium à 4,99 €/mois ou 39,99 €/an, essai gratuit de 7 jours, valable pour tous les enfants de la télé. Achat seulement dans l'app Android TV ; sur les autres télés tout est ouvert pour l'instant.
+- Visuel : style plat et arrondi, fond bleu clair, polices Fredoka et Nunito, emojis comme illustrations d'exercices.
+- Points faibles déjà repérés : illustrations en emojis, voix de synthèse, QCM uniquement, mascotte peu personnalisable, aucun canal marketing, aucun avis, pas d'app tablette ou téléphone dédiée, éditeur non renseigné sur le site (« [NOM DE L'ÉDITEUR] »).
+- Projet des fondateurs : mascottes personnalisables grâce aux points gagnés chaque jour ; présence sur YouTube, TikTok, Instagram, Pinterest et Facebook ; objectif téléchargements et conversion vers l'abonnement.
