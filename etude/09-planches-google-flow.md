@@ -90,9 +90,6 @@ Ces planches reprennent le catalogue du rapport 03 (122 objets). Pour chaque cat
 **P12 · Somnole, le gardien du soir**
 > *Original character sheet: a big living cushion creature, soft and round-cornered, deep night indigo (#2E3D7C) fabric with small embroidered yellow stars, a long starry night cap with a pompom, sleepy half-closed kind eyes, small stubby arms, holding a tiny glowing paper lantern. Front, three-quarter and side views, plus 3 expressions: yawning, gently smiling, sleeping.*
 
-**P13 · Les 5 compagnons en version « fiche de présentation »** *(si vous voulez un autre style que P01 bis)*
-> *Lineup of 5 original small creatures standing side by side, same size and style as a family: Babil, a speech-bubble-shaped creature in raspberry (#C72E5A) who loves rhymes; Pila, three stacked rounded blocks with dice dots on the faces, in cube blue (#2566CC); Feuillette, a small green creature (#1D7A45) with two big leaf-shaped ears and an oversized magnifying glass; Nimbo, a small pearly-white cloud with a violet backpack (#7444D9) covered in stickers; Plumo, a ribbon-shaped creature in teal (#08757D) whose tail ends in a pencil tip leaving a glowing trail.*
-
 **P14 · Les Pépins (8 petits compagnons)**
 > *Sheet of 8 tiny seed-shaped companion creatures, each the size of a bean, with two dot eyes and a tiny sprout on top, in a 4 × 2 grid, each with its own theme: moss, bubble, ember, water drop, pebble, pollen, snowflake, moon.*
 
