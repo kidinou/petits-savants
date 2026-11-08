@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profils · Petits Savants 2026</title>
+<link rel="stylesheet" href="assets/ds.css">
+<style>
+  #stage { color: var(--cream); background:
+    radial-gradient(1100px 520px at 50% 108%, rgba(255,180,110,.32), rgba(255,180,110,0) 70%),
+    radial-gradient(900px 500px at 50% 0%, rgba(124,120,255,.35), rgba(124,120,255,0) 70%),
+    linear-gradient(180deg, #10154A 0%, #1B2468 55%, #26348A 100%); }
+  .stars i { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: #FFF6D8; opacity: .6; animation: tw 4s var(--soft) infinite; }
+  @keyframes tw { 0%, 100% { opacity: .2; } 50% { opacity: .85; } }
+  .garland { position: absolute; left: 0; top: 0; width: 1920px; height: 220px; }
+  .garland .lan { position: absolute; width: 52px; transform-origin: 50% 0; animation: sway 4.5s var(--soft) infinite; }
+  @keyframes sway { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+  .hills div { position: absolute; border-radius: 50%; }
+
+  .brand { position: absolute; left: 96px; top: 50px; display: flex; align-items: center; gap: 14px; font-family: var(--f-display); font-weight: 700; font-stretch: 112%; font-size: 40px; }
+  .brand .tilou { width: 64px; height: 104px; margin-top: -26px; }
+  .brand b { color: var(--apricot-l); }
+  .parents { position: absolute; right: 96px; top: 54px; display: flex; align-items: center; gap: 12px; height: 72px; padding: 0 28px 0 20px; border-radius: 999px; background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.2); font-family: var(--f-display); font-weight: 600; font-size: 30px; }
+  .parents .ico { width: 34px; height: 34px; }
+
+  .title { position: absolute; left: 0; right: 0; top: 196px; text-align: center; }
+  .title .h1 { font-size: 80px; }
+
+  .row { position: absolute; left: 0; right: 0; top: 360px; display: flex; justify-content: center; gap: 56px; }
+  .pcard { width: 360px; height: 540px; border-radius: 48px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding-bottom: 40px;
+    background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.04)); border: 2px solid rgba(255,255,255,.14); transition: transform var(--t-focus) var(--spring), background var(--t-focus); }
+  .pcard .pet { position: absolute; left: 0; right: 0; top: -96px; height: 410px; display: flex; justify-content: center; transition: transform 500ms var(--spring); transform-origin: 50% 100%; }
+  .pcard .pet .comp { width: 316px; height: 410px; }
+  .pcard .floor { position: absolute; left: 50px; right: 50px; top: 270px; height: 70px; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,255,255,.18), rgba(255,255,255,0)); }
+  .pname { font-family: var(--f-display); font-weight: 700; font-stretch: 112%; font-size: 60px; line-height: 1; }
+  .pwith { margin-top: 6px; font-size: 26px; color: #CBD3FF; }
+  .pchip { margin-top: 14px; padding: 8px 20px; border-radius: 999px; background: rgba(255,255,255,.14); font-size: 24px; }
+  .pcard.is-focus { background: linear-gradient(180deg, #FFF8E6 0%, #FFE9B8 100%); border-color: transparent; color: var(--ink); }
+  .pcard.is-focus .pwith { color: var(--ink-2); }
+  .pcard.is-focus .pchip { background: var(--ink); color: var(--lantern); }
+  .pcard.is-focus .pet { transform: scale(1.08) translateY(-6px); }
+  .pcard.is-focus .floor { background: radial-gradient(closest-side, rgba(255,190,80,.55), rgba(255,190,80,0)); }
+  .pcard:not(.is-focus) .pet { opacity: .88; }
+  .pcard.add { background: transparent; border: 4px dashed rgba(255,255,255,.28); justify-content: center; padding: 0; }
+  .pcard.add .plus { width: 140px; height: 140px; border-radius: 50%; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
+  .pcard.add .plus .ico { width: 64px; height: 64px; }
+  .left-time { position: absolute; left: 0; right: 0; bottom: -64px; text-align: center; font-size: 26px; color: #FFE7A8; }
+
+  .peek { position: absolute; right: 110px; top: 830px; width: 200px; transform: rotate(-8deg); }
+  .peek .tilou { width: 200px; height: 325px; }
+  .peek-bubble { right: 330px; top: 900px; font-size: 32px; }
+</style>
+</head>
+<body>
+<main id="stage" class="on-dark">
+  <div class="stars" id="stars"></div>
+  <div class="hills">
+    <div style="left:-300px;top:900px;width:1200px;height:500px;background:radial-gradient(ellipse at 50% 20%,#34449A,#202B70 70%)"></div>
+    <div style="left:900px;top:930px;width:1400px;height:520px;background:radial-gradient(ellipse at 50% 20%,#3A4AA6,#222E76 70%)"></div>
+  </div>
+  <div class="garland" id="garland"></div>
+
+  <div class="brand in" style="--d:60ms"><span id="logo"></span>Petits <b>Savants</b></div>
+  <div class="parents f in" style="--d:120ms" id="par">Parents</div>
+  <div class="title in" style="--d:160ms"><h1 class="h1">Qui apprend aujourd'hui&#8239;?</h1></div>
+
+  <div class="row" id="row"></div>
+
+  <div class="speech tail-left peek-bubble in" style="--d:900ms">Bonsoir&#8239;! On joue&#8239;?</div>
+  <div class="peek in" style="--d:800ms" id="tilou"></div>
+</main>
+<script src="assets/companions.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/stage.js"></script>
+<script>
+(function () {
+  var kids = [
+    { name: "Léa", pet: "licorne", petName: "Praline", cls: "Grande section", wear: { hat: "flower", neck: "bow" }, left: "Encore 30 min aujourd'hui" },
+    { name: "Hugo", pet: "dinosaure", petName: "Croc", cls: "CE1", wear: { hat: "cap", feet: "sneakers" } },
+    { name: "Nina", pet: "panda", petName: "Bambou", cls: "Petite section", wear: { hat: "beanie", neck: "scarf" } }
+  ];
+  document.getElementById("row").innerHTML = kids.map(function (k, i) {
+    return '<div class="pcard f in' + (i === 0 ? " is-focus" : "") + '" style="--d:' + (260 + i * 90) + 'ms"><div class="floor"></div><div class="pet">' +
+      Companion.svg(k.pet, { wear: k.wear, pose: i === 0 ? "wave" : "idle" }) + '</div><div class="pname">' + k.name + '</div><div class="pwith">avec ' + k.petName +
+      '</div><div class="pchip">' + k.cls + "</div>" + (k.left ? '<div class="left-time">' + k.left + "</div>" : "") + "</div>";
+  }).join("") + '<div class="pcard add f in" style="--d:530ms"><div class="plus">' + Ico.plus("#FFF6E8") + '</div><div class="pname" style="font-size:48px">Ajouter</div><div class="pwith">un enfant</div></div>';
+  // l'animal de la carte qui a le focus fait coucou
+  document.getElementById("stage").addEventListener("focuschange", function (e) {
+    [].forEach.call(document.querySelectorAll(".pcard .comp"), function (c) { c.setAttribute("class", c.getAttribute("class").replace("pose-wave", "pose-idle")); });
+    var c = e.detail.querySelector(".comp"); if (c) c.setAttribute("class", c.getAttribute("class").replace("pose-idle", "pose-wave"));
+  });
+  document.getElementById("par").insertAdjacentHTML("afterbegin", Ico.parent("#FFF6E8"));
+  document.getElementById("logo").innerHTML = Tilou.svg({ mood: "x" });
+  document.getElementById("tilou").innerHTML = Tilou.svg({ mood: "q", arms: "wave" });
+  // guirlande de lanternes (le motif de la marque)
+  function gy(x) { return 26 + 70 * Math.abs(Math.sin(Math.PI * x / 960)); }
+  var d = "M-20 " + gy(-20); for (var x = 0; x <= 1940; x += 20) d += " L" + x + " " + gy(x).toFixed(1);
+  var g = '<svg width="1920" height="220" style="position:absolute"><path d="' + d + '" stroke="#0A0E3A" stroke-width="4" fill="none" opacity=".8"/></svg>';
+  for (var i = 0; i < 14; i++) {
+    var lx = 600 + i * 58; if (lx > 1340) break;
+    g += '<div class="lan" style="left:' + (lx - 26) + "px;top:" + (gy(lx) - 4) + "px;animation-delay:-" + (i % 5) * .7 + 's">' + Ico.lantern(i % 3 !== 1) + "</div>";
+  }
+  document.getElementById("garland").innerHTML = g;
+  var st = ""; for (var j = 0; j < 40; j++) st += '<i style="left:' + ((j * 433) % 1900) + "px;top:" + (200 + (j * 173) % 700) + "px;animation-delay:-" + (j % 6) * .6 + 's"></i>';
+  document.getElementById("stars").innerHTML = st;
+})();
+</script>
+</body>
+</html>

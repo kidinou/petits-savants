@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confort et thème · Petits Savants 2026</title>
+<link rel="stylesheet" href="assets/ds.css">
+<style>
+  #stage { background: linear-gradient(180deg, #EEF3FF 0%, #F7F8FF 50%, #FFF6EA 100%); }
+  .head { position: absolute; left: 96px; top: 54px; display: flex; align-items: center; gap: 24px; }
+  .back { width: 84px; height: 84px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .back .ico { width: 44px; height: 44px; }
+  .head .h1 { font-size: 64px; }
+  .head p { margin: 4px 0 0; font-size: 28px; color: var(--mist); }
+  .kid { position: absolute; right: 96px; top: 60px; display: flex; align-items: center; gap: 14px; height: 84px; padding: 0 30px 0 8px; border-radius: 999px; font-family: var(--f-display); font-weight: 700; font-size: 34px; }
+  .kid .face { width: 70px; height: 70px; border-radius: 50%; overflow: hidden; background: radial-gradient(circle at 40% 30%, #fff, #F1E8FF); }
+  .kid .face svg { width: 70px; height: 70px; }
+
+  .col { position: absolute; left: 96px; top: 190px; width: 1000px; display: flex; flex-direction: column; gap: 14px; }
+  .sec { font-size: 24px; letter-spacing: 1px; color: var(--mist); margin: 2px 0 -6px 12px; }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 104px; padding: 0 24px 0 32px; box-sizing: border-box; border-radius: 36px; }
+  .row .lab { flex: 1; min-width: 0; }
+  .row .lab b { display: block; font-family: var(--f-display); font-weight: 600; font-size: 34px; }
+  .row .lab span { font-size: 24px; color: var(--mist); }
+
+  .themes { display: flex; gap: 14px; padding: 22px 0 8px; }
+  .th { width: 122px; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 24px; color: var(--ink-2); }
+  .th .sw { position: relative; width: 122px; height: 104px; border-radius: 26px; overflow: hidden; box-shadow: 0 0 0 3px rgba(30,42,94,.1); }
+  .th .sw .hl { position: absolute; left: -20px; right: -20px; bottom: -50px; height: 90px; border-radius: 50%; }
+  .th .sw .em { position: absolute; left: 50%; top: 14px; width: 48px; height: 48px; margin-left: -24px; }
+  .th .sw .em svg { width: 48px; height: 48px; }
+  .th.sel .sw { box-shadow: 0 0 0 5px var(--good); }
+  .th .ok { position: absolute; right: 6px; top: 6px; width: 34px; height: 34px; border-radius: 50%; background: var(--good); display: flex; align-items: center; justify-content: center; }
+  .th .ok .ico { width: 24px; height: 24px; }
+  .th.f::before { border-radius: 30px; left: -8px; right: -8px; top: -8px; bottom: -6px; box-shadow: 0 0 0 6px var(--lantern), 0 0 0 12px var(--ink); }
+  .th.f.is-focus { transform: translateY(-4px) scale(1.03); }
+  .th.f::after { display: none; }
+
+  .seg { display: flex; gap: 8px; padding: 8px; border-radius: 999px; background: rgba(30,42,94,.06); }
+  .seg span { display: flex; align-items: baseline; gap: 10px; height: 68px; padding: 0 20px; border-radius: 999px; align-items: center; font-size: 26px; color: var(--ink-2); }
+  .seg span i { font-style: normal; font-family: var(--f-display); font-weight: 700; }
+  .seg span.on { background: var(--milk); box-shadow: var(--lift-1); color: var(--ink); }
+  .seg span.on::before { content: ""; }
+
+  /* interrupteur : position du bouton + mot + icône (jamais la couleur seule) */
+  .sw2 { display: flex; align-items: center; gap: 12px; height: 72px; min-width: 176px; padding: 0 10px 0 22px; box-sizing: border-box; border-radius: 999px; background: #E4E6F2; font-family: var(--f-display); font-weight: 700; font-size: 28px; color: var(--ink-2); }
+  .sw2 .knob { width: 54px; height: 54px; border-radius: 50%; background: #fff; box-shadow: 0 3px 0 rgba(30,42,94,.15); display: flex; align-items: center; justify-content: center; margin-left: auto; }
+  .sw2.on { background: var(--good); color: #fff; flex-direction: row; }
+  .sw2.off { flex-direction: row-reverse; padding: 0 22px 0 10px; }
+  .sw2.off .knob { margin-left: 0; margin-right: auto; }
+  .sw2 .knob .ico { width: 34px; height: 34px; }
+
+  .prev { position: absolute; left: 1140px; top: 200px; width: 684px; }
+  .prev .tv { position: relative; width: 684px; height: 385px; border-radius: 26px; overflow: hidden; background: #000; box-shadow: 0 0 0 12px #1E2235, 0 40px 50px -20px rgba(30,42,94,.6); }
+  .prev iframe { width: 1920px; height: 1080px; border: 0; transform: scale(.35625); transform-origin: 0 0; pointer-events: none; }
+  .prev .foot { width: 180px; height: 26px; margin: 22px auto 0; border-radius: 0 0 20px 20px; background: #2A2F48; }
+  .prev .cap { margin-top: 26px; font-size: 26px; color: var(--mist); text-align: center; }
+  .prev .cap b { color: var(--ink); }
+  .fx { margin-top: 26px; padding: 26px 30px; border-radius: 32px; }
+  .fx b { font-family: var(--f-display); font-weight: 700; font-size: 32px; display: flex; align-items: center; gap: 12px; }
+  .fx ul { margin: 12px 0 0; padding-left: 28px; font-size: 26px; line-height: 1.45; color: var(--ink-2); }
+  .tilou-mini { position: absolute; right: 70px; top: 870px; width: 110px; }
+  .tilou-mini svg { width: 110px; height: 180px; }
+</style>
+</head>
+<body>
+<main id="stage">
+  <header class="head in"><span class="back clay f round" id="back"></span><div><h1 class="h1">Confort et thème</h1><p>Aussi proposé au premier lancement, en une seule étape</p></div></header>
+  <div class="kid clay in" id="kid"><span class="face" id="face"></span>Léa</div>
+
+  <section class="col">
+    <div class="sec in" style="--d:60ms">L'ÉCRAN</div>
+    <div class="row clay in" style="--d:80ms;display:block;padding:22px 32px 14px">
+      <div class="lab"><b>Thème</b><span>Change le fond et le décor. Jamais les couleurs des matières.</span></div>
+      <div class="themes" id="themes"></div>
+    </div>
+    <div class="row clay in" style="--d:140ms"><div class="lab"><b>Taille du texte</b><span>Tout grandit, boutons compris</span></div>
+      <div class="seg f" style="border-radius:999px"><span><i style="font-size:26px">Aa</i>Petit</span><span class="on"><i style="font-size:34px">Aa</i>Moyen</span><span><i style="font-size:42px">Aa</i>Grand</span></div></div>
+    <div class="sec in" style="--d:180ms">LE CONFORT</div>
+    <div class="row clay in" style="--d:200ms"><div class="lab"><b>Mode calme</b><span>Moins d'animations, sons doux, pas de confettis</span></div><div class="sw2 on f" id="calm">Oui<span class="knob"></span></div></div>
+    <div class="row clay in" style="--d:240ms"><div class="lab"><b>Formes en plus des couleurs</b><span>Motifs sur les matières et les réponses</span></div><div class="sw2 on f" id="cvd">Oui<span class="knob"></span></div></div>
+    <div class="row clay in" style="--d:280ms"><div class="lab"><b>Police pour lire</b><span>Lettres de l'école</span></div>
+      <div class="seg f"><span class="on"><i class="learn" style="font-size:34px;font-family:var(--f-learn)">abd</i>Andika</span><span><i style="font-size:30px">abd</i>OpenDyslexic</span></div></div>
+  </section>
+
+  <aside class="prev in" style="--d:200ms">
+    <div class="tv"><iframe id="pv" src="03-parcours.html?theme=rose&calm=1" title="Aperçu" tabindex="-1"></iframe></div>
+    <div class="foot"></div>
+    <p class="cap">Aperçu en direct · <b id="tn">Rose</b></p>
+    <div class="fx clay"><b id="fxh">Mode calme activé</b><ul><li>Pas de confettis ni de rayons qui tournent</li><li>Le compagnon bouge moins, sans sauter</li><li>Sons à moitié, jingle sans glockenspiel</li></ul></div>
+  </aside>
+</main>
+<script src="assets/companions.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/stage.js"></script>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  $("back").innerHTML = Ico.back();
+  $("face").innerHTML = Companion.svg("licorne", { wear: { hat: "flower" } }).replace('viewBox="0 -60 400 520"', 'viewBox="40 0 320 320"');
+  var planet = '<svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="12" fill="#FFD23F"/><ellipse cx="24" cy="24" rx="22" ry="7" fill="none" stroke="#FF8FC0" stroke-width="4" transform="rotate(-20 24 24)"/></svg>';
+  var wave = '<svg viewBox="0 0 48 48"><path d="M4 28c6-8 12-8 18 0s12 8 22 0v14H4z" fill="#22C7C2"/><path d="M4 20c6-8 12-8 18 0s12 8 22 0" stroke="#fff" stroke-width="4" fill="none"/></svg>';
+  var dot = function (c) { return '<svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="14" fill="' + c + '"/><circle cx="19" cy="19" r="5" fill="#fff" opacity=".6"/></svg>'; };
+  var T = [
+    ["", "Pop", ["#DDEFFF", "#FFF3E2", "#8FD6A6"], dot("#FF9A3C")],
+    ["rose", "Rose", ["#FFE1EE", "#FFF6EC", "#FFB3CF"], dot("#FF8FC0")],
+    ["bleu", "Bleu", ["#CFE6FF", "#F2F8FF", "#95C9FF"], dot("#4C9BFF")],
+    ["jungle", "Jungle", ["#C9F0D8", "#FFF6DA", "#6CC58A"], Ico.subject("monde", "#1D7A45").replace('class="ico"', "")],
+    ["princesse", "Princesse", ["#EBDDFF", "#FFEFF5", "#CDA8FF"], Items.icon("crown").replace('class="item-icon"', "")],
+    ["espace", "Espace", ["#1A1F5E", "#4A3C9E", "#5B4BBF"], planet],
+    ["ocean", "Océan", ["#BDEBFF", "#FFF1D6", "#5FCAD6"], wave]
+  ];
+  $("themes").innerHTML = T.map(function (t, i) {
+    return '<div class="th f' + (i === 1 ? " sel is-focus" : "") + '" data-t="' + t[0] + '" data-n="' + t[1] + '"><div class="sw" style="background:linear-gradient(180deg,' + t[2][0] + "," + t[2][1] + ')"><div class="hl" style="background:' + t[2][2] + '"></div><div class="em">' + t[3] + "</div>" +
+      (i === 1 ? '<span class="ok">' + Ico.check() + "</span>" : "") + "</div>" + t[1] + "</div>";
+  }).join("");
+  ["calm", "cvd"].forEach(function (id) { $(id).querySelector(".knob").innerHTML = Ico.check("#13834A"); });
+  // l'aperçu suit le thème qui a le focus
+  $("stage").addEventListener("focuschange", function (e) {
+    var t = e.detail.getAttribute("data-t"); if (t === null) return;
+    $("pv").src = "03-parcours.html?calm=1" + (t ? "&theme=" + t : ""); $("tn").textContent = e.detail.getAttribute("data-n");
+  });
+})();
+</script>
+</body>
+</html>

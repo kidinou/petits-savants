@@ -259,7 +259,8 @@
       back += '<g fill="' + S.plates + '"><path d="M160 72Q170 30 192 52Q186 64 184 76Z"/><path d="M186 66Q204 14 226 52Q218 62 214 72Z"/><path d="M214 72Q238 36 252 70Q246 78 240 84Z"/></g>';
     }
     if (S.mane) {
-      back += S.mane.map(function (c, i) { return '<circle cx="' + (96 + i * 6) + '" cy="' + (96 + i * 34) + '" r="' + (38 - i * 4) + '" fill="' + c + '"/>'; }).join("");
+      back += S.mane.map(function (c, i) { return '<circle cx="' + (300 - i * 4) + '" cy="' + (78 + i * 40) + '" r="' + (44 - i * 4) + '" fill="' + c + '"/>'; }).join("") +
+        '<circle cx="312" cy="252" r="30" fill="' + S.mane[0] + '"/><circle cx="286" cy="62" r="12" fill="#fff" opacity=".4"/>';
     }
     out.push(back);
     out.push(vol(head, body, rim));
@@ -312,7 +313,10 @@
       out.push('<g class="c-ear c-ear-l">' + fe + "</g>" + mirror('<g class="c-ear c-ear-r">' + fe + "</g>"));
     }
     // crinière avant (licorne)
-    if (S.mane) out.push('<path d="M160 74C176 50 214 46 236 66C226 70 222 84 222 96C206 84 182 82 160 96Z" fill="' + S.mane[0] + '"/><path d="M186 72C196 60 214 60 224 70C214 74 210 84 210 92C202 84 192 80 186 84Z" fill="' + S.mane[1] + '"/>');
+    if (S.mane) out.push('<path d="M150 82C170 52 226 44 262 70C246 74 240 92 242 112C214 92 180 90 150 104Z" fill="' + S.mane[0] + '"/>' +
+      '<path d="M196 70C214 58 240 60 256 72C242 78 236 90 236 102C222 90 208 86 196 88Z" fill="' + S.mane[1] + '"/>' +
+      '<path d="M230 76C246 70 266 76 276 92C264 92 256 100 254 112C246 98 238 90 230 88Z" fill="' + S.mane[2] + '"/>' +
+      '<path d="M166 80Q190 64 214 64" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".5"/>');
 
     // accessoires de tête et de visage
     if (wear.face && WEAR[wear.face]) out.push(WEAR[wear.face].draw(g, ctx));
@@ -320,8 +324,8 @@
     if (S.horn) {
       var hg = id + "h"; defs.push(linear(hg, [[0, "#FFF4B8"], [0.5, "#FFD23F"], [1, "#F2A20C"]], 0, 0, 1, 0));
       var hy = wear.hat === "cap" || wear.hat === "beanie" ? -26 : 0;
-      out.push('<g transform="translate(0 ' + hy + ')"><path d="M184 70L200 -6L216 70Q200 78 184 70Z" fill="url(#' + hg + ')"/>' +
-        '<path d="M188 52L212 46M192 32L209 28M196 14L205 12" stroke="#E39A0C" stroke-width="4" stroke-linecap="round"/><path d="M198 4L192 56" stroke="#fff" stroke-width="3" opacity=".6"/></g>');
+      out.push('<g transform="translate(0 ' + hy + ')"><path d="M178 72L200 -28L222 72Q200 82 178 72Z" fill="url(#' + hg + ')"/>' +
+        '<path d="M182 52L218 44M187 28L213 22M192 6L207 2" stroke="#E39A0C" stroke-width="5" stroke-linecap="round"/><path d="M197 -14L189 60" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".6"/></g>');
     }
     out.push("</g>"); // tête
     out.push("</g>"); // saut
@@ -379,7 +383,7 @@
   /* ---------- la vignette d'un accessoire (dressing) ---------- */
   var BOX = {
     cap: "50 10 260 130", beanie: "96 -16 208 150", crown: "110 16 180 110", party: "140 -20 130 130", flower: "84 40 110 90",
-    glasses: "104 130 192 92", scarf: "110 266 180 120", bow: "130 262 140 70", sneakers: "100 388 200 64", boots: "112 368 176 84"
+    glasses: "104 130 192 92", scarf: "110 266 180 120", bow: "130 262 140 70", sneakers: "96 384 208 66", boots: "112 368 176 84"
   };
   function icon(itemId) {
     var id = "i" + (++uid), defs = [];

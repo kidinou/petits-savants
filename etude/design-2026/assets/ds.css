@@ -1,0 +1,166 @@
+/* Petits Savants · système de design 2026 « Lumière douce »
+ * Scène fixe 1920×1080. Animations sur transform et opacity uniquement.
+ * Pas de backdrop-filter, pas de filter: blur. Les ombres sont peintes une fois (statiques). */
+
+@font-face { font-family: "Fredoka"; font-weight: 300 700; font-stretch: 75% 125%; src: url(../fonts/fredoka-variable-latin.woff2) format("woff2"); }
+@font-face { font-family: "Nunito"; font-weight: 700; src: url(../fonts/nunito-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Nunito"; font-weight: 800; src: url(../fonts/nunito-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Andika"; font-weight: 400; src: url(../fonts/andika-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Andika"; font-weight: 700; src: url(../fonts/andika-latin-700-normal.woff2) format("woff2"); }
+
+:root {
+  /* marque (inchangée) */
+  --ink: #1E2A5E; --ink-2: #3A4678; --mist: #5A6186;
+  --cream: #FFF6E8; --milk: #FFFDF8;
+  --apricot: #FF9A3C; --apricot-l: #FFC27A; --apricot-d: #E8771E;
+  --lantern: #FFD23F; --lantern-l: #FFF0A8; --lantern-d: #E0A90A;
+  --cheek: #FF8FA3;
+  --night: #161C4A; --night-2: #2E3D7C;
+  /* matières : signal (porte du texte crème) / lueur (objets en volume) / pastel (fonds) */
+  --mots: #C72E5A; --mots-ink: #B42550; --mots-glow: #FF5C8A; --mots-pastel: #FCE3EA;
+  --nombres: #2566CC; --nombres-glow: #4C9BFF; --nombres-pastel: #E1ECFB;
+  --monde: #1D7A45; --monde-glow: #3FCB78; --monde-pastel: #DFF2E5;
+  --langues: #7444D9; --langues-glow: #A57BFF; --langues-pastel: #ECE5FC;
+  --traces: #08757D; --traces-glow: #22C7C2; --traces-pastel: #DDF2F2;
+  /* réussite : vert menthe + lumière ; « presque » : pêche, jamais rouge */
+  --good: #13834A; --good-glow: #3FD08A; --good-pastel: #DDF7E8;
+  --almost: #B25400; --almost-pastel: #FFE7CF;
+
+  /* thème (surcharge par [data-theme]) */
+  --bg-top: #DDEFFF; --bg-mid: #F2F7FF; --bg-bottom: #FFF3E2;
+  --surface: #FFFDF8; --surface-2: #FFF6EA; --surface-edge: rgba(30, 42, 94, .08);
+  --on-bg: #1E2A5E; --on-bg-2: #3A4678; --on-bg-3: #5A6186; /* texte posé directement sur le fond */
+  --hill-1: #BFE8C9; --hill-2: #8FD6A6; --hill-3: #64C189; --deco-1: #FF8FC0; --deco-2: #7CC7FF; --deco-3: #FFD23F;
+
+  /* typo */
+  --f-display: "Fredoka", "Nunito", system-ui, sans-serif;
+  --f-ui: "Nunito", system-ui, sans-serif;
+  --f-learn: "Andika", "Nunito", system-ui, sans-serif;
+  --text-scale: 1;
+
+  /* profondeur (ombres statiques, teintées indigo) */
+  --lift-1: 0 2px 0 rgba(255,255,255,.9) inset, 0 -5px 0 rgba(30,42,94,.06) inset, 0 6px 0 rgba(30,42,94,.06), 0 16px 28px -14px rgba(30,42,94,.35);
+  --lift-2: 0 3px 0 rgba(255,255,255,.95) inset, 0 -6px 0 rgba(30,42,94,.07) inset, 0 10px 0 rgba(30,42,94,.07), 0 34px 50px -22px rgba(30,42,94,.45);
+
+  /* mouvement */
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+  --out: cubic-bezier(.22, 1, .36, 1);
+  --soft: cubic-bezier(.65, 0, .35, 1);
+  --t-tap: 120ms; --t-focus: 240ms; --t-screen: 450ms; --t-hero: 700ms;
+}
+
+html, body { margin: 0; height: 100%; overflow: hidden; background: #0E1233; }
+body { font-family: var(--f-ui); font-weight: 800; color: var(--ink); -webkit-font-smoothing: antialiased; }
+#stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden; transform-origin: 0 0; }
+.abs { position: absolute; }
+svg { display: block; }
+
+/* ---------- fonds ---------- */
+.bg-day { background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 46%, var(--bg-bottom) 100%); }
+.bg-dusk { background: radial-gradient(1200px 700px at 50% 108%, #FFB37A 0%, rgba(255,140,120,.55) 28%, rgba(120,80,200,0) 62%), linear-gradient(180deg, #1B1F5C 0%, #3A2F8C 45%, #7A4AB8 78%, #C46A9E 100%); }
+.bg-night { background: radial-gradient(900px 520px at 50% 20%, rgba(255,210,63,.16), rgba(255,210,63,0) 70%), linear-gradient(180deg, #121848 0%, #1E2A6E 60%, #2E3D8C 100%); }
+.bg-gold { background: radial-gradient(1000px 760px at 50% 44%, #FFF6D0 0%, #FFE08A 38%, #FFB45E 75%, #FF8F5A 100%); }
+
+/* bulles en volume qui flottent (décor) */
+.orb { position: absolute; border-radius: 50%; background: radial-gradient(circle at 34% 30%, #fff 0, var(--c) 40%, var(--cd, var(--c)) 100%); opacity: .95; animation: float 9s var(--soft) infinite alternate; }
+@keyframes float { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(var(--dx, 10px), var(--dy, -26px), 0); } }
+
+/* ---------- typographie ---------- */
+.hero { font-family: var(--f-display); font-weight: 700; font-stretch: 125%; font-size: calc(120px * var(--text-scale)); line-height: 1; letter-spacing: -1px; margin: 0; }
+.h1 { font-family: var(--f-display); font-weight: 700; font-stretch: 112%; font-size: calc(72px * var(--text-scale)); line-height: 1.05; margin: 0; }
+.h2 { font-family: var(--f-display); font-weight: 600; font-stretch: 108%; font-size: calc(48px * var(--text-scale)); line-height: 1.1; margin: 0; }
+.h3 { font-family: var(--f-display); font-weight: 600; font-size: calc(36px * var(--text-scale)); line-height: 1.15; margin: 0; }
+.body { font-size: calc(32px * var(--text-scale)); line-height: 1.35; }
+.small { font-size: calc(26px * var(--text-scale)); }
+.learn { font-family: var(--f-learn); font-weight: 700; }
+
+/* ---------- surfaces « pâte douce » ---------- */
+.clay { background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%); border-radius: 40px; box-shadow: var(--lift-1); }
+.clay-2 { background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%); border-radius: 44px; box-shadow: var(--lift-2); }
+.glass-dark { background: linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.06)); border: 2px solid rgba(255,255,255,.18); border-radius: 36px; }
+
+/* boutons bonbons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 16px; height: 104px; padding: 0 56px; border-radius: 999px; border: 0; font-family: var(--f-display); font-weight: 700; font-stretch: 108%; font-size: 42px; color: var(--ink); cursor: pointer; box-sizing: border-box; }
+.btn-primary { background: linear-gradient(180deg, #FFC27A 0%, #FF9A3C 55%, #F7862A 100%); box-shadow: 0 3px 0 rgba(255,255,255,.6) inset, 0 -8px 0 rgba(176,80,0,.25) inset, 0 10px 0 #C9661A, 0 26px 36px -16px rgba(150,60,0,.55); }
+.btn-soft { background: linear-gradient(180deg, #FFFFFF, #FFF4E4); box-shadow: var(--lift-1); }
+.btn-ghost-dark { background: rgba(255,255,255,.1); color: #FFF6E8; border: 3px solid rgba(255,246,232,.35); }
+
+/* pastille de chiffre (télécommande) */
+.num { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 20px; font-family: var(--f-display); font-weight: 700; font-size: 34px; color: var(--ink); background: linear-gradient(180deg, #fff, #EEF1FA); box-shadow: 0 2px 0 #fff inset, 0 4px 0 rgba(30,42,94,.14); }
+
+/* ---------- le focus : la lanterne ----------
+ * Toujours : l'élément se soulève (transform), un double anneau Lanterne + Indigo l'entoure,
+ * et une flaque de lumière apparaît dessous (calque pré-dessiné, seule son opacité change). */
+.f { position: relative; transition: transform var(--t-focus) var(--spring); }
+.f::before { content: ""; position: absolute; left: -14px; right: -14px; top: -14px; bottom: -14px; border-radius: inherit; box-shadow: 0 0 0 8px var(--lantern), 0 0 0 16px var(--ink); opacity: 0; transform: scale(.96); transition: opacity var(--t-focus) var(--out), transform var(--t-focus) var(--spring); pointer-events: none; z-index: 3; }
+.f::after { content: ""; position: absolute; left: 6%; right: 6%; bottom: -46px; height: 60px; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,210,63,.75), rgba(255,210,63,0)); opacity: 0; transition: opacity var(--t-focus) var(--out); pointer-events: none; z-index: -1; }
+.f.is-focus { transform: translateY(-14px) scale(1.06); z-index: 5; }
+.f.is-focus::before { opacity: 1; transform: scale(1); }
+.f.is-focus::after { opacity: 1; }
+.on-dark .f::before { box-shadow: 0 0 0 8px var(--lantern), 0 0 0 16px rgba(255,240,168,.35); }
+.f.round::before { border-radius: 50%; }
+
+/* ---------- compagnons ---------- */
+.comp { overflow: visible; }
+.comp .c-body { transform-box: fill-box; transform-origin: 50% 100%; animation: breathe 3.2s var(--soft) infinite; }
+.comp .c-head { transform-box: fill-box; transform-origin: 50% 90%; animation: tilt 7s var(--soft) infinite; }
+.comp .c-eyes { transform-box: fill-box; transform-origin: 50% 50%; animation: blink 5.2s infinite; }
+.comp .c-tail { transform-box: fill-box; transform-origin: 0% 90%; animation: wag 2.4s var(--soft) infinite; }
+.comp .c-ear-l { transform-box: fill-box; transform-origin: 70% 100%; animation: ear 6s var(--soft) infinite; }
+.comp .c-arm { transform-box: fill-box; transform-origin: 70% 12%; }
+.comp.pose-wave .c-arm-r { animation: wave 1.1s var(--soft) infinite; }
+.comp.pose-joy .c-hop { animation: hop 1.1s var(--out) infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+.comp.pose-joy .c-arm-l, .comp.pose-joy .c-arm-r { transform: rotate(140deg); }
+.comp.pose-joy .c-eyes { display: none; }
+.comp.pose-joy .c-shadow { animation: shadow 1.1s var(--out) infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+@keyframes breathe { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.012, 1.03); } }
+@keyframes tilt { 0%, 100% { transform: rotate(0); } 30% { transform: rotate(-3deg); } 65% { transform: rotate(2.5deg); } }
+@keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.08); } }
+@keyframes wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(8deg); } }
+@keyframes ear { 0%, 80%, 100% { transform: rotate(0); } 85% { transform: rotate(-9deg); } 90% { transform: rotate(3deg); } }
+@keyframes wave { 0%, 100% { transform: rotate(120deg); } 50% { transform: rotate(160deg); } }
+@keyframes hop { 0% { transform: translateY(0) scale(1.06, .92); } 18% { transform: translateY(0) scale(.94, 1.08); } 45% { transform: translateY(-70px) scale(1, 1); } 72% { transform: translateY(0) scale(1.08, .9); } 86%, 100% { transform: translateY(0) scale(1, 1); } }
+@keyframes shadow { 0%, 18%, 72%, 100% { transform: scale(1); opacity: 1; } 45% { transform: scale(.7); opacity: .5; } }
+
+.tilou { overflow: visible; }
+.tilou .t-hop { transform-box: fill-box; transform-origin: 50% 100%; animation: breathe 3s var(--soft) infinite; }
+.tilou .t-eyes { transform-box: fill-box; transform-origin: 50% 50%; animation: blink 4.6s infinite; }
+.tilou .t-halo { transform-box: fill-box; transform-origin: 50% 50%; animation: glow 2.4s var(--soft) infinite; }
+.tilou .t-sparks { transform-box: fill-box; transform-origin: 50% 50%; animation: twinkle 1.6s var(--soft) infinite; }
+.tilou .t-wave { transform-box: fill-box; transform-origin: 10% 90%; animation: twave 1.2s var(--soft) infinite; }
+@keyframes glow { 0%, 100% { transform: scale(.9); opacity: .75; } 50% { transform: scale(1.12); opacity: 1; } }
+@keyframes twinkle { 0%, 100% { transform: scale(.8) rotate(0); opacity: .6; } 50% { transform: scale(1.1) rotate(12deg); opacity: 1; } }
+@keyframes twave { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(14deg); } }
+
+/* bulle de parole */
+.speech { position: absolute; padding: 26px 36px; border-radius: 40px; background: var(--milk); box-shadow: var(--lift-1); font-family: var(--f-display); font-weight: 600; font-size: calc(36px * var(--text-scale)); line-height: 1.2; color: var(--ink); }
+.speech::after { content: ""; position: absolute; width: 36px; height: 36px; background: var(--milk); transform: rotate(45deg); border-radius: 6px; }
+.speech.tail-left::after { left: -12px; top: 50%; margin-top: -18px; }
+.speech.tail-bottom::after { left: 60px; bottom: -12px; }
+.speak-btn { display: inline-flex; align-items: center; justify-content: center; width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(180deg, #FFE27A, #FFD23F 60%, #F2B81E); box-shadow: 0 2px 0 #fff8 inset, 0 5px 0 #C99406; flex: none; }
+
+/* ---------- chorégraphie d'entrée ----------
+ * Les éléments arrivent en cascade (60 ms d'écart), en montant de 24 px, jamais plus de
+ * trois groupes à la fois. */
+.in { animation: enter var(--t-hero) var(--out) both; animation-delay: var(--d, 0ms); }
+.in-pop { animation: pop 620ms var(--spring) both; animation-delay: var(--d, 0ms); }
+@keyframes enter { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@keyframes pop { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: scale(1); } }
+
+/* ---------- accessibilité ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
+}
+[data-calm] .orb, [data-calm] .confetti, [data-calm] .rays { display: none !important; }
+[data-calm] * { animation-iteration-count: 1 !important; }
+[data-text="m"] { --text-scale: 1.15; }
+[data-text="l"] { --text-scale: 1.3; }
+
+/* ---------- thèmes ----------
+ * Un thème ne touche QUE : fond, surfaces, décor. Jamais l'encre, le focus ni les matières. */
+[data-theme="rose"] { --bg-top: #FFE1EE; --bg-mid: #FFF0F6; --bg-bottom: #FFF6EC; --surface: #FFFDFB; --surface-2: #FFF1F5; --hill-1: #FFD0E2; --hill-2: #FFB3CF; --hill-3: #F592B8; --deco-1: #FF8FC0; --deco-2: #C7A6FF; --deco-3: #FFD23F; }
+[data-theme="bleu"] { --bg-top: #CFE6FF; --bg-mid: #E8F3FF; --bg-bottom: #F2F8FF; --surface: #FDFEFF; --surface-2: #EEF5FF; --hill-1: #BFE0FF; --hill-2: #95C9FF; --hill-3: #6BAEF5; --deco-1: #7CC7FF; --deco-2: #9FA8FF; --deco-3: #FFD23F; }
+[data-theme="jungle"] { --bg-top: #C9F0D8; --bg-mid: #E6F8EC; --bg-bottom: #FFF6DA; --surface: #FFFDF6; --surface-2: #F3F8E8; --hill-1: #A7E0B5; --hill-2: #6CC58A; --hill-3: #3EA86A; --deco-1: #FF9A3C; --deco-2: #3FCB78; --deco-3: #FFD23F; }
+[data-theme="espace"] { --on-bg: #FFF6E8; --on-bg-2: #ECE8FF; --on-bg-3: #D2CCF5; --bg-top: #1A1F5E; --bg-mid: #2C2F86; --bg-bottom: #4A3C9E; --surface: #FFFDF8; --surface-2: #F1EEFF; --hill-1: #7B6CD8; --hill-2: #5B4BBF; --hill-3: #3E3496; --deco-1: #FFD23F; --deco-2: #7CC7FF; --deco-3: #FF8FC0; }
+[data-theme="ocean"] { --bg-top: #BDEBFF; --bg-mid: #DDF6FF; --bg-bottom: #FFF1D6; --surface: #FFFEFA; --surface-2: #EAF8FB; --hill-1: #9EE3E8; --hill-2: #5FCAD6; --hill-3: #2FA9BE; --deco-1: #FF8F7A; --deco-2: #22C7C2; --deco-3: #FFD23F; }
+[data-theme="princesse"] { --bg-top: #EBDDFF; --bg-mid: #F7EEFF; --bg-bottom: #FFEFF5; --surface: #FFFDFF; --surface-2: #F8F0FF; --hill-1: #E3CCFF; --hill-2: #CDA8FF; --hill-3: #B086F2; --deco-1: #FF8FC0; --deco-2: #B48CFF; --deco-3: #FFD23F; }

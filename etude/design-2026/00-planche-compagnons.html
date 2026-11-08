@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planche des compagnons · Petits Savants 2026</title>
+<link rel="stylesheet" href="assets/ds.css">
+<style>
+  #stage { background: linear-gradient(180deg, #F3F0FF 0%, #FFF6EA 100%); }
+  h1 { position: absolute; left: 96px; top: 46px; }
+  .sub { position: absolute; left: 96px; top: 130px; font-size: 26px; color: var(--mist); margin: 0; }
+  .row { position: absolute; left: 70px; right: 70px; display: flex; justify-content: space-between; }
+  .a { width: 214px; text-align: center; font-family: var(--f-display); font-weight: 600; font-size: 28px; }
+  .a .comp { width: 214px; height: 278px; }
+  .items { position: absolute; left: 80px; top: 850px; display: flex; gap: 8px; align-items: flex-end; }
+  .it { width: 102px; text-align: center; font-size: 22px; color: var(--ink-2); }
+  .it .art { height: 80px; display: flex; align-items: center; justify-content: center; }
+  .it svg { width: 96px; height: 70px; }
+  .tl { position: absolute; right: 96px; top: 800px; display: flex; gap: 10px; align-items: flex-end; }
+  .tl .tilou { width: 120px; height: 195px; }
+  .tl p { margin: 0 0 10px; font-size: 22px; color: var(--mist); width: 150px; }
+</style>
+</head>
+<body>
+<main id="stage">
+  <h1 class="h1">Les compagnons</h1>
+  <p class="sub">Une seule base (corps, tête, accroches) pour tous : chaque accessoire va à chaque animal. Tilou reste la mascotte, il n'est pas un compagnon.</p>
+  <div class="row" style="top:190px" id="r1"></div>
+  <div class="row" style="top:510px" id="r2"></div>
+  <div class="items" id="items"></div>
+  <div class="tl" id="tl"></div>
+</main>
+<script src="assets/companions.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/stage.js"></script>
+<script>
+var k = Object.keys(Companion.SPECIES);
+var outfits = [{ hat: "cap", neck: "bow" }, { hat: "cap", top: "tee", feet: "sneakers" }, { hat: "beanie", neck: "scarf" }, { hat: "crown", neck: "bow" }, { face: "glasses", top: "raincoat", feet: "boots" }, { hat: "party" }, { hat: "flower", neck: "bow" }, { neck: "scarf", feet: "sneakers" }];
+function cell(s, w, pose) { return '<div class="a">' + Companion.svg(s, { wear: w, pose: pose }) + Companion.SPECIES[s].name + "</div>"; }
+document.getElementById("r1").innerHTML = k.map(function (s, i) { return cell(s, {}, i === 3 ? "wave" : "idle"); }).join("");
+document.getElementById("r2").innerHTML = k.map(function (s, i) { return cell(s, outfits[(i + 1) % 8], "idle"); }).join("");
+document.getElementById("items").innerHTML = Object.keys(Companion.ITEMS).map(function (id) { return '<div class="it"><div class="art">' + Items.icon(id) + "</div>" + Companion.ITEMS[id].name + "</div>"; }).join("");
+document.getElementById("tl").innerHTML = Tilou.svg({ mood: "q" }) + Tilou.svg({ mood: "x", arms: "up" }) + "<p>Tilou : « ? » devient « ! »</p>";
+</script>
+</body>
+</html>

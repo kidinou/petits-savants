@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fin de leçon · Petits Savants 2026</title>
+<link rel="stylesheet" href="assets/ds.css">
+<style>
+  #stage { background: radial-gradient(1100px 820px at 50% 56%, #FFF8DC 0%, #FFE59A 34%, #FFC069 68%, #FF9E6B 100%); }
+  /* rayons : un seul calque pré-dessiné qui tourne (transform) */
+  .rays { position: absolute; left: 50%; top: 600px; width: 2400px; height: 2400px; margin: -1200px 0 0 -1200px; border-radius: 50%;
+    background: repeating-conic-gradient(from 0deg, rgba(255,255,255,.34) 0deg 7deg, rgba(255,255,255,0) 7deg 22.5deg); animation: spin 60s linear infinite; }
+  .rays::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,248,220,0) 30%, #FFB46A 100%); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .confetti i { position: absolute; top: -60px; width: 18px; height: 28px; border-radius: 6px; animation: fall linear infinite; }
+  .confetti i:nth-child(3n) { width: 22px; height: 22px; border-radius: 50%; }
+  @keyframes fall { from { transform: translate3d(0, 0, 0) rotate(0); } to { transform: translate3d(var(--dx), 1200px, 0) rotate(720deg); } }
+
+  .head { position: absolute; left: 0; right: 0; top: 58px; text-align: center; }
+  .head .hero { font-size: 140px; color: var(--ink); animation: big 900ms var(--spring) both; }
+  @keyframes big { 0% { opacity: 0; transform: scale(.5); font-stretch: 75%; } 100% { opacity: 1; transform: scale(1); font-stretch: 125%; } }
+  .head .sub { margin-top: 12px; font-size: 34px; color: #6A3A12; }
+  .head .sub span { font-family: var(--f-learn); }
+
+  .stars { position: absolute; left: 0; right: 0; top: 282px; display: flex; justify-content: center; align-items: flex-end; gap: 30px; }
+  .stars .s { width: 130px; height: 130px; }
+  .stars .s.mid { width: 170px; height: 170px; margin-bottom: 30px; }
+  .stars .s .ico { width: 100%; height: 100%; }
+  .stars .s { animation: starpop 700ms var(--spring) both; }
+  .stars .s:nth-child(1) { animation-delay: 500ms; transform: rotate(-12deg); } .stars .s:nth-child(2) { animation-delay: 750ms; } .stars .s:nth-child(3) { animation-delay: 1000ms; transform: rotate(12deg); }
+  @keyframes starpop { 0% { opacity: 0; transform: scale(0) rotate(-90deg); } 70% { opacity: 1; transform: scale(1.25) rotate(8deg); } 100% { opacity: 1; transform: scale(1); } }
+
+  .podium { position: absolute; left: 740px; top: 812px; width: 440px; height: 92px; border-radius: 50%; background: radial-gradient(ellipse at 45% 35%, #FFFFFF, #FFF1D2 50%, #F7CF8C); box-shadow: 0 14px 0 #E0A257, 0 0 0 10px rgba(255,255,255,.4); }
+  .pet { position: absolute; left: 790px; top: 430px; width: 340px; height: 442px; }
+  .pet .comp { width: 340px; height: 442px; }
+
+  .stat { position: absolute; top: 540px; width: 400px; padding: 30px 34px; box-sizing: border-box; }
+  .stat.l { left: 250px; } .stat.r { left: 1270px; }
+  .stat .big { display: flex; align-items: center; gap: 14px; font-family: var(--f-display); font-weight: 700; font-stretch: 115%; font-size: 76px; line-height: 1; }
+  .stat .big .ico { width: 70px; height: 70px; }
+  .stat .lab { margin-top: 10px; font-size: 28px; color: var(--mist); }
+  .lans { display: flex; gap: 6px; }
+  .lans div { display: flex; flex-direction: column; align-items: center; font-size: 24px; color: var(--mist); }
+  .lans .ico { width: 46px; height: 54px; }
+
+  .actions { position: absolute; left: 0; right: 0; top: 930px; display: flex; justify-content: center; gap: 40px; }
+  .actions .btn-soft .ico { width: 44px; height: 44px; }
+</style>
+</head>
+<body>
+<main id="stage">
+  <div class="rays"></div>
+  <div class="confetti" id="conf"></div>
+
+  <header class="head"><h1 class="hero">Bravo Léa&#8239;!</h1><p class="sub in" style="--d:300ms">Tu as fini <span>«&#8239;Les sons m, p, b&#8239;»</span></p></header>
+  <div class="stars" id="stars"></div>
+
+  <div class="podium in" style="--d:200ms"></div>
+  <div class="pet in" style="--d:250ms" id="pet"></div>
+
+  <div class="stat clay-2 l in" style="--d:1200ms"><div class="big" id="sb">+12</div><div class="lab">étoiles gagnées</div></div>
+  <div class="stat clay-2 r in" style="--d:1300ms"><div class="lans" id="lans"></div><div class="lab">3 jours cette semaine</div></div>
+
+  <nav class="actions in" style="--d:1400ms">
+    <span class="btn btn-soft f" id="re">Rejouer</span>
+    <span class="btn btn-primary f is-focus" style="padding:0 80px">Continuer</span>
+    <span class="btn btn-soft f" id="ma">Mon animal</span>
+  </nav>
+</main>
+<script src="assets/companions.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/stage.js"></script>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  $("stars").innerHTML = '<div class="s">' + Ico.star(true) + '</div><div class="s mid">' + Ico.star(true) + '</div><div class="s">' + Ico.star(true) + "</div>";
+  $("pet").innerHTML = Companion.svg("licorne", { wear: { hat: "flower", neck: "bow" }, pose: "joy" });
+  $("sb").insertAdjacentHTML("afterbegin", Ico.star(true));
+  $("re").insertAdjacentHTML("afterbegin", Ico.replay());
+  $("ma").insertAdjacentHTML("afterbegin", Ico.hanger());
+  $("lans").innerHTML = ["L", "M", "M", "J", "V", "S", "D"].map(function (d, i) { return "<div>" + Ico.lantern(i < 3) + d + "</div>"; }).join("");
+  // confettis : 28 pièces, ils tombent 2 fois puis s'arrêtent (célébration courte)
+  var c = "", cols = ["#FF5C8A", "#4C9BFF", "#3FCB78", "#A57BFF", "#FFD23F", "#FF9A3C"];
+  for (var i = 0; i < 28; i++) c += '<i style="left:' + ((i * 137) % 1900) + "px;background:" + cols[i % 6] + ";--dx:" + ((i % 5) - 2) * 40 + "px;animation-duration:" + (3 + (i % 4) * .6) + "s;animation-delay:-" + (i % 7) * .45 + 's;animation-iteration-count:2"></i>';
+  $("conf").innerHTML = c;
+})();
+</script>
+</body>
+</html>

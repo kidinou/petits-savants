@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercice · Petits Savants 2026</title>
+<link rel="stylesheet" href="assets/ds.css">
+<style>
+  #stage { --subj: var(--mots); --subj-glow: var(--mots-glow); background:
+    radial-gradient(900px 600px at 18% 78%, rgba(255,210,63,.28), rgba(255,210,63,0) 70%),
+    linear-gradient(180deg, #E4F1FF 0%, #F6F9FF 38%, #FFF4E4 100%); }
+  .floor { position: absolute; left: -100px; right: -100px; top: 850px; height: 600px; border-radius: 50%; background: radial-gradient(ellipse at 50% 12%, #FFF1DA, #FBE4C2 60%, #F2D2A6); }
+
+  .top { position: absolute; left: 96px; right: 96px; top: 50px; height: 84px; display: flex; align-items: center; gap: 24px; }
+  .x { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .x .ico { width: 40px; height: 40px; }
+  .chip { display: flex; align-items: center; gap: 10px; height: 64px; padding: 0 24px 0 16px; border-radius: 999px; background: var(--mots-pastel); color: #B42550; font-family: var(--f-display); font-weight: 700; font-size: 30px; }
+  .chip .ico { width: 36px; height: 36px; }
+  .beads { flex: 1; display: flex; align-items: center; justify-content: center; gap: 0; position: relative; }
+  .beads .string { position: absolute; left: 50%; width: 560px; margin-left: -280px; top: 50%; height: 8px; margin-top: -4px; border-radius: 4px; background: #E3DEF0; }
+  .beads .string i { display: block; height: 100%; width: 72%; border-radius: 4px; background: linear-gradient(90deg, #FFD23F, #FFB21F); }
+  .bead { position: relative; width: 140px; display: flex; justify-content: center; }
+  .bead span { width: 46px; height: 46px; border-radius: 50%; background: radial-gradient(circle at 38% 30%, #fff, #ECE8F6 60%, #D3CDE6); box-shadow: 0 5px 0 #C3BCDB; }
+  .bead.on span { background: radial-gradient(circle at 38% 30%, #FFF7C8, #FFD23F 55%, #F0A81A); box-shadow: 0 5px 0 #C98A08, 0 0 0 8px rgba(255,210,63,.25); }
+  .bead.now span { width: 58px; height: 58px; animation: beadpop 900ms var(--spring) 1 both; animation-delay: 400ms; }
+  @keyframes beadpop { 0% { transform: scale(.6); } 60% { transform: scale(1.3); } 100% { transform: scale(1); } }
+  .pill { display: flex; align-items: center; gap: 10px; height: 72px; padding: 0 26px 0 14px; border-radius: 999px; background: linear-gradient(180deg, #fff, #FFF6E6); box-shadow: var(--lift-1); font-family: var(--f-display); font-weight: 700; font-size: 34px; }
+  .pill .ico { width: 44px; height: 44px; }
+  .plus2 { position: absolute; right: 70px; top: 112px; font-family: var(--f-display); font-weight: 700; font-size: 34px; color: #B87A00; animation: up 1.4s var(--out) both; animation-delay: 600ms; }
+  @keyframes up { from { opacity: 0; transform: translateY(30px) scale(.6); } 40% { opacity: 1; transform: translateY(0) scale(1.1); } to { opacity: 1; transform: none; } }
+
+  .q { position: absolute; left: 96px; top: 176px; display: flex; align-items: center; gap: 22px; }
+  .q .tilou { width: 150px; height: 244px; margin-top: -40px; }
+  .q .bub { position: relative; display: flex; align-items: center; gap: 26px; padding: 26px 40px 26px 30px; border-radius: 48px; }
+  .q .bub::after { content: ""; position: absolute; left: -14px; top: 50%; margin-top: -18px; width: 36px; height: 36px; background: var(--surface); transform: rotate(45deg); border-radius: 6px; }
+  .q .h1 { font-size: 64px; }
+  .q .h1 em { font-style: normal; color: var(--subj); }
+  .q .speak-btn { width: 84px; height: 84px; }
+  .q .speak-btn .ico { width: 46px; height: 46px; }
+
+  .cards { position: absolute; left: 500px; top: 452px; display: flex; gap: 36px; }
+  .card { width: 300px; height: 372px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: opacity 400ms var(--out), transform 400ms var(--out); }
+  .card .num { position: absolute; left: 20px; top: 20px; }
+  .card .obj { width: 210px; height: 210px; }
+  .card .word { font-family: var(--f-learn); font-weight: 700; font-size: 56px; line-height: 1; color: var(--ink); }
+  .card .word b { color: var(--subj); font-size: 1.12em; }
+  .card.dim { opacity: .45; transform: scale(.95); animation: enterdim 700ms var(--out) both; animation-delay: var(--d); }
+  @keyframes enterdim { from { opacity: 0; transform: translateY(28px) scale(.95); } to { opacity: .45; transform: scale(.95); } }
+  .card.dim .word b { color: inherit; font-size: 1em; }
+  .card.good { background: linear-gradient(180deg, #F2FFF7 0%, #D8F7E6 100%); transform: translateY(-22px) scale(1.08); box-shadow: 0 0 0 8px var(--good-glow), 0 0 0 16px rgba(63,208,138,.25), 0 36px 50px -18px rgba(19,131,74,.55); animation: goodin 700ms var(--spring) both; }
+  @keyframes goodin { 0% { transform: translateY(-14px) scale(1.06); } 40% { transform: translateY(-34px) scale(1.14); } 100% { transform: translateY(-22px) scale(1.08); } }
+  .card.good .num { background: var(--good); color: #fff; box-shadow: 0 4px 0 #0B5E33; }
+  .badge { position: absolute; right: -22px; top: -22px; width: 84px; height: 84px; border-radius: 50%; background: radial-gradient(circle at 38% 30%, #7FF0B4, #2FBF74 55%, #13834A); box-shadow: 0 6px 0 #0B5E33; display: flex; align-items: center; justify-content: center; animation: pop 560ms var(--spring) both; animation-delay: 160ms; }
+  .badge .ico { width: 52px; height: 52px; }
+  .burst i { position: absolute; left: 50%; top: 50%; width: 30px; height: 30px; margin: -15px; animation: burst 1.2s var(--out) both; animation-delay: 120ms; }
+  .burst i .ico { width: 30px; height: 30px; }
+  @keyframes burst { 0% { opacity: 0; transform: translate(0, 0) scale(.3); } 25% { opacity: 1; } 100% { opacity: 1; transform: translate(var(--x), var(--y)) scale(1) rotate(40deg); } }
+
+  .pet { position: absolute; left: 60px; top: 520px; width: 380px; height: 494px; }
+  .pet .comp { width: 380px; height: 494px; }
+
+  .toast { position: absolute; left: 720px; top: 912px; display: flex; align-items: center; gap: 44px; height: 116px; padding: 0 30px 0 44px; border-radius: 999px; background: linear-gradient(180deg, #14894D, var(--good)); color: #fff; box-shadow: 0 4px 0 rgba(255,255,255,.3) inset, 0 10px 0 #0B5E33, 0 30px 40px -18px rgba(11,94,51,.6); animation: enter 600ms var(--spring) both; animation-delay: 300ms; }
+  .toast .h2 { font-size: 46px; color: #fff; }
+  .toast .h2 span { font-family: var(--f-learn); }
+  .next { position: relative; width: 84px; height: 84px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--f-display); font-weight: 700; font-size: 28px; color: var(--good); }
+  .next svg.ring { position: absolute; inset: -6px; width: 96px; height: 96px; transform: rotate(-90deg); }
+  .next svg.ring circle { fill: none; stroke: var(--lantern); stroke-width: 7; stroke-linecap: round; stroke-dasharray: 280; stroke-dashoffset: 280; animation: fill 3.2s linear forwards; animation-delay: 500ms; }
+  @keyframes fill { to { stroke-dashoffset: 80; } }
+  /* « Presque » : pas de rouge, pas de secousse, la bonne réponse n'est pas montrée */
+  .card.almost { background: linear-gradient(180deg, #FFF8EE, var(--almost-pastel)); opacity: .62; transform: translateY(8px) rotate(-2deg) scale(.96); animation: none; }
+  .card.almost .qbadge { position: absolute; right: -18px; top: -18px; width: 76px; height: 76px; border-radius: 50%; background: radial-gradient(circle at 38% 30%, #FFE3B8, #FFB25E 60%, #E8862A); box-shadow: 0 6px 0 #B9631A; display: flex; align-items: center; justify-content: center; font-family: var(--f-display); font-weight: 700; font-size: 46px; color: var(--ink); }
+  .is-almost .card.dim { opacity: 1; transform: none; animation: enter 700ms var(--out) both; }
+  .is-almost .card .word b { color: inherit; font-size: 1em; }
+  .toast.almost { background: linear-gradient(180deg, #FFF3E2, var(--almost-pastel)); color: var(--ink); box-shadow: 0 3px 0 #fff inset, 0 10px 0 #E9B98A, 0 30px 40px -18px rgba(178,84,0,.45); }
+  .toast.almost .h2 { color: var(--ink); }
+  .toast.almost .next { background: var(--lantern); color: var(--ink); }
+</style>
+</head>
+<body>
+<main id="stage">
+  <div class="floor"></div>
+  <header class="top">
+    <div class="x clay f round in" id="x"></div>
+    <div class="chip in" style="--d:60ms" id="chip">Langage</div>
+    <div class="beads in" style="--d:100ms"><div class="string"><i></i></div>
+      <div class="bead on"><span></span></div><div class="bead on"><span></span></div><div class="bead on"><span></span></div><div class="bead on now"><span></span></div><div class="bead"><span></span></div>
+    </div>
+    <div class="pill in" style="--d:140ms" id="stars">50</div>
+  </header>
+  <div class="plus2">+2</div>
+
+  <section class="q in" style="--d:120ms">
+    <span id="tilou"></span>
+    <div class="bub clay-2"><h1 class="h1">Quel mot commence par <em>«&#8239;b&#8239;»</em>&#8239;?</h1><span class="speak-btn f round" id="spk"></span></div>
+  </section>
+
+  <div class="pet" id="pet"></div>
+  <div class="cards" id="cards"></div>
+
+  <div class="toast"><div class="h2">Bravo&#8239;! «&#8239;b&#8239;» comme <span>ballon</span></div><div class="next f round is-focus">OK<svg class="ring" viewBox="0 0 96 96"><circle cx="48" cy="48" r="44"/></svg></div></div>
+</main>
+<script src="assets/companions.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/stage.js"></script>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  $("x").innerHTML = Ico.close();
+  $("chip").insertAdjacentHTML("afterbegin", Ico.subject("mots", "#C72E5A"));
+  $("stars").insertAdjacentHTML("afterbegin", Ico.star(true));
+  $("spk").innerHTML = Ico.speaker();
+  $("tilou").innerHTML = Tilou.svg({ mood: "x", arms: "up" });
+  $("pet").innerHTML = Companion.svg("licorne", { wear: { hat: "flower", neck: "bow" }, pose: "joy" });
+  var opts = [["ballon", "b"], ["lune", "l"], ["pomme", "p"], ["soleil", "s"]];
+  var burst = "";
+  for (var i = 0; i < 10; i++) {
+    var a = i / 10 * Math.PI * 2, r = 230 + (i % 2) * 40;
+    burst += '<i style="--x:' + Math.round(Math.cos(a) * r) + "px;--y:" + Math.round(Math.sin(a) * r * .85) + 'px">' + Ico.sparkle(["#FFD23F", "#FF8FC0", "#7CC7FF", "#3FD08A"][i % 4]) + "</i>";
+  }
+  $("cards").innerHTML = opts.map(function (o, i) {
+    var good = i === 0;
+    return '<div class="card clay-2 ' + (good ? "good" : "dim") + '" style="--d:' + (200 + i * 60) + 'ms"><span class="num">' + (i + 1) + "</span>" + Ico.obj(o[0]) +
+      '<div class="word"><b>' + o[0].charAt(0) + "</b>" + o[0].slice(1) + "</div>" + (good ? '<div class="badge">' + Ico.check() + '</div><div class="burst">' + burst + "</div>" : "") + "</div>";
+  }).join("");
+  // variante « Presque » : ?etat=presque
+  if (PS.params.etat === "presque") {
+    document.getElementById("stage").classList.add("is-almost");
+    var cards = $("cards").children;
+    cards[0].className = "card clay-2 dim"; cards[0].querySelector(".badge").remove(); cards[0].querySelector(".burst").remove();
+    cards[0].querySelector(".word").innerHTML = "ballon";
+    cards[2].className = "card clay-2 almost"; cards[2].insertAdjacentHTML("beforeend", '<span class="qbadge">?</span>');
+    cards[1].classList.add("f", "is-focus");
+    $("tilou").innerHTML = Tilou.svg({ mood: "q", arms: "wave" });
+    $("pet").innerHTML = Companion.svg("licorne", { wear: { hat: "flower", neck: "bow" }, pose: "idle" });
+    document.querySelector(".plus2").remove();
+    var t = document.querySelector(".toast"); t.classList.add("almost");
+    t.innerHTML = '<div class="h2">Presque&#8239;! Écoute bien le début&#8239;: «&#8239;b&#8239;»</div><div class="next round">' + Ico.speaker() + "</div>";
+    t.querySelector(".ico").style.cssText = "width:46px;height:46px";
+    document.querySelector(".bead.now").className = "bead";
+  }
+  // le jingle « Ça pétille » (sol, la, DO) : il ne joue qu'après une première action (règle des navigateurs)
+  document.addEventListener("keydown", function once() { Sfx.yes(); document.removeEventListener("keydown", once); });
+})();
+</script>
+</body>
+</html>

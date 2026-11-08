@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choix de l'animal · Petits Savants 2026</title>
+<link rel="stylesheet" href="assets/ds.css">
+<style>
+  #stage { background:
+    radial-gradient(760px 300px at 50% 79%, rgba(255,196,140,.75) 0%, rgba(255,150,140,.35) 45%, rgba(255,150,140,0) 100%),
+    radial-gradient(1400px 600px at 50% 112%, #9A5BC4 0%, rgba(154,91,196,0) 70%),
+    linear-gradient(180deg, #171B55 0%, #2B2A80 40%, #4D3A9E 72%, #5E3F9F 100%); color: var(--cream); }
+  .stars i { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #FFF6D8; animation: tw 3.6s var(--soft) infinite; }
+  .stars i:nth-child(3n) { width: 4px; height: 4px; animation-delay: -1.2s; }
+  .stars i:nth-child(4n) { animation-delay: -2.3s; }
+  @keyframes tw { 0%, 100% { opacity: .25; transform: scale(.8); } 50% { opacity: .9; transform: scale(1.15); } }
+  .beam { position: absolute; left: 610px; top: -40px; width: 700px; height: 920px; background: linear-gradient(180deg, rgba(255,240,200,.16), rgba(255,240,200,0) 85%); clip-path: polygon(38% 0, 62% 0, 100% 100%, 0 100%); }
+  .hill { position: absolute; border-radius: 50%; }
+
+  .head { position: absolute; left: 0; right: 0; top: 118px; text-align: center; }
+  .head .hero { font-size: 92px; color: #FFF6E8; }
+  .head .hero span { color: var(--lantern); }
+  .steps { position: absolute; left: 0; right: 0; justify-content: center; top: 40px; display: flex; gap: 12px; }
+  .step { display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 20px 0 10px; border-radius: 999px; background: rgba(255,255,255,.1); font-size: 24px; color: #E9E3FF; }
+  .step b { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.18); font-family: var(--f-display); font-size: 22px; }
+  .step.done b { background: var(--good-glow); }
+  .step.now { background: var(--lantern); color: var(--ink); }
+  .step.now b { background: var(--ink); color: var(--lantern); }
+  .step .ico { width: 22px; height: 22px; }
+
+  .podium { position: absolute; left: 620px; top: 770px; width: 680px; height: 190px; }
+  .podium .side { position: absolute; left: 0; right: 0; top: 52px; height: 92px; border-radius: 0 0 340px 340px / 0 0 70px 70px; background: linear-gradient(90deg, #7B55C9, #B78CF0 45%, #8C66D8 80%, #6B48B8); }
+  .podium .top { position: absolute; left: 0; right: 0; top: 0; height: 120px; border-radius: 50%; background: radial-gradient(ellipse at 45% 35%, #FFFFFF 0%, #F1E8FF 45%, #CDB8F5 100%); box-shadow: 0 0 0 6px rgba(255,210,63,.85), 0 0 0 14px rgba(255,210,63,.18); }
+  .podium .glow { position: absolute; left: 80px; right: 80px; top: 10px; height: 100px; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,226,140,.9), rgba(255,226,140,0)); animation: breath2 3s var(--soft) infinite; }
+  @keyframes breath2 { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+
+  .ring { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+  .slot { position: absolute; left: 0; top: 0; width: 500px; height: 650px; transform-origin: 50% 100%; transition: transform 620ms var(--out), opacity 620ms var(--out); }
+  .slot .comp { width: 500px; height: 650px; }
+  .slot.far { opacity: .55; }
+  .slot.near { opacity: .9; }
+  .slot .pebble { position: absolute; left: 90px; right: 90px; bottom: -6px; height: 70px; border-radius: 50%; background: radial-gradient(ellipse at 50% 40%, rgba(255,255,255,.28), rgba(255,255,255,.04) 70%, rgba(255,255,255,0)); }
+  .slot.center .pebble { display: none; }
+  .slot.center::before { display: none; }
+  .slot.center::after { display: none; }
+  
+
+  .name { position: absolute; left: 0; right: 0; top: 938px; display: flex; justify-content: center; align-items: center; gap: 22px; }
+  .name .h1 { font-size: 84px; color: #FFF6E8; }
+  .name .speak-btn .ico { width: 40px; height: 40px; }
+  .hint { position: absolute; left: 0; right: 0; top: 1030px; text-align: center; font-size: 24px; color: #D9CFFF; }
+
+  .chev { position: absolute; top: 800px; width: 96px; height: 96px; border-radius: 50%; background: rgba(255,255,255,.14); border: 3px solid rgba(255,255,255,.28); display: flex; align-items: center; justify-content: center; }
+  .chev .ico { width: 54px; height: 54px; }
+  .chev.l { left: 500px; } .chev.r { left: 1324px; } .chev { z-index: 20; }
+  .chev.l { animation: nudgeL 2.4s var(--soft) infinite; } .chev.r { animation: nudgeR 2.4s var(--soft) infinite; }
+  @keyframes nudgeL { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(-10px); } }
+  @keyframes nudgeR { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(10px); } }
+
+  .guide { position: absolute; left: 80px; top: 742px; width: 180px; z-index: 20; }
+  .guide .tilou { width: 180px; height: 292px; }
+  .guide-bubble { left: 70px; top: 560px; width: 300px; font-size: 32px; z-index: 20; }
+  .cta { position: absolute; right: 96px; top: 930px; z-index: 20; }
+  .cta .btn { height: 112px; font-size: 44px; padding: 0 44px 0 56px; }
+  .okkey { display: inline-flex; align-items: center; justify-content: center; height: 56px; padding: 0 14px; border-radius: 16px; background: rgba(30,42,94,.14); font-size: 28px; }
+  .sparkles .ico { position: absolute; width: 36px; height: 36px; animation: twinkle 2.2s var(--soft) infinite; }
+</style>
+</head>
+<body>
+<main id="stage" class="on-dark">
+  <div class="stars" id="stars"></div>
+  <div class="beam"></div>
+  <div class="hill" style="left:-200px;top:820px;width:900px;height:420px;background:radial-gradient(ellipse at 50% 30%,#7D52BE,#4B3492 70%)"></div>
+  <div class="hill" style="left:1220px;top:800px;width:960px;height:440px;background:radial-gradient(ellipse at 50% 30%,#7D52BE,#4B3492 70%)"></div>
+
+  <header class="head in" style="--d:80ms"><h1 class="hero">Choisis <span>ton animal</span></h1></header>
+  <nav class="steps in" style="--d:160ms" aria-label="Étapes">
+    <div class="step done"><b id="ck"></b>Prénom</div>
+    <div class="step now"><b>2</b>Animal</div>
+    <div class="step"><b>3</b>Réponses</div>
+  </nav>
+
+  <div class="podium in" style="--d:200ms"><div class="side"></div><div class="top"></div><div class="glow"></div></div>
+  <div class="ring" id="ring"></div>
+  <div class="sparkles" id="sp"></div>
+  <div class="chev l" id="cl"></div><div class="chev r" id="cr"></div>
+
+  <div class="name in" style="--d:420ms"><span class="speak-btn" id="spk"></span><h2 class="h1" id="nm">La licorne</h2></div>
+
+  <div class="speech tail-bottom guide-bubble in" style="--d:700ms">Il apprendra tout avec toi, Léa&#8239;!</div>
+  <div class="guide in" style="--d:600ms" id="tilou"></div>
+
+  <div class="cta in" style="--d:500ms"><span class="btn btn-primary">Je choisis <span class="okkey">OK</span></span></div>
+</main>
+<script src="assets/companions.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/stage.js"></script>
+<script>
+(function () {
+  var order = ["dinosaure", "chat", "panda", "licorne", "renard", "chien", "lapin", "ours"];
+  var wear = { licorne: { neck: "bow" } };
+  var ring = document.getElementById("ring");
+  // place sur l'arc : rang -3..3 → position, échelle, profondeur
+  // [centre x, bas y, échelle] : plus loin = plus haut, plus petit, plus pâle
+  var P = { "0": [960, 872, 1], "-1": [530, 660, .56], "1": [1390, 660, .56], "-2": [210, 560, .4], "2": [1710, 560, .4], "-3": [-160, 470, .3], "3": [2080, 470, .3] };
+  var center = order.indexOf("licorne");
+  ring.innerHTML = order.map(function (k, i) {
+    return '<div class="slot" data-k="' + k + '"><div class="pebble"></div>' + Companion.svg(k, { wear: wear[k] || {}, pose: "idle" }) + "</div>";
+  }).join("");
+  var slots = [].slice.call(ring.children);
+  function layout() {
+    slots.forEach(function (el, i) {
+      var r = i - center; if (r > 4) r -= order.length; if (r < -4) r += order.length;
+      var p = P[String(r)] || (r < 0 ? [-400, 400, .2] : [2300, 400, .2]);
+      el.style.transform = "translate(" + (p[0] - 250) + "px," + (p[1] - 650) + "px) scale(" + p[2] + ")";
+      el.style.zIndex = 10 - Math.abs(r);
+      el.className = "slot " + (r === 0 ? "center f is-focus" : Math.abs(r) === 1 ? "near" : "far");
+      el.querySelector(".comp").setAttribute("class", "comp pose-" + (r === 0 ? "wave" : "idle"));
+    });
+    document.getElementById("nm").textContent = Companion.SPECIES[order[center]].name;
+  }
+  layout();
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+      e.stopImmediatePropagation(); center = (center + (e.key === "ArrowLeft" ? -1 : 1) + order.length) % order.length; layout(); Sfx.tic(center % 4);
+    }
+  }, true);
+  document.getElementById("cl").innerHTML = Ico.chev("l", "#FFF6E8");
+  document.getElementById("cr").innerHTML = Ico.chev("r", "#FFF6E8");
+  document.getElementById("spk").innerHTML = Ico.speaker();
+  document.getElementById("ck").innerHTML = Ico.check();
+  document.getElementById("tilou").innerHTML = Tilou.svg({ mood: "q", arms: "wave" });
+  var st = ""; for (var i = 0; i < 46; i++) st += '<i style="left:' + ((i * 397) % 1900) + "px;top:" + ((i * 211) % 560) + "px;animation-delay:-" + (i % 7) * .5 + 's"></i>';
+  document.getElementById("stars").innerHTML = st;
+  var sp = [[690, 330, "#FFD23F"], [1210, 300, "#FF8FC0"], [760, 600, "#7CC7FF"], [1170, 560, "#FFD23F"]];
+  document.getElementById("sp").innerHTML = sp.map(function (s, i) { return '<div style="position:absolute;left:' + s[0] + "px;top:" + s[1] + 'px">' + Ico.sparkle(s[2]).replace('class="ico"', 'class="ico" style="animation-delay:-' + i * .5 + 's"') + "</div>"; }).join("");
+})();
+</script>
+</body>
+</html>
