@@ -267,3 +267,188 @@ Il est interdit d'inciter directement un enfant à acheter ou à demander l'acha
 - **Instagram :** les n° 3, 4, 12, 15, 19, 31, 33 et 35 (astuces à enregistrer).
 - **Facebook :** les n° 14, 16, 24, 34, 37 et 39 (parents plus âgés et grands-parents).
 - **Partout :** les n° 1, 2, 6, 7, 13 et 26.
+
+---
+
+## 4. Pinterest : la machine à trafic et à e-mails
+
+### 4.1 Pourquoi et comment
+
+Sur Pinterest, les parents **préparent** : routines, activités, fêtes, rentrée. Le rapport de tendances parentales 2026 relève de fortes hausses de recherche sur les **tableaux de routine quotidienne (+575 %)**, les **fiches cognitives (+540 %)**, les activités sans écran (+200 %) et la motricité des tout-petits (+145 %) ([Pinterest Newsroom](https://newsroom.pinterest.com/fr/news/parenting-trend-report-2026/), [Today's Parent](https://www.todaysparent.com/family/pinterest-parenting-trends-2026/)). Petits Savants y place donc des **fiches imprimables** et des **routines**, et l'app est présentée comme « le complément de 10 minutes ».
+
+**Mise en place (2 heures, le jour 1) :**
+
+1. Créer un **compte professionnel** @petitssavants. Dans la catégorie « Éducation », indiquer le site.
+2. **Vérifier le site** avec la balise meta Pinterest dans le `<head>` de index.html. C'est faisable sur GitHub Pages. Un domaine à vous (par exemple petitssavants.fr, disponibilité à vérifier) est conseillé avant d'investir dans Pinterest, car changer de domaine plus tard ferait perdre l'historique des épingles.
+3. Activer les **Rich Pins** (balises Open Graph sur chaque page de fiche).
+4. Créer les 20 tableaux ci-dessous, avec une description riche en mots-clés pour chacun.
+5. Mettre en place la **collecte d'e-mails** (4.5).
+
+### 4.2 La stratégie des épingles
+
+| Type d'épingle | Part | Exemple | Destination |
+|---|---|---|---|
+| **Fiche à imprimer** (aperçu de la fiche, mockup sur une table) | 40 % | « Le son [ch] : fiche GS gratuite à imprimer » | Page de la fiche, téléchargement contre e-mail |
+| **Coloriage des mascottes** | 15 % | « Coloriage Fenouil le renard : son [f] » | Page coloriage, téléchargement contre e-mail |
+| **Calendriers et routines** | 15 % | « Calendrier de révision GS : 10 min par jour en décembre », « Tableau de routine du matin 3-6 ans » | Page de la fiche |
+| **Listes de mots et infographies** | 15 % | « 50 mots avec le son [ou] pour le CP », « Les 10 repères de fin de GS » | Article de blog sur le site (à créer, 1 par mois) |
+| **Épingles vidéo** (Reels recadrés en 2:3 ou 9:16) | 10 % | « Astuce b/d en 20 secondes » | Page « Vidéos » du site |
+| **Produit** (l'app à la télé) | 5 % | « Une école sur la télé, sans pub : 151 leçons de la TPS au CE2 » | Page d'accueil du site, puis Google Play |
+
+**Rythme :** 3 à 5 épingles **nouvelles** par jour. Une « nouvelle » épingle est un visuel nouveau, même s'il pointe vers une URL déjà épinglée. On les prépare en lot le mardi soir (1 h 30) et on les programme sur 7 jours, avec le planificateur intégré de Pinterest, Metricool ou Tailwind. Chaque fiche donne **5 visuels différents** (mockup, gros titre, aperçu en grille, version « avant/après coloriée », version vidéo). Une fiche par semaine suffit donc à alimenter Pinterest. Les blogs spécialisés citent souvent 5 à 25 épingles par jour, mais **la régularité compte plus que le volume** ([Tailwind](https://www.tailwindapp.com/blog/pinterest-marketing-2025)).
+
+**Saisonnalité :** sur Pinterest, on publie **45 à 60 jours avant** l'événement. Comme on est le 8 novembre, Noël est déjà tardif : il faut le publier immédiatement. La rentrée se prépare début juillet, les cahiers de vacances en mai.
+
+### 4.3 Les 20 tableaux à créer
+
+| # | Nom du tableau (mots-clés en tête) | Contenu |
+|---|---|---|
+| 1 | Fiches maternelle à imprimer gratuites | Toutes les fiches de la PS à la GS |
+| 2 | Phonologie GS : sons, syllabes, rimes | Les fiches de sons et les jeux de rimes |
+| 3 | Apprendre à lire au CP : sons et syllabes | Fiches CP, listes de mots |
+| 4 | Lettres de l'alphabet : activités maternelle | Une lettre par fiche, graphisme, majuscule et cursive |
+| 5 | Nombres et calcul maternelle | Compter, décomposer, dés, maisons des nombres |
+| 6 | Maths CP CE1 : fiches et astuces | Doubles, compléments à 10, problèmes |
+| 7 | Écriture maternelle : graphisme et prénom | Tracés, pince, prénom en cursive |
+| 8 | Anglais pour enfants : fiches et jeux | Couleurs, animaux, chiffres avec Tofu |
+| 9 | Découvrir le monde : saisons, corps, animaux | Fiches de sciences pour la maternelle |
+| 10 | Coloriages éducatifs : mascottes Petits Savants | Coloriages de Fenouil, Moka, Pépin, Tofu et Nacre |
+| 11 | Calendrier de révision enfant (GS, CP, CE1) | Calendriers mensuels de 10 minutes par jour |
+| 12 | Routine enfant : tableaux à imprimer | Routines du matin et du soir, tableau de motivation |
+| 13 | Passage au CP : préparer la rentrée | Checklists, activités d'été |
+| 14 | Cahier de vacances maison : maternelle et primaire | Programmes d'été, défis, fiches |
+| 15 | Instruction en famille (IEF) : organisation et ressources | Plannings IEF, progressions |
+| 16 | Activités sans écran pour enfants | Jeux de sons à l'oral, comptines, jeux de société maison |
+| 17 | Écrans et enfants : bien les utiliser | Infographies sur le temps d'écran, conseils |
+| 18 | Noël éducatif : calendrier de l'Avent et activités | Calendrier de l'Avent à imprimer, coloriages |
+| 19 | Halloween, Pâques, fêtes : activités maternelle | Contenus saisonniers |
+| 20 | Petits Savants : l'app éducative sur la télé | Captures, tutoriels, nouveautés |
+
+### 4.4 Le format des épingles
+
+- **Taille :** 1000 × 1500 px (ratio 2:3) pour les statiques. Les vidéos font de 6 à 30 s, en 9:16 ou 2:3.
+- **Structure visuelle :**
+  - **Haut (25 %) :** le titre en Fredoka Bold de 80 à 100 px, deux couleurs au maximum, par exemple « LE SON [CH] » puis « Fiche GS gratuite ».
+  - **Centre (60 %) :** l'aperçu réel de la fiche, posé sur une table en bois clair avec un crayon (mockup Canva), ou les mains d'un adulte qui la colorient.
+  - **Bas (15 %) :** un badge de classe (« GS • 5-6 ans »), le logo Petits Savants et la mention « À imprimer ».
+- **Couleurs :** le fond bleu clair de la marque, des accents jaune étoile et orange renard. **Pas d'emojis comme illustrations principales**, car c'est un point faible déjà relevé. Sur les fiches, on utilise les dessins des mascottes.
+- **Titre de l'épingle** (100 caractères au maximum) : mot-clé en premier, par exemple « Fiche son ch grande section à imprimer gratuite (PDF) ».
+- **Description** (de 250 à 500 caractères, en phrases naturelles) : *« Fiche de phonologie gratuite pour la grande section : entourer les images qui contiennent le son [ch], colorier et écrire. Idéale pour réviser à la maison en 10 minutes ou en instruction en famille. Conforme au programme de maternelle. Téléchargez le PDF et retrouvez la leçon animée avec Fenouil le renard dans l'app Petits Savants sur la télé. »*
+- **Texte alternatif :** une description de l'image pour l'accessibilité, qui sert aussi au référencement.
+
+**Mots-clés prioritaires** (à valider avec la barre de recherche de Pinterest et l'outil Pinterest Trends) :
+
+- **Recherches génériques :** fiche maternelle à imprimer · fiches GS gratuites · phonologie grande section · son [ch] / [ou] / [an] CP · apprendre à lire CP · lettres de l'alphabet maternelle · graphisme maternelle · écrire son prénom · compter jusqu'à 10 · décomposition des nombres GS · maths CP fiches · anglais enfant fiches · coloriage éducatif · calendrier de l'Avent enfant à imprimer · routine enfant à imprimer · tableau de motivation enfant · passage au CP · cahier de vacances maternelle · instruction en famille maternelle · activités sans écran.
+- **Mots-clés de marque :** Petits Savants · Fenouil le renard.
+
+### 4.5 Une fiche contre une adresse e-mail
+
+**Parcours :** une épingle mène à **une page dédiée** à la fiche sur le site (par exemple /fiches/son-ch-gs). On y voit l'aperçu, trois lignes de conseil pédagogique et un formulaire « Recevez la fiche par e-mail » (prénom du **parent** et e-mail, avec une case à cocher pour la newsletter). Le parent reçoit le PDF par e-mail, suivi d'une **séquence de bienvenue de 5 e-mails**.
+
+**Outils :** [Brevo](https://www.brevo.com) (français, avec une offre gratuite) ou MailerLite (offre gratuite jusqu'à un certain volume d'abonnés). Les formulaires intégrables fonctionnent sur un site statique GitHub Pages. Vérifiez les limites des offres gratuites, qui changent souvent.
+
+**RGPD :** il faut un double opt-in, la mention « réservé aux adultes », une politique de confidentialité du site mise à jour, et un lien de désinscription. L'app ne collecte aucune donnée, mais le site, lui, collectera des adresses. Dites-le clairement pour que la promesse « aucune donnée » reste vraie (*« L'app ne collecte rien. Seule la newsletter, si vous vous y inscrivez, utilise votre e-mail. »*).
+
+**La séquence de bienvenue :**
+
+| Quand | Objet de l'e-mail | Contenu |
+|---|---|---|
+| Jour 0 | « Votre fiche [son ch] est là 🦊 » | Le PDF, puis « 3 façons de l'utiliser » |
+| Jour 2 | « Pourquoi on dit “Presque !” et jamais “Faux” » | La pédagogie de l'erreur, puis l'histoire des fondateurs |
+| Jour 4 | « 10 minutes par jour, pas plus » | Écrans raisonnés et minuteur, puis la vidéo YouTube de la semaine |
+| Jour 6 | « Votre enfant a-t-il un renard ? » | Présentation de l'app sur la télé, puis « Essai gratuit de 7 jours, 42 leçons gratuites pour toujours » |
+| Jour 9 | « 2 nouvelles fiches pour vous » | 2 fiches en plus et une demande d'avis (« Répondez à cet e-mail, on lit tout ») |
+
+---
+
+## 5. Instagram et Facebook
+
+### 5.1 Les 6 piliers éditoriaux
+
+| Pilier | Part | Ce qu'on publie | Signal visé |
+|---|---|---|---|
+| **1. Apprendre à la maison** (astuces d'enseignant, fiches) | 30 % | Carrousels « méthode », fiches, gestes d'enseignant | Enregistrements |
+| **2. Repères du programme** (ce que mon enfant apprend en GS, au CP…) | 20 % | Carrousels par classe, « mythe ou réalité » | Enregistrements et partages |
+| **3. Écrans raisonnés et parentalité positive** | 15 % | « L'écran qu'on regarde ensemble », minuteur, gestion de l'erreur | Partages en message privé et commentaires |
+| **4. Les coulisses du couple fondateur** | 15 % | Histoire, chiffres, ratés, décisions | Abonnements et commentaires |
+| **5. L'univers des mascottes** | 10 % | Fenouil et ses amis, coloriages, sketchs, « quelle mascotte es-tu ? » | Partages |
+| **6. Le produit et les preuves** | 10 % | Tutoriels télé, nouveautés, avis de parents, essai gratuit | Clics |
+
+**Ton :** un parent bienveillant qui s'y connaît, jamais moralisateur. On tutoie sur TikTok et Instagram, on vouvoie sur Facebook et dans la newsletter (le public y est plus âgé).
+
+### 5.2 Trente idées de publications et de carrousels
+
+| # | Format | Titre ou accroche | Contenu (slides ou description) |
+|---|---|---|---|
+| 1 | Carrousel | « Fin de GS : les 10 repères (et ce qui n'est PAS exigé) » | 10 slides, une par repère, avec une dernière slide « ce qui n'est pas attendu : lire couramment » |
+| 2 | Carrousel | « Le son, pas le nom : la règle n° 1 pour apprendre à lire » | Avant/après, exemples, mini-jeu, CTA « Enregistre » |
+| 3 | Reel | Astuce b/d avec les poings | Voir l'idée n° 19 de la partie 3 |
+| 4 | Carrousel | « 7 jeux de sons à faire en voiture » | 7 jeux sans écran (le pigeon vole des sons, la valise des rimes…) |
+| 5 | Photo et texte | « Bonjour, on est [Prénom] et [Prénom]. On a créé Petits Savants. » | Post de présentation à épingler en haut du profil |
+| 6 | Carrousel | « Écran passif ou écran actif ? 5 différences » | Comparatif visuel, sans culpabiliser |
+| 7 | Reel | « POV : 18 h, ton enfant fait ses sons tout seul » | Voir l'idée n° 2 |
+| 8 | Carrousel | « Mythe ou réalité : 6 idées reçues sur le CP » | 6 slides, sources Eduscol à l'appui |
+| 9 | Fiche | « Fiche gratuite : le son [m] » | Aperçu, puis « Commente FICHE » pour la recevoir en message privé |
+| 10 | Carrousel | « Comment on a choisi le renard (les 47 croquis) » | Coulisses du design, et un vote en Story |
+| 11 | Reel | Fenouil se présente | Mascotte qui parle, voix modifiée |
+| 12 | Carrousel | « Décomposer 5 : le jeu des maisons des nombres » | Activité avec des haricots secs ou des Lego |
+| 13 | Carrousel | « Que dire quand votre enfant se trompe ? 8 phrases » | Les phrases de l'encouragement, et le lien avec « Presque ! » |
+| 14 | Reel | Tutoriel : installer l'app sur une télé Samsung ou LG | Pas-à-pas |
+| 15 | Carrousel | « Notre première semaine en chiffres » | Installations, avis, bugs, apprentissages, en toute transparence |
+| 16 | Collaboration avec une enseignante | « Les 5 conseils de [maîtresse partenaire] pour le CP » | Post en collaboration Instagram (co-auteur) |
+| 17 | Carrousel | « Calendrier de l'Avent : 24 défis de lecture » | Aperçu, puis « Commente NOËL » |
+| 18 | Coloriage | « Coloriage de Moka l'ourse : le chiffre 3 » | À imprimer, et repartager le coloriage de son enfant (sans visage) |
+| 19 | Carrousel | « IEF en maternelle : notre semaine type » | Planning type, avec la place de l'app (10 min) |
+| 20 | Reel | « Le parent contre l'enfant » | Idée n° 18 |
+| 21 | Carrousel | « Le prénom en cursive : comment l'apprendre en GS » | Étapes, gestes, erreurs fréquentes |
+| 22 | Avis | « Ce qu'une maman nous a écrit… » | Capture d'avis anonymisée, avec son accord |
+| 23 | Carrousel | « 3 mots d'anglais par semaine : le programme de Tofu » | Un programme sur 4 semaines |
+| 24 | Reel | « Pourquoi la télé et pas le téléphone » | Idée n° 23 |
+| 25 | Carrousel | « Le livret scolaire de décembre : comment le lire sans stress » | Comprendre « atteint / en cours / non atteint » et quoi en dire à son enfant |
+| 26 | Carrousel | « 10 activités pour l'été avant le CP (sans cahier de vacances) » | Une activité par slide |
+| 27 | Jeu-concours | « Gagnez 1 an de Premium » | Règlement simple, sans visage d'enfant demandé, réservé aux majeurs |
+| 28 | Carrousel | « Combien d'écran à 3, 6 et 9 ans ? Ce que disent les repères officiels » | Synthèse sourcée (rapport de la commission Écrans de 2024, à citer précisément) |
+| 29 | Reel | « Une journée de deux parents fondateurs » | Idée n° 40 |
+| 30 | Carrousel | « Quelle mascotte est ton enfant ? » | Test de personnalité ludique : Fenouil le curieux, Moka la calme, etc. |
+
+**Facebook :** on reprend les numéros 1, 4, 8, 13, 14, 17, 19, 21, 25, 26 et 28 sous forme de **posts photo avec un long texte** (le public Facebook lit plus) et de Reels. On pose une question à la fin de chaque post (« Et chez vous, comment ça se passe ? »). On évite les posts dont le message principal est un lien externe, car ils sont moins diffusés ([Kolsquare](https://www.kolsquare.com/fr/blog/comprendre-lalgorithme-de-facebook)) : on met le lien en premier commentaire.
+
+### 5.3 Participer aux groupes Facebook sans spammer
+
+**Les types de groupes à rejoindre**, avec le profil personnel d'un fondateur (les Pages ne peuvent pas rejoindre tous les groupes) :
+
+- les groupes d'instruction en famille (recherches : « instruction en famille », « IEF maternelle », « école à la maison »), et ceux liés aux associations IEF reconnues comme Les Enfants d'Abord ou LAIA, en vérifiant leurs règles ;
+- les groupes « Maternelle : activités et fiches », « GS / CP parents », « Passage au CP » ;
+- les groupes Montessori et pédagogies alternatives, sans prétendre que l'app est Montessori ;
+- les groupes de parents par ville (« Mamans de Lyon », « Parents de Nantes »…), très actifs et ouverts aux recommandations locales ;
+- les groupes d'utilisateurs de télés connectées (Google TV, Fire TV, LG webOS), utiles pour l'aide technique et les tutoriels.
+
+**La règle 9 + 1 :** pour 10 interventions, 9 sont de l'aide pure (répondre à une question, partager une fiche gratuite **sans lien commercial**, conseiller une activité), et 1 seule mentionne l'app, **uniquement si quelqu'un cherche une solution de ce type**, en se présentant clairement (« Transparence : c'est nous qui l'avons créée »).
+
+**Bonnes pratiques :**
+
+- lire et respecter le règlement de chaque groupe, et demander l'accord des admins avant de proposer des fiches ;
+- proposer aux admins un **atelier en direct gratuit** (« Préparer le CP à la maison, 30 min de questions-réponses ») ou des codes Premium offerts pour les familles IEF du groupe ;
+- ne jamais copier-coller le même message dans 10 groupes ;
+- ne jamais envoyer de messages privés non sollicités ;
+- ne pas faire de faux avis, ni demander à des amis de « recommander spontanément » l'app (c'est une pratique commerciale trompeuse).
+
+**Créer son propre groupe**, « Petits Savants : parents de la maternelle au CE2 », à partir du 3e mois seulement, quand la communauté dépasse environ 1 000 abonnés. On y fera le défi de la semaine, les retours bêta et les questions aux fondateurs.
+
+### 5.4 Les temps forts de l'année
+
+*Les dates exactes des vacances dépendent des zones A, B et C : vérifiez le calendrier officiel sur education.gouv.fr.*
+
+| Période | Temps fort | Contenus | Pinterest (à publier en avance) |
+|---|---|---|---|
+| **Novembre** | Lancement ; journée des droits de l'enfant (20 nov.) ; Black Friday (27 nov. 2026) | Histoire des fondateurs, post sur le droit à l'image des enfants (notre engagement), offre annuelle | Noël et calendrier de l'Avent (urgent) |
+| **Décembre** | Calendrier de l'Avent ; **livret scolaire du 1er trimestre et conseils de classe** (en primaire : livret et rendez-vous avec l'enseignant) ; vacances de Noël | 24 défis de l'Avent, « lire le livret sans stress », « offrir un abonnement d'un an » | Hiver, galette, « révisions de janvier » |
+| **Janvier** | Bonnes résolutions ; Épiphanie ; reprise | « 10 minutes par jour en 2027 », calendrier de révision de janvier, défi « 7 jours de flamme » | Saint-Valentin, Chandeleur, hiver |
+| **Février** | Vacances d'hiver (par zones) ; Chandeleur | Activités d'intérieur, « révisions sans pleurs » | Printemps, Pâques |
+| **Mars** | Printemps ; **inscriptions au CP** en mairie ; semaine de la presse à l'école | « Préparer l'entrée au CP », fiches sur le printemps | Fête des mères, cahiers de vacances |
+| **Avril** | Vacances de printemps ; Pâques | Chasse aux œufs des sons (fiche), activités nature | **Été et cahiers de vacances** |
+| **Mai** | Ponts ; fête des mères ; **lancement des cahiers de vacances en magasin** | « Cahier de vacances ou app ? », programme d'été maison | Rentrée, passage au CP |
+| **Juin** | Fin d'année ; **2e livret scolaire et conseils de cycle** ; fête des pères | « Bilan de l'année : 5 repères », offre été | Rentrée (checklists) |
+| **Juillet-août** | **Été : cahiers de vacances, passage au CP**, voyages | Défi d'été « 30 jours, 10 min », activités voyage (journal de voyage : +1 280 % sur Pinterest) | Rentrée, Halloween |
+| **Septembre** | **Rentrée** | « Rentrée en GS, au CP, en CE1 : ce qui change », routines, offre de rentrée | Halloween, Toussaint |
+| **Octobre** | Vacances de la Toussaint ; Halloween ; 1 an de l'app en novembre | Activités d'Halloween (sons qui font peur), bilan de la première année | Noël |
